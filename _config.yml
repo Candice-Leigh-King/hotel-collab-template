@@ -33,10 +33,28 @@ _array_structures:
         icon: star
         value:
           _section-type: hero
-          hero:
-          hero-image:
-          hero-color:
-          hero-font: 
+          hero: professional imagery for hotels
+          subheading:
+          cta: see our work
+          cta-link: /portfolio
+          hero-image: /images/professional-hotel-photography-near-me.webp
+          textarea-background-image: /images/hotel-collab-background.webp
+          textarea-optional-image: /images/hotel-photographer.webp
+          colors:
+            hero-color: '#766C5B'
+            subheading-color: 
+            cta-color: '#766C5B'
+            cta-text-color: 'white'
+            cta-background-hover-color: '#366E94'
+          fonts:  
+            hero-font: Mak
+            subheading-font:
+            cta-font: Mak
+          border-radius:
+            top-left-corner: 100%
+            top-right-corner: 100%
+            bottom-left-corner: 100%
+            bottom-right-corner: 100%
           content-block-link:
       - label: Text Area
         icon: article

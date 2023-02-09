@@ -1,2 +1,2 @@
-# TTL-website-template
+# hotel-collab-template
  

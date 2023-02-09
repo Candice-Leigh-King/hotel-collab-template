@@ -1,17 +1,86 @@
 <style>
 
   #content-blocks-{{forloop.index0}} .hero-color
-   {color: {{item.hero-color}};}
+   {
+   color: {{item.colors.hero-color}};
+   margin: 0;
+   }
   
   #content-blocks-{{forloop.index0}} .hero-font
-    {font-family: {{item.hero-font}};}
+    {font-family: {{item.fonts.hero-font}};}
 
+  #content-blocks-{{forloop.index0}} .subheading
+  {
+  font-family: {{item.fonts.subheading-font}};
+  color: {{item.colors.subheading-color}};
+  margin: 0;
+  }
+
+  #content-blocks-{{forloop.index0}} .hero-button
+    {
+    font-family: {{item.fonts.cta-font}};
+    background-color: {{item.colors.cta-color}};
+    color: {{item.colors.cta-text-color}};
+    font-size: 1.5rem;
+    border: solid 2px {{item.colors.cta-text-color}};
+    border-top-left-radius: {{item.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.border-radius.bottom-right-corner}};
+    }
+
+    #content-blocks-{{forloop.index0}} .hero-button:hover
+    {background-color: {{item.colors.cta-background-hover-color}};
+    transition: all 0.5s;}
+
+  @media(max-width:1024px)
+  {
+    #content-blocks-{{forloop.index0}} h1 {font-size: 2rem;}
+
+    #content-blocks-{{forloop.index0}} .hero-button {font-size: 1.2rem; }
+  }  
+
+  @media(max-width:768px) 
+  {
+
+    #content-blocks-{{forloop.index0}} h1 {font-size: 1.8rem; }
+
+    #content-blocks-{{forloop.index0}} .hero-button {font-size: 1.1rem; }
+  }  
+
+  @media(max-width: 500px)
+  {
+
+    #content-blocks-{{forloop.index0}} h1 {font-size: 1.6rem;}
+
+    #content-blocks-{{forloop.index0}} .vertical-text-mobile
+    {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 79%;
+    }
+
+    #content-blocks-{{forloop.index0}} .hero-button {font-size: 1rem; }
+
+  }
 </style>
 
 <section id="content-blocks-{{forloop.index0}}" class="center">
-  <section id="{{.item.content-block-link}}"  class=" padded-sides banner grid center" style="background-image: url('{{item.hero-image}}');">
-    <div class="col-12-middle" >
-      <h1 class="reveal fade-up hero-color hero-font">{{item.hero}}</h1>
+  <section id="{{.item.content-block-link}}"  class="  grid-middle center">
+    <div class="col-7_xs-8 banner" style="background-image: url('{{item.hero-image}}');"></div>
+    <div class="col-5-middle_xs-4 grid-center banner" style="background-image: url('{{item.textarea-background-image}}');">
+      <div class="grid-center vertical-text-mobile padded">
+        <div class= "col-12 grid-center ">
+          <h1 class=" col-12 hero-color hero-font ">{{item.hero}} </h1>
+          <h3 class=" col-12 subheading mob-hide">{{item.subheading}} </h3>
+        </div>
+        <div class= "col-12 grid-center padded-bottom ">
+          <a href="{{item.cta-link}}" class="hero-button center col-4_md-6">{{item.cta}}</a>
+        </div>
+       </div>
     </div>
+    <!-- <img class="col-4_sm-6" src="{{item.textarea-optional-image}}" alt=""> -->
   </section>
 </section>
