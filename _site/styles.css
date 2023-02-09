@@ -631,6 +631,68 @@ header
 .reveal.active 
   {opacity: 1;}
 /* ---------ANNIMATION--------- */
+
+/* ---------ANNIMATION--------- */
+
+/* IMAGE  */
+@keyframes fadeIn {
+  from {
+      /* transform: translate3d(0,40px,0) */
+  }
+
+  to {
+      /* transform: translate3d(0,0,0); */
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeIn {
+  opacity: 0
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+
+/* TEXT  */
+@keyframes fadeInLong {
+  from {
+      /* transform: translate3d(0,40px,0) */
+  }
+
+  to {
+      /* transform: translate3d(0,0,0); */
+      opacity: 1
+  }
+}
+
+
+.animatedLong {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeIn {
+  opacity: 0
+}
+
+.fadeInLong {
+  opacity: 0;
+  animation-name: fadeInLong;
+  -webkit-animation-name: fadeInLong;
+}
+
 .active.fade-up {animation: fade-up 1s ease-in;}
 
 @keyframes fade-up 

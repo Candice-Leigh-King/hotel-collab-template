@@ -65,13 +65,16 @@
     #content-blocks-{{forloop.index0}} .hero-button {font-size: 1rem; }
 
   }
+
+  
+
 </style>
 
 <section id="content-blocks-{{forloop.index0}}" class="center">
   <section id="{{.item.content-block-link}}"  class="  grid-middle center">
-    <div class="col-7_xs-8 banner" style="background-image: url('{{item.hero-image}}');"></div>
-    <div class="col-5-middle_xs-4 grid-center banner" style="background-image: url('{{item.textarea-background-image}}');">
-      <div class="grid-center vertical-text-mobile padded">
+    <div class="col-7_xs-8 banner " style="background-image: url('{{item.hero-image}}');"></div>
+    <div class="col-5-middle_xs-4 grid-center banner " style="background-image: url('{{item.textarea-background-image}}');">
+      <div class="grid-center vertical-text-mobile padded fadeInLong animatedFadeInLong animatedLong">
         <div class= "col-12 grid-center ">
           <h1 class=" col-12 hero-color hero-font ">{{item.hero}} </h1>
           <h3 class=" col-12 subheading mob-hide">{{item.subheading}} </h3>

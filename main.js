@@ -50,6 +50,8 @@ $(document).ready(function() {
 			window.addEventListener("scroll", reveal);
 
 			
+
+			
 			$('[data-fancybox="gallery"]').fancybox({
 			  loop: true,
 			  buttons: [
@@ -70,3 +72,5 @@ $(document).ready(function() {
 				   $(this).slideToggle();
 				 }});
 			});
+				
+
