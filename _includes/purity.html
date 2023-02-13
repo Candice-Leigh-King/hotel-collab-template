@@ -5,45 +5,56 @@
 
   #content-blocks-{{forloop.index0}} .textarea-color a:hover {color: {{item.colors.link-hover-color}};}
 
-  #content-blocks-{{forloop.index0}} .textarea-color {color: {{item.colors.textarea-color}};}
+  #content-blocks-{{forloop.index0}} .
+  {color: {{item.colors.textarea-color}};
+  font-family: {{item.fonts.textarea-font}};
+  }
 
-  #content-blocks-{{forloop.index0}} .textarea-font {font-family: {{item.fonts.textarea-font}};}
+  #content-blocks-{{forloop.index0}} .purity-button a
+  {
+  background-color: {{item.colors.button-color}};
+  color: {{item.colors.button-text-color}};
+  font-family: {{item.fonts.button-font}};
+  font-weight: bolder;
+  padding: .8rem 2rem .6rem;
+  border: solid 2px {{item.colors.button-text-color}};
+  border-top-left-radius: {{item.button-border-radius.border-top-left-corner}};
+  border-top-right-radius: {{item.button-border-radius.border-top-right-corner}};
+  border-bottom-left-radius: {{item.button-border-radius.border-bottom-left-corner}};
+  border-bottom-right-radius: {{item.button-border-radius.border-bottom-right-corner}};
+  }
 
-  #content-blocks-{{forloop.index0}} .top-line-color 
+  #content-blocks-{{forloop.index0}} .purity-button a:hover
+  {
+  color: {{item.colors.button-text-hover-color}};
+  background-color: {{item.colors.button-hover-color}};
+  border: solid 2px {{item.colors.button-text-hover-color}};
+  transition: all 0.5s;
+  }
+
+  
+  #content-blocks-{{forloop.index0}} .subheading 
     {
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: 4px solid {{item.colors.top-line-color}};
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
     }
 
-  #content-blocks-{{forloop.index0}} .left-line-color 
-    {
-    border-bottom: none;
-    border-right: none;
-    border-top: none;
-    border-left: solid 4px {{item.colors.left-line-color}};
-    } 
-  
-  #content-blocks-{{forloop.index0}} .subheading-color 
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .subheading-font {font-family: {{item.fonts.subheading-font}};}
+  #content-blocks-{{forloop.index0}} .subheading-font {}
 
   #content-blocks-{{forloop.index0}} .purity img
     { 
-    border: solid 2px {{item.colors.border-color}};
-    border-top-left-radius: {{item.border-radius.top-left-corner}};
-    border-top-right-radius: {{item.border-radius.top-right-corner}};
-    border-bottom-left-radius: {{item.border-radius.bottom-left-corner}};
-    border-bottom-right-radius: {{item.border-radius.bottom-right-corner}};
+    border: solid 2px {{item.colors.image-border-color}};
+    border-top-left-radius: {{item.image-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.image-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.image-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-border-radius.bottom-right-corner}};
     }
 
   #content-blocks-{{forloop.index0}} h1 
   {
   font-size: 3.5rem;
-  color: {{item.colors.subheading-color}};
-  font-family: {{item.fonts.subheading-font}};
+  color: {{item.colors.heading-color}};
+  font-family: {{item.fonts.heading-font}};
   }
 
   #content-blocks-{{forloop.index0}} h2 
@@ -111,9 +122,12 @@
       </div>
     </div>
     <div class="col-2"></div>
-    <div class="col-7_sm-12 textarea-color textarea-font grid padded reveal fade-right">
+    <div class="col-7_sm-12 textarea grid padded reveal fade-right">
       <p class=" ">{{item.textarea_html}}</p>
-      </div>
+      <div class="purity-button">  
+        <a href="{{item.button-link}}">{{item.cta}}</a>
+      </div>  
+    </div>
     </div>
     </div>
   </section>
