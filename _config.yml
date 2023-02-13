@@ -81,20 +81,52 @@ _array_structures:
         icon: article
         value:
           _section-type: purity
-          textarea_html:
-          subheading_html:
+          background-image: /images/shadows.png
+          image: /images/about-us.webp
+          textarea_html: >-
+            <h2>about Us</h2><h4>We're hotel photographers with 3 Million
+            followers!</h4><p>Use this block to tell your audience more about you. Be
+            descriptive and make sure your personality shines through your writing.
+            You also want to <a href="/media-kit.html"><strong>write the way you
+            talk</strong> </a>so that your website comes across more personal which
+            builds relationship and trust.</p><p>In this block, you can add links, add
+            headings, subheadings,&nbsp;<em>italics</em> and <strong>bold text.
+            </strong>You can also added<strong>&nbsp;</strong>quotes, bulleted list
+            and numbered lists.</p><p>Use this block throughout your website if you
+            wish for an about section, story section, mission and/or vision statement
+            or in any way you please!</p>
+          button-link: /portfolio
+          cta: see our work
           colors:
-            background-color: 
-            text-color: 
-            subheading-color: 
-            top-line-color: 
-            left-line-color:
-            link-color:
-            link-hover-color:
+            heading-color:
+            subheading-color: '#9E9282'
+            other-subheadings-color: '#9E9282'
+            background-color: '#F8F7F3'
+            image-border-color: transparent
+            text-color: '#2f3031'
+            button-color: '#366E94'
+            button-text-color: white
+            button-hover-color: transparent
+            button-text-hover-color: '#9E9282'
+            link-color: '#d2966d'
+            link-hover-color: '#859f9f'
           fonts:
-            subheading-font: 
-            text-font:  
-          content-block-link: 
+            heading-font:
+            subheading-font: Mak
+            other-subheadings-font: Brushwell
+            text-font: Raleway, sans-serif
+            button-font: Mak
+          content-block-link: about
+          image-border-radius:
+            border-top-left-corner: 113%;
+            border-top-right-corner: 82%;
+            border-bottom-left-corner: 76%;
+            border-bottom-right-corner: 131%;
+          button-border-radius:
+            border-top-left-corner: 100%;
+            border-top-right-corner: 100%;
+            border-bottom-left-corner: 100%;
+            border-bottom-right-corner: 100%;
       - label: Carousel
         icon: view_carousel
         value:
