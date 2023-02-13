@@ -36,6 +36,12 @@
     border-bottom-right-radius: {{item.image-border-radius.bottom-right-corner}};
     }
 
+  #content-blocks-{{forloop.index0}} p 
+    {
+     font-family: {{item.fonts.text-font}}; 
+     color: {{item.colors.text-color}}
+    }
+
   #content-blocks-{{forloop.index0}} h1 
   {
   font-size: 3.5rem;
@@ -61,21 +67,21 @@
   {
   font-size: 2rem;
   color: {{item.colors.other-subheadings-color}};
-  font-family: {{item.fonts.other-subheading-font}};
+  font-family: {{item.fonts.other-subheadings-font}};
   }
 
   #content-blocks-{{forloop.index0}} h5 
   {
   font-size: 1.5rem;
   color: {{item.colors.other-subheadings-color}};
-  font-family: {{item.fonts.other-subheading-font}};
+  font-family: {{item.fonts.other-subheadings-font}};
   }
 
   #content-blocks-{{forloop.index0}} h6 
   {
   font-size: 1rem;
   color: {{item.colors.other-subheadings-color}};
-  font-family: {{item.fonts.other-subheading-font}};
+  font-family: {{item.fonts.other-subheadings-font}};
   }
 
   @media(max-width:576px) 
@@ -109,7 +115,7 @@
     </div>
     <div class="col-2"></div>
     <div class="col-7_sm-12 grid textarea padded reveal fade-right">
-      <p class=" ">{{item.textarea_html}}</p>
+      {{item.textarea_html}}
       <div class="purity-button">  
         <a href="{{item.button-link}}">{{item.cta}}</a>
       </div>  
