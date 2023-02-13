@@ -99,7 +99,7 @@ _array_structures:
             bottom-left-corner: 100%
             bottom-right-corner: 100%
           content-block-link:
-      - label: Text Area
+      - label: Purity
         icon: article
         value:
           _section-type: purity
