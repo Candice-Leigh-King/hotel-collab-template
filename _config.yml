@@ -105,7 +105,7 @@ _array_structures:
           _section-type: purity
           background-image: /images/shadows.png
           image: /images/about-us.webp
-          textarea: >-
+          textarea_html: >-
             <h2>about Us</h2><h4>We're hotel photographers with 3 Million
             followers!</h4><p>Use this block to tell your audience more about you. Be
             descriptive and make sure your personality shines through your writing.
