@@ -35,6 +35,28 @@ _inputs:
       undo: true
       redo: true
 
+  cta_html:
+    options:
+      options:
+      blockquote: true
+      bold: true
+      format: p h1 h2 h3 h4 h5 h6
+      italic: true
+      strike: true
+      underline: true 
+      link: true
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      styles: /custom-styles.css
+      left: left
+      center: center
+      right: right
+      justify: justify
+      image: true
+      undo: true
+      redo: true
+
   content-block-link:
     comment: If you would like this section to be linked through the navigation, then you'll need to add an ID. The ID can be added in the below box. Your ID is 1 word describing the section it is leading to. For example - about. For more detailed instructions on how to link your pages and content blocks to the navigation, please visit our YouTube tutorial here - https://www.youtube.com/watch?v=odzPwMfEaxU. If you don't want this section to link from the navigation, you can simply leave it out.
   colors.subheading-mobile-color:
@@ -95,8 +117,7 @@ _array_structures:
             and numbered lists.</p><p>Use this block throughout your website if you
             wish for an about section, story section, mission and/or vision statement
             or in any way you please!</p>
-          button-link: /portfolio
-          cta: see our work
+          cta_html: see our work
           colors:
             heading-color:
             subheading-color: '#9E9282'
