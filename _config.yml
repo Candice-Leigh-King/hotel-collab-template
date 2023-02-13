@@ -13,7 +13,7 @@ defaults:
       layout: "connect-tree" # overrides previous default layout
 
 _inputs:
-  textarea:
+  textarea_html:
     options:
       options:
       blockquote: true
