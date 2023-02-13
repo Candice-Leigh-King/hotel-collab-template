@@ -1,9 +1,9 @@
 <style>
   #content-blocks-{{forloop.index0}} .background-color {background-color: {{item.colors.background-color}};}
 
-  #content-blocks-{{forloop.index0}} .textarea-color a {color: {{item.colors.link-color}};}
+  #content-blocks-{{forloop.index0}} .textarea a {color: {{item.colors.link-color}};}
 
-  #content-blocks-{{forloop.index0}} .textarea-color a:hover {color: {{item.colors.link-hover-color}};}
+  #content-blocks-{{forloop.index0}} .textarea a:hover {color: {{item.colors.link-hover-color}};}
 
   #content-blocks-{{forloop.index0}} .purity-button a
   {
@@ -108,7 +108,7 @@
       </div>
     </div>
     <div class="col-2"></div>
-    <div class="col-7_sm-12 grid padded reveal fade-right">
+    <div class="col-7_sm-12 grid textarea padded reveal fade-right">
       <p class=" ">{{item.textarea_html}}</p>
       <div class="purity-button">  
         <a href="{{item.button-link}}">{{item.cta}}</a>
