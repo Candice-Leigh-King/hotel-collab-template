@@ -15,15 +15,22 @@ defaults:
 _inputs:
   textarea_html:
     options:
+      options:
       blockquote: true
       bold: true
       format: p h1 h2 h3 h4 h5 h6
       italic: true
       strike: true
       underline: true 
+      link: true
       bulletedlist: true
       numberedlist: true
       horizontalrule: true
+      styles: /custom-styles.css
+      left: left
+      center: center
+      right: right
+      justify: justify
       image: true
       undo: true
       redo: true
