@@ -299,7 +299,10 @@ font-family: 'Shrikhand', cursive;*/
 
 .purity img 
   {
-  margin-left: 7rem;
+  margin-left: 10rem;
+  max-width: 400px;
+  height: auto;
+  padding: 10%;
   }
 
 /* -----------------TEXTAREA----------------- */
