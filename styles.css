@@ -61,6 +61,12 @@ font-family: 'Shrikhand', cursive;*/
 
 @font-face 
   {
+  font-family: Gloss and Bloom;
+  src: url(/fonts/gloss-and-bloom.ttf);
+  }
+
+@font-face 
+  {
   font-family: Lineal Simples;
   src: url(/fonts/lineal-simples.ttf);
   }
@@ -304,6 +310,8 @@ font-family: 'Shrikhand', cursive;*/
   height: auto;
   padding: 10%;
   }
+
+ .purity-button a 
 
 /* -----------------TEXTAREA----------------- */
 
