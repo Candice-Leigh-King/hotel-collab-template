@@ -30,6 +30,15 @@
 
   #content-blocks-{{forloop.index0}} .subheading-font {font-family: {{item.fonts.subheading-font}};}
 
+  #content-blocks-{{forloop.index0}} .purity img
+    { 
+    border: solid 2px {{item.colors.border-color}};
+    border-top-left-radius: {{item.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.border-radius.bottom-right-corner}};
+    }
+
   #content-blocks-{{forloop.index0}} h1 
   {
   font-size: 3.5rem;
@@ -92,21 +101,19 @@
     #content-blocks-{{forloop.index0}} h6 
     {font-size: 0.9rem;}
   }
-
-  
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-  <section id="{{item.content-block-link}}" class="grid-middle textarea-content-block padded background-color">
-    <div class="col-8_sm-12 left textarea-color textarea-font reveal padded-sides fade-left">
-      <p class=" ">{{item.textarea_html}}</p>
-    </div>
-    <div class="col-4_sm-12 grid center top padded-sides reveal fade-right">
-      <div class="col-12 grid-center" >
-        <hr class="top-line col-8 top-line-color ">
+  <section id="{{item.content-block-link}}" class="grid-middle purity-content-block background-color">
+    <div class="col-5_sm-12 left reveal purity-banner fade-left" style="background-image: url('{{item.background-image}}');">
+      <div class="purity padded">
+        <img class="padded" src="{{item.image}}" alt="">
       </div>
-      <hr class="col-1 left-line left-line-color">
-      <div class="col-11 subheading-color padded-top textarea-subheading-font subheading-font">{{item.subheading_html}}</dic>
+    </div>
+    <div class="col-7_sm-12 textarea-color textarea-font grid top padded reveal fade-right">
+      <div class="col-11 subheading-color padded textarea-subheading-font subheading-font"><p class=" ">{{item.textarea_html}}</p>
+      </div>
+    </div>
     </div>
   </section>
 </section>

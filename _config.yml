@@ -58,7 +58,7 @@ _array_structures:
       - label: Text Area
         icon: article
         value:
-          _section-type: textarea
+          _section-type: purity
           textarea_html:
           subheading_html:
           colors:

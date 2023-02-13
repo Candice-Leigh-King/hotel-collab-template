@@ -289,7 +289,18 @@ font-family: 'Shrikhand', cursive;*/
   } 
 
 
+  /* -----PURITY---- */
 
+  .purity-banner 
+  {
+  background-size: cover;
+  background-position: center;
+  }
+
+.purity img 
+  {
+  margin-left: 7rem;
+  }
 
 /* -----------------TEXTAREA----------------- */
 
@@ -1040,7 +1051,9 @@ header
   
   .vertical-form-text {margin: -3%;}
 
-  .textarea-content-block h3 
+  /* ----PURITY--- */
+
+  .purity-content-block h3 
     {
     margin: 0;
     padding-top: 1.2rem;
