@@ -332,24 +332,6 @@ font-family: 'Shrikhand', cursive;*/
     font-size: 3rem;
   }  
 
-.textarea-top-line-color
-  {
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  border-top: #D2966D solid 4px ;
-  }
-
-
-.textarea-left-line-color 
-  {
-  border-bottom: none;
-  border-right: none;
-  border-top: none;
-  border-left: #D2966D solid 4px ;
-  }  
- 
-
   /*------------- HOVER GRID--------------- */
 
   .hover-container 
@@ -762,9 +744,6 @@ header
     opacity: 1;
     }
 }
-
-.textarea 
-  {min-height: 6rem;}
 
 .relative {
     position: relative;}
