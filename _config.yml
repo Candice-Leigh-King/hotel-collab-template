@@ -117,7 +117,7 @@ _array_structures:
             and numbered lists.</p><p>Use this block throughout your website if you
             wish for an about section, story section, mission and/or vision statement
             or in any way you please!</p>
-          cta_html: see our work
+          cta_html: <p><a href="portfolio">see our work</a></p>
           colors:
             heading-color:
             subheading-color: '#9E9282'
@@ -137,17 +137,17 @@ _array_structures:
             other-subheadings-font: Brushwell
             text-font: Raleway, sans-serif
             button-font: Mak
-          content-block-link: about
           image-border-radius:
-            border-top-left-corner: 113%;
-            border-top-right-corner: 82%;
-            border-bottom-left-corner: 76%;
-            border-bottom-right-corner: 131%;
+            border-top-left-corner: 0%;
+            border-top-right-corner: 0%;
+            border-bottom-left-corner: 0%;
+            border-bottom-right-corner: 0%;
           button-border-radius:
             border-top-left-corner: 100%;
             border-top-right-corner: 100%;
             border-bottom-left-corner: 100%;
             border-bottom-right-corner: 100%;
+          content-block-link: about
       - label: Carousel
         icon: view_carousel
         value:
