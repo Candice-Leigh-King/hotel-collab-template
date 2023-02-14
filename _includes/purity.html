@@ -84,37 +84,58 @@
   font-family: {{item.fonts.other-subheadings-font}};
   }
 
+  @media(max-width:770px)
+  {
+    content-blocks-{{forloop.index0}} h1 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h2 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h3 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h4 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h5 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h6 
+    { margin: 0;}
+  }
+
   @media(max-width:576px) 
   {
     #content-blocks-{{forloop.index0}} h1 
-    {font-size: 3rem;}
+    {font-size: 3rem; margin-bottom: 15px; }
 
     #content-blocks-{{forloop.index0}} h2 
-    {font-size: 2.5rem;}
+    {font-size: 2.5rem; margin-bottom: 15px; }
 
     #content-blocks-{{forloop.index0}} h3 
-    {font-size: 2rem;}
+    {font-size: 2rem; margin-bottom: 15px;}
 
     #content-blocks-{{forloop.index0}} h4 
-    {font-size: 1.5rem;}
+    {font-size: 1.5rem; margin-bottom: 15px; }
 
     #content-blocks-{{forloop.index0}} h5 
-    {font-size: 1rem;}
+    {font-size: 1rem;margin-bottom: 15px;}
 
     #content-blocks-{{forloop.index0}} h6 
-    {font-size: 0.9rem;}
+    {font-size: 0.9rem; margin-bottom: 15px;}
   }
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
   <section id="{{item.content-block-link}}" class="grid-middle purity-content-block background-color">
     <div class="col-3_sm-12 purity-banner" style="background-image: url('{{item.background-image}}');">
-      <div class="purity padded">
+      <div class="purity reveal fade-left padded">
         <img class="" src="{{item.image}}" alt="">
       </div>
     </div>
-    <div class="col-2"></div>
-    <div class="col-7_sm-12 textarea padded ">
+    <div class="col-2_sm-hidden"></div>
+    <div class="col-7_xs-12 textarea grid padded ">
       {{item.textarea_html}}
       <div class="purity-button reveal fade-up col-12">  
         {{item.cta_html}}

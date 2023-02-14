@@ -904,7 +904,6 @@ footer {
 .hidden {display: none;}
 
 
-
 /* Smaller than laptop */
 @media(max-width:768px) {
 
@@ -946,6 +945,21 @@ header
       top: 9rem;
       left: 0rem;
       }
+
+      /* ----- PURITY ----  */
+    .purity-banner 
+      {
+      max-height: 7rem;
+      }
+
+    .purity img 
+      {
+      text-align: right;
+      max-width: 280px;
+      padding: 0%;
+      } 
+    
+    .purity {text-align: right;}
 
   /* --------FORM-------- */
   .radius-quarter {border-radius: 0px 150px 0px 0px;}
@@ -1047,6 +1061,22 @@ header
     margin: 0;
     padding-top: 1.2rem;
     }
+
+  .purity-banner 
+      {
+      max-height: 12rem;
+      }
+
+  .purity img 
+      {
+      text-align: right;
+      max-width: 170px;
+      padding: 0%;
+      margin-left: 11.5rem;
+      } 
+    
+  .purity {text-align: right;}
+    
 
    /* ----------GALLERY--------- */
    .square {padding-bottom: 50%;} 
