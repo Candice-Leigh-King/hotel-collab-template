@@ -1,0 +1,123 @@
+<style>
+     #content-blocks-{{forloop.index0}} .background-color
+     {background-color: {{item.colors.background-color}};}
+
+     #content-blocks-{{forloop.index0}} h1
+     {
+     color: {{item.colors.heading-color}};
+     font-family: {{item.fonts.heading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} h2
+     {
+     color: {{item.colors.subheading-color}};
+     font-family: {{item.fonts.subheading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} h3
+     {
+     color: {{item.colors.subheading-color}};
+     font-family: {{item.fonts.subheading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} h4
+     {
+     color: {{item.colors.subheading-color}};
+     font-family: {{item.fonts.subheading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} h5
+     {
+     color: {{item.colors.subheading-color}};
+     font-family: {{item.fonts.subheading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} h6
+     {
+     color: {{item.colors.subheading-color}};
+     font-family: {{item.fonts.subheading-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} p
+     {
+     color: {{item.colors.text-color}};
+     font-family: {{item.fonts.text-font}};
+     }
+
+     #content-blocks-{{forloop.index0}} .textarea
+     {
+     background-color: {{item.colors.textarea-background-color}};
+     border-top: 10px solid {{item.colors.background-color}};
+     border-right: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .gallery-images-under-text
+     {
+     background-size: cover;
+     background-position: center;
+     
+     }
+
+     #content-blocks-{{forloop.index0}} .padding-bottom-18-rem
+     {
+     padding-bottom: 18rem;
+     }
+
+     #content-blocks-{{forloop.index0}} .padding-top-20-rem
+     {
+     padding-top: 20.5rem;
+     }
+
+     #content-blocks-{{forloop.index0}} .image-1-and-2 
+     {
+     border-top: 10px solid {{item.colors.background-color}};
+     border-right: 10px solid {{item.colors.background-color}};
+     border-bottom: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .titles p
+     {
+     padding: 2% 10%;
+     color: {{item.colors.titles-color}};
+     font-family: {{item.fonts.titles-fonts}};
+     background-color: {{item.colors.titles-background-color}};
+     border-top-left-radius: {{item.border-radius.titles.top-left-corner}};
+     border-top-right-radius: {{item.border-radius.titles.top-right-corner}};
+     border-bottom-left-radius: {{item.border-radius.titles.bottom-left-corner}};
+     border-bottom-right-radius: {{item.border-radius.titles.bottom-right-corner}};
+     }
+
+     #content-blocks-{{forloop.index0}} .title-1 p 
+     {
+     margin-top: 2rem;
+     margin-left: -0.5rem;
+     }
+
+     #content-blocks-{{forloop.index0}} .title-2 p 
+     {
+     margin-bottom: -0.5rem;
+     }
+
+</style>
+
+<section id="content-blocks-{{forloop.index0}}">
+  <section class="grid background-color padded">
+    <div class="col-12">
+      <h1> {{item.heading}}</h1>
+    </div>
+    <div class="grid col-12">
+        <div class="grid col-6">
+            <div class="textarea padded col-12">
+                {{item.textarea}}
+            </div>
+            <a href="{{item.image-1.link}}" class="col-6 grid titles title-1 image-1-and-2 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-1.image}}');">
+               <p>{{item.image-1.title}}</p>
+            </a>
+            <a href="{{item.image-2.link}}" class="col-6 grid-center titles title-2 image-1-and-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-2.image}}');">
+               <p> {{item.image-2.title}}</p>
+            </a>
+        </div>
+    </div>
+
+  </section>
+</section>
