@@ -53,8 +53,16 @@
 
      #content-blocks-{{forloop.index0}} .gallery-images-under-text
      {
-     background-size: cover;
+     background-size: 100%;
+     background-position: center; 
+     }
+
+     #content-blocks-{{forloop.index0}} .gallery-images-under-text:hover
+     {
+     background-size: 110%;
      background-position: center;
+     transition: all 0.3s;
+     opacity: 75%;
      
      }
 
@@ -171,10 +179,10 @@
              </a>
         </div>
         <div class="grid col-6_xs-12">
-            <a href="{{item.image-4.link}}" class="col-12 reveal fade-down grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('{{item.image-4.image}}');">
+            <a href="{{item.image-4.link}}" class="col-12 grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('{{item.image-4.image}}');">
                <p><b>{{item.image-4.title}}</b></p>
             </a>
-            <a href="{{item.image-5.link}}" class="col-12 reveal fade-down grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-5.image}}');">
+            <a href="{{item.image-5.link}}" class="col-12 reveal fade-right grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-5.image}}');">
                 <p><b>{{item.image-5.title}}</b></p>
              </a>
         </div>

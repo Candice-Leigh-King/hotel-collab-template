@@ -348,8 +348,16 @@
 
      #content-blocks-0 .gallery-images-under-text
      {
-     background-size: cover;
+     background-size: 100%;
+     background-position: center; 
+     }
+
+     #content-blocks-0 .gallery-images-under-text:hover
+     {
+     background-size: 110%;
      background-position: center;
+     transition: all 0.3s;
+     opacity: 75%;
      
      }
 
@@ -466,10 +474,10 @@
              </a>
         </div>
         <div class="grid col-6_xs-12">
-            <a href="" class="col-12 reveal fade-down grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('/images/facility-photography/facility.webp');">
+            <a href="" class="col-12 grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('/images/facility-photography/facility.webp');">
                <p><b>facility</b></p>
             </a>
-            <a href="" class="col-12 reveal fade-down grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/room-photography/room.webp');">
+            <a href="" class="col-12 reveal fade-right grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/room-photography/room.webp');">
                 <p><b>room</b></p>
              </a>
         </div>
