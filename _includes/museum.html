@@ -82,7 +82,14 @@
      padding-bottom: 31rem;
      }
 
-     #content-blocks-{{forloop.index0}} .image-1-and-2 
+     #content-blocks-{{forloop.index0}} .image-1 
+     {
+     border-top: 10px solid {{item.colors.background-color}};
+     border-right: 10px solid {{item.colors.background-color}};
+     border-bottom: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-2 
      {
      border-top: 10px solid {{item.colors.background-color}};
      border-right: 10px solid {{item.colors.background-color}};
@@ -169,6 +176,33 @@
     }
   }
 
+  @media(max-width:1024px) 
+  {
+
+  #content-blocks-{{forloop.index0}} .textarea
+     {
+     border-right: 0px solid {{item.colors.background-color}};
+     }
+     
+     #content-blocks-{{forloop.index0}} .image-1
+     {
+     border-right: 5px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-2
+     {
+     border-right: 0px solid {{item.colors.background-color}};
+     border-left: 5px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-3
+     {
+     border-right: 0px solid {{item.colors.background-color}};
+     }
+
+    } 
+     
+
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
@@ -181,10 +215,10 @@
             <div class="textarea padded col-12">
                 {{item.textarea}}
             </div>
-            <a href="{{item.image-1.link}}" class="col-6 reveal fade-down grid titles title-1 image-1-and-2 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-1.image}}');">
+            <a href="{{item.image-1.link}}" class="col-6 reveal fade-down grid titles title-1 image-1 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-1.image}}');">
                <p><b>{{item.image-1.title}}</b></p>
             </a>
-            <a href="{{item.image-2.link}}" class="col-6 reveal fade-up grid-center titles title-2 image-1-and-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-2.image}}');">
+            <a href="{{item.image-2.link}}" class="col-6 reveal fade-up grid-center titles title-2 image-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-2.image}}');">
                <p> <b>{{item.image-2.title}}</b></p>
             </a>
             <a href="{{item.image-3.link}}" class="col-12 reveal fade-down grid titles title-1 image-3 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-3.image}}');">
