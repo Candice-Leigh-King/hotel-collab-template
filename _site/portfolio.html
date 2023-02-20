@@ -350,6 +350,7 @@
      {
      background-size: 100%;
      background-position: center; 
+     background-repeat: no-repeat;
      }
 
      #content-blocks-0 .gallery-images-under-text:hover
@@ -434,8 +435,14 @@
      margin-right: -0.5rem;
      }
 
- @media(max-width:768px) 
+ @media(max-width:1024px) 
   {
+
+    #content-blocks-0 .gallery-images-under-text
+     {
+     background-size: cover;
+     }
+
     #content-blocks-0 .padding-bottom-18-rem
      {
      padding-bottom: 10rem;
@@ -446,9 +453,15 @@
      padding-top: 12.5rem;
      }
 
-    #content-blocks-0 .padding-bottom-30-rem {
+    #content-blocks-0 .padding-bottom-30-rem 
+    {
     padding-bottom: 25rem;
-}
+    }
+
+    #content-blocks-0 .title-4 p 
+    {
+    margin-top: -0.5rem;
+    }
   }
 
 </style>
@@ -459,25 +472,25 @@
       <h1> hotel photography genres</h1>
     </div>
     <div class="grid-middle col-12">
-        <div class="grid col-6_xs-12">
+        <div class="grid-middle col-6_xs-12">
             <div class="textarea padded col-12">
                 <p>We specialize in the hotel facility, food, travel and lifestyle. We cover both photography and videography. <br><br> To see more images, tap/click the image.  </p>
             </div>
-            <a href="" class="col-6 reveal fade-down grid titles title-1 image-1-and-2 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('/images/food-photography/food-photography.webp');">
+            <a href="/food-photography" class="col-6 reveal fade-down grid titles title-1 image-1-and-2 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('/images/food-photography/food-photography.webp');">
                <p><b>food</b></p>
             </a>
-            <a href="" class="col-6 reveal fade-up grid-center titles title-2 image-1-and-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/travel-photography/travel-photography.webp');">
+            <a href="travel-photography" class="col-6 reveal fade-up grid-center titles title-2 image-1-and-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/travel-photography/travel-photography.webp');">
                <p> <b>travel</b></p>
             </a>
-            <a href="" class="col-12 reveal fade-down grid titles title-1 image-3 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('/images/lifestyle-photography/lifestyle.webp');">
+            <a href="/lifestyle-photography" class="col-12 reveal fade-down grid titles title-1 image-3 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('/images/lifestyle-photography/lifestyle.webp');">
                 <p> <b>lifestyle</b></p>
              </a>
         </div>
         <div class="grid col-6_xs-12">
-            <a href="" class="col-12 grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('/images/facility-photography/facility.webp');">
+            <a href="/facility-photography" class="col-12 grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('/images/facility-photography/facility.webp');">
                <p><b>facility</b></p>
             </a>
-            <a href="" class="col-12 reveal fade-right grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/room-photography/room.webp');">
+            <a href="/room-photography" class="col-12 reveal fade-right grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('/images/room-photography/room.webp');">
                 <p><b>room</b></p>
              </a>
         </div>

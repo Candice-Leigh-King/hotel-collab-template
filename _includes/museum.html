@@ -55,6 +55,7 @@
      {
      background-size: 100%;
      background-position: center; 
+     background-repeat: no-repeat;
      }
 
      #content-blocks-{{forloop.index0}} .gallery-images-under-text:hover
@@ -139,8 +140,14 @@
      margin-right: -0.5rem;
      }
 
- @media(max-width:768px) 
+ @media(max-width:1024px) 
   {
+
+    #content-blocks-{{forloop.index0}} .gallery-images-under-text
+     {
+     background-size: cover;
+     }
+
     #content-blocks-{{forloop.index0}} .padding-bottom-18-rem
      {
      padding-bottom: 10rem;
@@ -151,9 +158,15 @@
      padding-top: 12.5rem;
      }
 
-    #content-blocks-0 .padding-bottom-30-rem {
+    #content-blocks-0 .padding-bottom-30-rem 
+    {
     padding-bottom: 25rem;
-}
+    }
+
+    #content-blocks-0 .title-4 p 
+    {
+    margin-top: -0.5rem;
+    }
   }
 
 </style>
@@ -164,7 +177,7 @@
       <h1> {{item.heading}}</h1>
     </div>
     <div class="grid-middle col-12">
-        <div class="grid col-6_xs-12">
+        <div class="grid-middle col-6_xs-12">
             <div class="textarea padded col-12">
                 {{item.textarea}}
             </div>
