@@ -68,10 +68,32 @@
      padding-top: 20.5rem;
      }
 
+     #content-blocks-{{forloop.index0}} .padding-bottom-30-rem
+     {
+     padding-bottom: 31rem;
+     }
+
      #content-blocks-{{forloop.index0}} .image-1-and-2 
      {
      border-top: 10px solid {{item.colors.background-color}};
      border-right: 10px solid {{item.colors.background-color}};
+     border-bottom: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-3
+     {
+     border-right: 10px solid {{item.colors.background-color}};
+     border-bottom: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-4
+     {
+     border-top: 10px solid {{item.colors.background-color}};
+     border-bottom: 10px solid {{item.colors.background-color}};
+     }
+
+     #content-blocks-{{forloop.index0}} .image-5
+     {
      border-bottom: 10px solid {{item.colors.background-color}};
      }
 
@@ -98,6 +120,17 @@
      margin-bottom: -0.5rem;
      }
 
+     #content-blocks-{{forloop.index0}} .title-4 p 
+     {
+     margin-top: -1rem;
+     }
+
+     #content-blocks-{{forloop.index0}} .title-5 p 
+     {
+     margin-top: 2rem;
+     margin-right: -0.5rem;
+     }
+
  @media(max-width:768px) 
   {
     #content-blocks-{{forloop.index0}} .padding-bottom-18-rem
@@ -109,6 +142,10 @@
      {
      padding-top: 12.5rem;
      }
+
+    #content-blocks-0 .padding-bottom-30-rem {
+    padding-bottom: 25rem;
+}
   }
 
 </style>
@@ -118,17 +155,28 @@
     <div class="col-12">
       <h1> {{item.heading}}</h1>
     </div>
-    <div class="grid col-12">
+    <div class="grid-middle col-12">
         <div class="grid col-6_xs-12">
             <div class="textarea padded col-12">
                 {{item.textarea}}
             </div>
             <a href="{{item.image-1.link}}" class="col-6 reveal fade-down grid titles title-1 image-1-and-2 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-1.image}}');">
-               <p>{{item.image-1.title}}</p>
+               <p><b>{{item.image-1.title}}</b></p>
             </a>
             <a href="{{item.image-2.link}}" class="col-6 reveal fade-up grid-center titles title-2 image-1-and-2 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-2.image}}');">
-               <p> {{item.image-2.title}}</p>
+               <p> <b>{{item.image-2.title}}</b></p>
             </a>
+            <a href="{{item.image-3.link}}" class="col-12 reveal fade-down grid titles title-1 image-3 gallery-images-under-text padding-bottom-18-rem" style="background-image: url('{{item.image-3.image}}');">
+                <p> <b>{{item.image-3.title}}</b></p>
+             </a>
+        </div>
+        <div class="grid col-6_xs-12">
+            <a href="{{item.image-4.link}}" class="col-12 reveal fade-down grid-center titles title-4 image-4 gallery-images-under-text padding-bottom-30-rem" style="background-image: url('{{item.image-4.image}}');">
+               <p><b>{{item.image-4.title}}</b></p>
+            </a>
+            <a href="{{item.image-5.link}}" class="col-12 reveal fade-down grid-right titles title-5 image-5 gallery-images-under-text padding-top-20-rem" style="background-image: url('{{item.image-5.image}}');">
+                <p><b>{{item.image-5.title}}</b></p>
+             </a>
         </div>
     </div>
 
