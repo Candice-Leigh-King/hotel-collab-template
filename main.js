@@ -30,6 +30,17 @@ $(document).ready(function() {
 			});
 			});
 
+			$('.variable-width').slick({
+				dots: false,
+				infinite: true,
+				arrows: false,
+				speed: 1000,
+				slidesToShow: 4,
+				autoplay: true,
+				centerMode: true,
+				variableWidth: true
+			  });
+
 			// on scroll
 			// on scroll
 			function reveal() {

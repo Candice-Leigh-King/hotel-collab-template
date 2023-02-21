@@ -1,0 +1,88 @@
+<style>
+    #content-blocks-{{forloop.index0}} .background-color
+    {background-color: {{item.colors.background-color}};}
+
+    #content-blocks-{{forloop.index0}} h4
+    {
+    color: {{item.colors.heading-color}};
+    font-family: {{item.fonts.heading-font}};
+    font-size: 2rem;
+    }
+
+    #content-blocks-{{forloop.index0}} h6
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    font-size: 1rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .text-padding
+    {
+    padding: 0px 3%;    
+    }
+
+    #content-blocks-{{forloop.index0}} .scroll img
+    {
+    max-height: 270px;
+    width: auto;
+    padding: 14px 7px 3px 7px;
+    }
+
+    #content-blocks-{{forloop.index0}} .border-top-and-bottom
+    {
+    border-top: 1px solid {{item.borders.top-color}}; 
+    border-bottom: 1px solid {{item.borders.bottom-color}}; 
+      
+    }
+
+    #content-blocks-{{forloop.index0}} .border-left
+    {
+    border-left: 1px solid {{item.borders.left-color}};     
+    }
+
+    @media(max-width:1024px) 
+    {
+        #content-blocks-{{forloop.index0}} .scroll img
+        {
+        max-height: 200px;
+        width: auto;
+        }
+    }
+
+  @media(max-width:576px) 
+  {
+    #content-blocks-{{forloop.index0}} .scroll img
+        {
+        max-height: 150px;
+        width: auto;
+        }
+
+    #content-blocks-{{forloop.index0}} .border-left
+    {
+    border-left: 0px solid {{item.borders.left-color}};     
+    }
+
+    #content-blocks-{{forloop.index0}} .text-padding
+    {
+    padding: 3%;    
+    }
+  }
+
+  </style>
+
+<section id="content-blocks-{{forloop.index0}}">
+    <section class="grid-middle background-color border-top-and-bottom" id="{{item.content-block-link}}">
+        <div class="col-2-middle_md-3_sm-4_xs-12 text-padding center">
+            <h4>{{item.heading}}</h4>
+            <h6>{{item.subheading}}</h6>
+        </div>
+        <div class=" grid col-10_md-9_sm-8_xs-12 border-left variable-width">
+            {% for scroll in item.scroll %}
+            <div class="grid-center scroll col-12 center">
+              <img src="{{scroll.image}}" alt="">
+            </div>
+            {% endfor %}
+          </div>
+        
+    </section>
+</section>

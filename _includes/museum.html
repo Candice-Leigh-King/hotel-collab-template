@@ -200,13 +200,24 @@
      border-right: 0px solid {{item.colors.background-color}};
      }
 
+     #content-blocks-0 .image-4 
+     {
+     border-top: 0px solid #F8F7F3;
+     border-bottom: 10px solid #F8F7F3;
+     }
+
+     #content-blocks-0 .image-5 
+     {
+     border-bottom: 0px solid #F8F7F3;
+     }
+
     } 
      
 
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-  <section class="grid background-color padded">
+  <section class="grid background-color padded-sides" id="{{item.content-block-link}}">
     <div class="col-12">
       <h1> {{item.heading}}</h1>
     </div>

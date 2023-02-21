@@ -100,7 +100,7 @@ _array_structures:
             bottom-right-corner: 100%
           content-block-link:
       - label: Purity
-        icon: article
+        icon: local_florist
         value:
           _section-type: purity
           background-image: /images/shadows.png
@@ -148,6 +148,53 @@ _array_structures:
             border-bottom-left-corner: 100%;
             border-bottom-right-corner: 100%;
           content-block-link: about
+      - label: Museum
+        icon: temple_buddhist
+        value:
+          _section-type: museum
+          heading: hotel photography genres
+          subheading:
+          textarea: <p>We specialize in the hotel facility, food, travel and lifestyle. We cover both photography and videography. <br><br> To see more images, tap/click the image.  </p>
+          image-1:
+            image: /images/food-photography/food-photography.webp
+            title: food 
+            link: /food-photography
+          image-2:
+            image: /images/travel-photography/travel-photography.webp
+            title: travel
+            link: travel-photography
+          image-3:
+            image: /images/lifestyle-photography/lifestyle.webp
+            title: lifestyle
+            link: /lifestyle-photography
+          image-4:
+            image: /images/facility-photography/facility.webp
+            title: facility
+            link: /facility-photography
+          image-5:
+            image: /images/room-photography/room.webp
+            title: room
+            link: /room-photography
+          colors:
+            heading-color: '#9E9282'
+            subheading-color: '#9E9282'
+            text-color: '#9E9282'
+            titles-color: '#9E9282'
+            background-color: '#F8F7F3'
+            textarea-background-color: '#FEFEFE'
+            titles-background-color: '#F8F7F3'
+          fonts:
+            heading-font: Mak
+            subheading-font: Mak
+            text-font: Playfair Display, serif
+            titles-fonts: Mak
+          border-radius:
+            titles:
+              top-left-corner: 100%
+              top-right-corner: 100%
+              bottom-left-corner: 100%
+              bottom-right-corner: 100%
+          content-block-link:
       - label: Carousel
         icon: view_carousel
         value:
