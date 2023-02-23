@@ -201,9 +201,9 @@ _array_structures:
           _section-type: carousel
           heading:
           carousel:
-            - textarea_html:
-              symbols: 
-              ending:
+            - brand-name:
+              textarea_html:
+              name-or-star-rating: 
           background_image:          
           colors:
             background-color: 

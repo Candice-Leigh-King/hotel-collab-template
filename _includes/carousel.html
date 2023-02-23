@@ -1,6 +1,18 @@
 <style>
-  #content-blocks-{{forloop.index0}} .carousel-background-color 
-    {background-color: {{item.colors.background-color}};}
+  #content-blocks-{{forloop.index0}} .background-color 
+    {
+    background-color: {{item.colors.background-color}};
+    border-top: 40px solid {{item.colors.background-border.top-color}};
+    border-bottom: 40px solid {{item.colors.background-border.bottom-color}};
+    border-left: 40px solid {{item.colors.background-border.left-color}};
+    border-right: 40px solid {{item.colors.background-border.right-color}};
+    }
+  
+  #content-blocks-{{forloop.index0}} .carousel img
+  {
+  max-width: 100%;
+  height: auto;  
+  }
 
   #content-blocks-{{forloop.index0}} .heading-color 
     {color: {{item.colors.heading-color}};}
@@ -31,8 +43,12 @@
   #content-blocks-{{forloop.index0}} .text-font
     {font-family: {{item.fonts.text-font}};}
 
-  #content-blocks-{{forloop.index0}} .carousel-symbols-color
-    {color: {{item.colors.symbols-color}};}
+  #content-blocks-{{forloop.index0}} .symbols
+    {
+    color: {{item.colors.name-or-star-rating-color}};
+    font-family: {{item.fonts.name-or-star-rating-font}};
+    font-size: 1.7rem;
+    }
 
   #content-blocks-{{forloop.index0}} .carousel-subheading-color 
     {color: {{item.colors.subheading-color}};}
@@ -82,8 +98,31 @@
    color: {{item.colors.heading-color}};
    }
 
+   #content-blocks-{{forloop.index0}} .hero-button
+    {
+    font-family: {{item.fonts.cta-font}};
+    background-color: {{item.colors.cta-color}};
+    color: {{item.colors.cta-text-color}};
+    font-size: 1.5rem;
+    padding: 1% 7%;
+    border: solid 2px {{item.colors.cta-text-color}};
+    border-top-left-radius: {{item.cta-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.cta-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.cta-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.cta-border-radius.bottom-right-corner}};
+    }
+
 @media(max-width:768px) 
   {
+  #content-blocks-{{forloop.index0}} .background-color 
+    {
+    background-color: {{item.colors.background-color}};
+    border-top: 20px solid {{item.colors.background-border.top-color}};
+    border-bottom: 20px solid {{item.colors.background-border.bottom-color}};
+    border-left: 20px solid {{item.colors.background-border.left-color}};
+    border-right: 20px solid {{item.colors.background-border.right-color}};
+    }
+
     #content-blocks-{{forloop.index0}} .carousel-border-color
     {
     border: 4px solid {{item.colors.border-color}};
@@ -96,6 +135,15 @@
 
 @media(max-width:576px) 
   {
+
+  #content-blocks-{{forloop.index0}} .background-color 
+    {
+    background-color: {{item.colors.background-color}};
+    border-top: 10px solid {{item.colors.background-border.top-color}};
+    border-bottom: 10px solid {{item.colors.background-border.bottom-color}};
+    border-left: 10px solid {{item.colors.background-border.left-color}};
+    border-right: 10px solid {{item.colors.background-border.right-color}};
+    }
   #content-blocks-{{forloop.index0}} .carousel-border-color
     {
     border-top-left-radius: {{item.border-radius.mobile.top-left-corner}};
@@ -127,23 +175,27 @@
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-  <section class="grid-center padded carousel-background-color banner" style="background-image: url('{{item.background_image}}');">
-    <div class="col-12 padded-bottom" id="{{item.content-block-link}}">
-      <h2 class="heading-color heading-font">{{item.heading}}</h2>
+  <section class="grid-center padded carousel background-color banner" style="background-image: url('{{item.background_image}}');">
+    <div class="col-12 grid padded-bottom" id="{{item.content-block-link}}">
+      <h2 class="heading-color col-10 heading-font">{{item.heading}}</h2>
+      <img class="col-2" src="{{item.image}}" alt="">
     </div>
     <div class=" grid col-9_sm-11 padded-sides one-time">
       {% for carousel in item.carousel %}
       <div class="grid-center col-12 radius-leaf carousel-border-color textarea-background-color centered">
         <div class="grid-center padded ">
-          <div class = "col-9_xs-12 padded text-color text-font ">
+          <div class = "col-9_sm-10_xs-12 padded text-color text-font ">
+            <p class="center carousel-subheading-font carousel-subheading-color"> {{carousel.brand-name}} </p>
             <p class="text-color text-font">{{carousel.textarea_html}} <br />
-              <span class="carousel-symbols-color"> {{carousel.symbols}} </span>
+              <span class="symbols"> {{carousel.name-or-star-rating}} </span>
             </p>
-            <p class="centered carousel-subheading-font carousel-subheading-color"> {{carousel.ending}} </p>
           </div>
         </div>
       </div>
       {% endfor %}
+    </div>
+    <div class= "col-12 grid-center padded-bottom ">
+      <a href="{{item.cta-link}}" class="hero-button center">{{item.cta}}</a>
     </div>
   </section>
 </section>
