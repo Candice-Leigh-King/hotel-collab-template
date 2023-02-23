@@ -112,6 +112,14 @@
     border-bottom-right-radius: {{item.cta-border-radius.bottom-right-corner}};
     }
 
+  #content-blocks-{{forloop.index0}} .hero-button:hover
+    {
+    background-color: {{item.colors.cta-background-hover-color}};
+    transition: all 0.5s;
+    color: {{item.colors.cta-text-hover-color}};
+    border: solid 2px {{item.colors.cta-text-hover-color}};
+    }
+
 @media(max-width:768px) 
   {
   #content-blocks-{{forloop.index0}} .background-color 
