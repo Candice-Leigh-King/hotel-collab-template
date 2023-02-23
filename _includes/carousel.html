@@ -10,7 +10,7 @@
   
   #content-blocks-{{forloop.index0}} .carousel img
   {
-  max-width: 100%;
+  max-width: 11rem;
   height: auto;  
   }
 
@@ -156,7 +156,11 @@
     {font-size: 3rem;}
 
   #content-blocks-{{forloop.index0}} h2 
-    {font-size: 2.5rem;}
+    {
+    font-size: 2.5rem; 
+    z-index: 1; 
+    text-align: left;
+    }
 
   #content-blocks-{{forloop.index0}} h3 
     {font-size: 2rem;}
@@ -169,6 +173,12 @@
 
   #content-blocks-{{forloop.index0}} h6 
     {font-size: 0.9rem;}
+
+  #content-blocks-4 .carousel img {
+    max-width: 9rem;
+    height: auto;
+    margin-top: -8rem;
+    margin-right: -8rem
   }
 
  
@@ -176,9 +186,9 @@
 
 <section id="content-blocks-{{forloop.index0}}">
   <section class="grid-center padded carousel background-color banner" style="background-image: url('{{item.background_image}}');">
-    <div class="col-12 grid padded-bottom" id="{{item.content-block-link}}">
-      <h2 class="heading-color col-10 heading-font">{{item.heading}}</h2>
-      <img class="col-2" src="{{item.image}}" alt="">
+    <div class="col-12 grid-center padded-bottom" id="{{item.content-block-link}}">
+      <h2 class="heading-color col-9-middle_sm-8_xs-12 center heading-font">{{item.heading}}</h2>
+      <img class="col-3_sm-4_xs-12" src="{{item.image}}" alt="">
     </div>
     <div class=" grid col-9_sm-11 padded-sides one-time">
       {% for carousel in item.carousel %}
