@@ -1,7 +1,9 @@
 colors:
-  background-color: '#bccaca'
-  heading-color: '#FFFFFF'
+  background-color: '#F8F7F3'
+  heading-color: '#9E9282'
   text-color: '#2f3031'
+  link-color: '#9E9282'
+  link-hover-color: '#366E94'
 fonts:
-  heading-font: Shrikhand, cursive
+  heading-font: Mak
   text-font:  Raleway, sans-serif

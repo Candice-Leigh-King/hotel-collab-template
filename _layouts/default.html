@@ -20,8 +20,15 @@ layout: connect-tree
             <a href="/" class="logo center grow col-12-middle exit"> 
               <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
             </a>
-            <div class="col-12 padded-sides text-med exit navigation-links">
-              <p>{{site.data.navigation.textarea_html}}</p>
+            <div class="col-12 grid padded-sides text-med exit navigation-links">
+              <div class="col-6-middle border-right-2">
+                <div class=" first-block padded ">
+                  <img src="{{site.data.navigation.first-block.image}}" alt="">
+                </div>
+               </div>
+              <div class="col-6"> 
+                {{site.data.navigation.first-block.textarea_html}}
+              </div>  
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="{{site.data.general.social-links.instagram}}"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>

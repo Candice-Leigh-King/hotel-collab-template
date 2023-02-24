@@ -1,7 +1,15 @@
-textarea_html: >-
-  <p><a href="/#services">services</a></p><p><a
-  href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a
-  href="/#contact">contact</a></p>
+first-block:
+  image: /images/food-photography/camrea.png
+  textarea_html: >-
+    <p><a href="/#services">services</a></p><p><a
+    href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a
+    href="/#contact">contact</a></p>
+  border-radius:
+    top-border:
+    bottom-border:
+    left-border:
+    right-border:
+  border-color: '#9E9282'    
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
@@ -17,7 +25,7 @@ border-radius:
   bottom-left-corner: 0%
   bottom-right-corner: 0%
 fonts:
-  link-font: Shrikhand, cursive;
+  link-font: Mak
 social-link-colors:
   icon-color: '#859f9f'
   background-color: '#ffffff'

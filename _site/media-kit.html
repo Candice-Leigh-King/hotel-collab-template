@@ -83,7 +83,7 @@
           --bottomLeftCorner: 0%;
           --bottomRightCorner: 0%;
           --linkColor: #2f3031;
-          --linkFont: Shrikhand, cursive;;
+          --linkFont: Mak;
           --HoverLinkColor: #ffffff;
           --iconColor: #859f9f;
           --navSocialsBorderTopRight: 0px;
@@ -250,6 +250,18 @@
       color: ;
       border: 2.5px solid ;
       }
+
+    .navigation-links img 
+      {
+      object-fit: cover;
+      width: 230px;
+      height: 230px;
+      }
+    
+    .first-block img
+      {
+        border: 1px solid #9E9282;
+      }
   
   </style>
 
@@ -271,8 +283,15 @@
             <a href="/" class="logo center grow col-12-middle exit"> 
               <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
             </a>
-            <div class="col-12 padded-sides text-med exit navigation-links">
-              <p><p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p></p>
+            <div class="col-12 grid padded-sides text-med exit navigation-links">
+              <div class="col-6-middle border-right-2">
+                <div class=" first-block padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+              <div class="col-6"> 
+                <p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p>
+              </div>  
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="https://www.instagram.com/candy_and_the_kings/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>

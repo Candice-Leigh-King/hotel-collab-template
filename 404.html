@@ -32,9 +32,13 @@ content-blocks:
  .text-font 
   {font-family: {{site.data.success-and-error-pages.fonts.text-font}};}
 
+ a {color: {{site.data.success-and-error-pages.colors.link-color}};}
+
+ a:hover {color: {{site.data.success-and-error-pages.colors.link-hover-color}};}
+
 </style>
 <section class="grid-center padded background-color">
   <h1 class="success padded-top heading-font heading-color centered center editable col-12 no-margin"> Oops!</h1>
-  <p class="sent col-6-center_sm-12 centered text-color text-font  "> It seems as though you're trying to access a page that doesn't exist. No worries, you can simple go back <a href = "javascript:history.back()"><span class="underline">here</span></a>.</p>
+  <p class="sent col-6-center_sm-12 centered text-color text-font  "> It seems as though you're trying to access a page that doesn't exist. No worries, you can simple go back <a href = "javascript:history.back()">here</a>.</p>
 
 </section>

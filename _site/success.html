@@ -83,7 +83,7 @@
           --bottomLeftCorner: 0%;
           --bottomRightCorner: 0%;
           --linkColor: #2f3031;
-          --linkFont: Shrikhand, cursive;;
+          --linkFont: Mak;
           --HoverLinkColor: #ffffff;
           --iconColor: #859f9f;
           --navSocialsBorderTopRight: 0px;
@@ -250,6 +250,18 @@
       color: ;
       border: 2.5px solid ;
       }
+
+    .navigation-links img 
+      {
+      object-fit: cover;
+      width: 230px;
+      height: 230px;
+      }
+    
+    .first-block img
+      {
+        border: 1px solid #9E9282;
+      }
   
   </style>
 
@@ -271,8 +283,15 @@
             <a href="/" class="logo center grow col-12-middle exit"> 
               <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
             </a>
-            <div class="col-12 padded-sides text-med exit navigation-links">
-              <p><p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p></p>
+            <div class="col-12 grid padded-sides text-med exit navigation-links">
+              <div class="col-6-middle border-right-2">
+                <div class=" first-block padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+              <div class="col-6"> 
+                <p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p>
+              </div>  
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="https://www.instagram.com/candy_and_the_kings/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
@@ -290,13 +309,13 @@
 
     <style>
   .background-color 
-  {background-color: #bccaca;}
+  {background-color: #F8F7F3;}
 
   .heading-color 
-  {color: #FFFFFF;}
+  {color: #9E9282;}
 
  .heading-font 
-  {font-family: Shrikhand, cursive;}
+  {font-family: Mak;}
 
   .text-color 
   {color: #2f3031;}
@@ -304,11 +323,15 @@
  .text-font 
   {font-family: Raleway, sans-serif;}
 
+  a {color: #9E9282;}
+
+  a:hover {color: #366E94;}
+
 </style>
 
 <section class="grid-center padded background-color">
   <h1 class="success padded-top heading-font heading-color centered center col-12 no-margin editable"> Success!</h1>
-  <p class="sent col-6-center_sm-12 centered text-color text-font editable  "> Your form was successfully sent! I'll be in contact with you shortly! Until then, feel free to continue exploring my <a href="/"> <u>site</u></a>!</p>
+  <p class="sent col-6-center_sm-12 centered text-color text-font editable  "> Your form was successfully sent! I'll be in contact with you shortly! Until then, feel free to continue exploring my <a href="/"> site</a>!</p>
 
 </section>
 

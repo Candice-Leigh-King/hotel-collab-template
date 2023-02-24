@@ -89,7 +89,7 @@ _array_structures:
             cta-color: '#766C5B'
             cta-text-color: 'white'
             cta-background-hover-color: '#366E94'
-             cta-text-hover-color: 'white' 
+            cta-text-hover-color: 'white' 
           fonts:  
             hero-font: Mak
             subheading-font:
