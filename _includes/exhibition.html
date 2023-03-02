@@ -1,0 +1,105 @@
+<style>
+    #content-blocks-{{forloop.index0}} .background-color
+    {background-color: {{item.colors.background-color}};}
+
+    #content-blocks-{{forloop.index0}} .mixed-gallery .exibition-gallery {border: 3px solid {{item.colors.background-color}};}
+
+    #content-blocks-{{forloop.index0}} h1
+    {
+    color: {{item.colors.heading-color}};
+    font-family: {{item.fonts.heading-font}};
+    margin-bottom: 0;
+    }
+
+    #content-blocks-{{forloop.index0}} h2
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h3
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h4
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h5
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h6
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} p
+    {
+    color: {{item.colors.text-color}};
+    font-family: {{item.fonts.text-font}};
+    }
+
+@media(max-width:1024px) 
+ {
+
+ }
+
+ @media(max-width:576px) 
+ {
+
+   } 
+    
+
+</style>
+
+
+<section id="content-blocks-{{forloop.index0}}">
+ <section class="grid background-color mixed-gallery padded-sides" id="{{item.content-block-link}}">
+   <div class="col-12">
+     <h1> {{item.heading}}</h1>
+   </div>
+   <div class="col-3 fadeIn animatedFadeInLong animatedLong exibition-gallery top-image " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');"></div>
+   <div class="grid-middle col-12">
+       <div class="grid-middle reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
+           <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           </a>
+           <a class="col-6 portrait exibition-gallery reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           </a>
+           <a class="col-6 reveal fadeIn animatedFadeInLong animatedLong grid-center exibition-gallery image-2 portrait" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-2.image}}');">
+           </a>
+           <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           </a>
+       </div>
+       <div class="grid col-6_xs-12">
+           <a class="col-12 grid-center reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-4.image}}');">
+           </a>
+           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-1.image}}"  style="background-image: url('{{item.image-5.image}}');">
+           </a>
+       </div>
+   </div>
+
+ </section>
+ <!-- epic gallery -->
+ <script>
+    $('[data-fancybox="gallery"]').fancybox({
+      loop: true,
+      buttons: [
+        "zoom",
+        "slideShow",
+        "thumbs",
+        "close"
+        ],
+        animationEffect: "zoom",
+         transitionEffect: "zoom-in-out",
+    });
+
+    </script>
+</section>
