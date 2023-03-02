@@ -2,7 +2,38 @@
     #content-blocks-{{forloop.index0}} .background-color
     {background-color: {{item.colors.background-color}};}
 
-    #content-blocks-{{forloop.index0}} .mixed-gallery .exibition-gallery {border: 3px solid {{item.colors.background-color}};}
+    #content-blocks-{{forloop.index0}} .mixed-gallery .exibition-gallery 
+    {border: 3px solid {{item.colors.background-color}};}
+
+    #content-blocks-{{forloop.index0}} .textarea 
+
+    {background-color: {{item.colors.textarea-background-color}};}
+
+    #content-blocks-{{forloop.index0}} .cta-button 
+    {
+    margin-top: -20rem;
+    z-index: 1;  
+    background-color: {{item.colors.button-color}};
+    color: {{item.colors.button-text-color}};
+    font-family: {{item.fonts.button-font}};
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding: .8rem 2rem .6rem;
+    border: solid 2px {{item.colors.button-text-color}};
+    border-top-left-radius: {{item.button-border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.button-border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.button-border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.button-border-radius.border-bottom-right-corner}};  
+    }
+
+    #content-blocks-{{forloop.index0}} .cta-button:hover
+    {
+    color: {{item.colors.button-text-hover-color}};
+    background-color: {{item.colors.button-hover-color}};
+    border: solid 2px {{item.colors.button-text-hover-color}};
+    transition: all 0.5s;
+    }
+
 
     #content-blocks-{{forloop.index0}} h1
     {
@@ -47,11 +78,11 @@
     font-family: {{item.fonts.text-font}};
     }
 
-@media(max-width:1024px) 
+@media(max-width:768px) 
  {
-
+    
+ #content-blocks-0 .cta-button { margin-top: -14rem; }
  }
-
  @media(max-width:576px) 
  {
 
@@ -62,13 +93,14 @@
 
 
 <section id="content-blocks-{{forloop.index0}}">
- <section class="grid background-color mixed-gallery padded-sides" id="{{item.content-block-link}}">
+ <section class="grid-center background-color mixed-gallery padded-sides" id="{{item.content-block-link}}">
    <div class="col-12">
      <h1> {{item.heading}}</h1>
+     {{item.intro_html}}
    </div>
-   <div class="col-3 fadeIn animatedFadeInLong animatedLong exibition-gallery top-image " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');"></div>
+ 
    <div class="grid-middle col-12">
-       <div class="grid-middle reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
+       <div class="grid-middle-center reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
            <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
            </a>
            <a class="col-6 portrait exibition-gallery reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
@@ -77,13 +109,17 @@
            </a>
            <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
            </a>
+           <a href="{{item.cta-link}}" class=" cta-button center"> {{item.cta}}</a>
        </div>
        <div class="grid col-6_xs-12">
            <a class="col-12 grid-center reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-4.image}}');">
            </a>
-           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-1.image}}"  style="background-image: url('{{item.image-5.image}}');">
+           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-1.image}}"  style="background-image: url('{{item.image-5.image}}');"> 
            </a>
-       </div>
+        </div>
+        <div class="textarea exibition-gallery padded col-12">
+            {{item.textarea}}
+        </div>
    </div>
 
  </section>

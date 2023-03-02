@@ -316,7 +316,38 @@
     #content-blocks-0 .background-color
     {background-color: #F8F7F3;}
 
-    #content-blocks-0 .mixed-gallery .exibition-gallery {border: 3px solid #F8F7F3;}
+    #content-blocks-0 .mixed-gallery .exibition-gallery 
+    {border: 3px solid #F8F7F3;}
+
+    #content-blocks-0 .textarea 
+
+    {background-color: #FEFEFE;}
+
+    #content-blocks-0 .cta-button 
+    {
+    margin-top: -20rem;
+    z-index: 1;  
+    background-color: #366E94;
+    color: white;
+    font-family: Mak;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding: .8rem 2rem .6rem;
+    border: solid 2px white;
+    border-top-left-radius: 100%;;
+    border-top-right-radius: 100%;;
+    border-bottom-left-radius: 100%;;
+    border-bottom-right-radius: 100%;;  
+    }
+
+    #content-blocks-0 .cta-button:hover
+    {
+    color: white;
+    background-color: #9E9282;
+    border: solid 2px white;
+    transition: all 0.5s;
+    }
+
 
     #content-blocks-0 h1
     {
@@ -361,11 +392,11 @@
     font-family: Playfair Display, serif;
     }
 
-@media(max-width:1024px) 
+@media(max-width:768px) 
  {
-
+    
+ #content-blocks-0 .cta-button { margin-top: -14rem; }
  }
-
  @media(max-width:576px) 
  {
 
@@ -376,13 +407,14 @@
 
 
 <section id="content-blocks-0">
- <section class="grid background-color mixed-gallery padded-sides" id="">
+ <section class="grid-center background-color mixed-gallery padded-sides" id="">
    <div class="col-12">
      <h1> hotel facility photography</h1>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id earum amet modi labore, quisquam pariatur at voluptatem repellendus, magnam rerum quod libero sunt dolorum numquam nesciunt dignissimos exercitationem? Fugiat!
    </div>
-   <div class="col-3 fadeIn animatedFadeInLong animatedLong exibition-gallery top-image " data-fancybox="gallery" href="/images/food-photography/food-photography.webp" style="background-image: url('/images/food-photography/food-photography.webp');"></div>
+ 
    <div class="grid-middle col-12">
-       <div class="grid-middle reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
+       <div class="grid-middle-center reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
            <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="/images/food-photography/food-photography.webp" style="background-image: url('/images/food-photography/food-photography.webp');">
            </a>
            <a class="col-6 portrait exibition-gallery reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="/images/food-photography/food-photography.webp" style="background-image: url('/images/food-photography/food-photography.webp');">
@@ -391,13 +423,17 @@
            </a>
            <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="/images/food-photography/food-photography.webp" style="background-image: url('/images/food-photography/food-photography.webp');">
            </a>
+           <a href="/contact" class=" cta-button center"> hire us</a>
        </div>
        <div class="grid col-6_xs-12">
            <a class="col-12 grid-center reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="/images/food-photography/food-photography.webp" style="background-image: url('/images/facility-photography/facility.webp');">
            </a>
-           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="/images/food-photography/food-photography.webp"  style="background-image: url('/images/room-photography/room.webp');">
+           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="/images/food-photography/food-photography.webp"  style="background-image: url('/images/room-photography/room.webp');"> 
            </a>
-       </div>
+        </div>
+        <div class="textarea exibition-gallery padded col-12">
+            <p>We specialize in the hotel facility, food, travel and lifestyle. We cover both photography and videography. <br><br> To see more images, tap/click the image.  </p>
+        </div>
    </div>
 
  </section>
