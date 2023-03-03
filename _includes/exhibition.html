@@ -26,6 +26,54 @@
     border-bottom-right-radius: {{item.button-border-radius.border-bottom-right-corner}};  
     }
 
+    #content-blocks-{{forloop.index0}} .border-1 
+    { 
+    border-top-left-radius: {{item.image-1.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-1.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-1.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-1.border-radius.border-bottom-right-corner}}; 
+    }
+
+    #content-blocks-{{forloop.index0}} .border-2 
+    { 
+    border-top-left-radius: {{item.image-2.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-2.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-2.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-2.border-radius.border-bottom-right-corner}}; 
+    }
+
+    #content-blocks-{{forloop.index0}} .border-3 
+    { 
+    border-top-left-radius: {{item.image-3.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-3.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-3.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-3.border-radius.border-bottom-right-corner}}; 
+    }
+
+    #content-blocks-{{forloop.index0}} .border-4 
+    { 
+    border-top-left-radius: {{item.image-4.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-4.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-4.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-4.border-radius.border-bottom-right-corner}}; 
+    }
+
+    #content-blocks-{{forloop.index0}} .border-5 
+    { 
+    border-top-left-radius: {{item.image-5.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-5.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-5.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-5.border-radius.border-bottom-right-corner}}; 
+    }
+
+    #content-blocks-{{forloop.index0}} .border-6 
+    { 
+    border-top-left-radius: {{item.image-6.border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-6.border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-6.border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-6.border-radius.border-bottom-right-corner}}; 
+    }
+
     #content-blocks-{{forloop.index0}} .cta-button:hover
     {
     color: {{item.colors.button-text-hover-color}};
@@ -101,20 +149,20 @@
  
    <div class="grid-middle col-12">
        <div class="grid-middle-center reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
-           <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           <a class="landscape col-12 exibition-gallery border-1" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
            </a>
-           <a class="col-6 portrait exibition-gallery reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           <a class="col-6 portrait exibition-gallery border-2 reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="{{item.image-2.image}}" style="background-image: url('{{item.image-2.image}}');">
            </a>
-           <a class="col-6 reveal fadeIn animatedFadeInLong animatedLong grid-center exibition-gallery image-2 portrait" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-2.image}}');">
+           <a class="col-6 border-3 reveal fadeIn animatedFadeInLong animatedLong grid-center exibition-gallery image-2 portrait" data-fancybox="gallery" href="{{item.image-3.image}}" style="background-image: url('{{item.image-3.image}}');">
            </a>
-           <a class="landscape col-12 exibition-gallery " data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           <a class="landscape col-12 border-4 exibition-gallery " data-fancybox="gallery" href="{{item.image-4.image}}" style="background-image: url('{{item.image-4.image}}');">
            </a>
            <a href="{{item.cta-link}}" class=" cta-button center"> {{item.cta}}</a>
        </div>
        <div class="grid col-6_xs-12">
-           <a class="col-12 grid-center reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-4.image}}');">
+           <a class="col-12 grid-center border-5 reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-5.image}}" style="background-image: url('{{item.image-5.image}}');">
            </a>
-           <a class="col-12 reveal fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-1.image}}"  style="background-image: url('{{item.image-5.image}}');"> 
+           <a class="col-12 reveal border-6 fade-right grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-6.image}}"  style="background-image: url('{{item.image-6.image}}');"> 
            </a>
         </div>
         <div class="textarea exibition-gallery padded col-12">
