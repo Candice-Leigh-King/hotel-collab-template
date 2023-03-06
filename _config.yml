@@ -131,7 +131,7 @@ _array_structures:
             button-hover-color: transparent
             button-text-hover-color: '#9E9282'
             link-color: '#366E94'
-            link-hover-color: '#EAE3D9'
+            link-hover-color: '#9E9282'
           fonts:
             heading-font:
             subheading-font: Mak
