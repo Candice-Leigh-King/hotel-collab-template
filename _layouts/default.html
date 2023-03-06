@@ -1,7 +1,45 @@
 --- 
 layout: connect-tree 
 ---
+<style>
+   .first-block img
+      {
+        border: 1px solid {{site.data.navigation.first-block.border-color}};
+        border-top-left-radius: {{site.data.navigation.first-block.border-radius.border-top-left-corner}};
+        border-top-right-radius: {{site.data.navigation.first-block.border-radius.border-top-right-corner}};
+        border-bottom-left-radius: {{site.data.navigation.first-block.border-radius.border-bottom-left-corner}};
+        border-bottom-right-radius: {{site.data.navigation.first-block.border-radius.border-bottom-right-corner}}; 
+      }
 
+  .second-block img
+      {
+        border: 1px solid {{site.data.navigation.second-block.border-color}};
+        border-top-left-radius: {{site.data.navigation.second-block.border-radius.border-top-left-corner}};
+        border-top-right-radius: {{site.data.navigation.second-block.border-radius.border-top-right-corner}};
+        border-bottom-left-radius: {{site.data.navigation.second-block.border-radius.border-bottom-left-corner}};
+        border-bottom-right-radius: {{site.data.navigation.second-block.border-radius.border-bottom-right-corner}}; 
+      }
+
+    .third-block img
+      {
+        border: 1px solid {{site.data.navigation.third-block.border-color}};
+        border-top-left-radius: {{site.data.navigation.third-block.border-radius.border-top-left-corner}};
+        border-top-right-radius: {{site.data.navigation.third-block.border-radius.border-top-right-corner}};
+        border-bottom-left-radius: {{site.data.navigation.third-block.border-radius.border-bottom-left-corner}};
+        border-bottom-right-radius: {{site.data.navigation.third-block.border-radius.border-bottom-right-corner}}; 
+      }
+
+     .fourth-block img
+      {
+        border: 1px solid {{site.data.navigation.fourth-block.border-color}};
+        border-top-left-radius: {{site.data.navigation.fourth-block.border-radius.border-top-left-corner}};
+        border-top-right-radius: {{site.data.navigation.fourth-block.border-radius.border-top-right-corner}};
+        border-bottom-left-radius: {{site.data.navigation.fourth-block.border-radius.border-bottom-left-corner}};
+        border-bottom-right-radius: {{site.data.navigation.fourth-block.border-radius.border-bottom-right-corner}}; 
+      }
+    .nav-border-right {border-right: 1px solid {{site.data.navigation.first-block.border-color}};}
+    .nav-border-bottom {border-bottom: 1px solid {{site.data.navigation.first-block.border-color}};}
+</style>
   <body>
 
     <header class="grid-center">
@@ -12,24 +50,61 @@ layout: connect-tree
       <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
       </p>
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url('{{site.data.colors.navigation-colors.navigation-background_image}}'); z-index: 100;">
-        <p class="cross exit right col-12"> ╳
-        </p>
-        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('{{site.data.colors.navigation-colors.navigation-arch-background_image}}');">
+        <!-- <p class="cross exit right col-2"> ╳
+        </p> -->
+        <a href="/" class="logo center grow col-12-middle exit"> 
+          <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
+        </a> 
+        <div class=" textarea-background-color radius-arch banner col-12 grid-top" style="background-image: url('{{site.data.colors.navigation-colors.navigation-arch-background_image}}');">
          
           <div class=" col-12 grid-center  ">
-            <a href="/" class="logo center grow col-12-middle exit"> 
-              <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
-            </a>
-            <div class="col-12 grid padded-sides text-med exit navigation-links">
-              <div class="col-6-middle border-right-2">
-                <div class=" first-block padded ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 nav-border-right">
+                <div class=" first-block grid-center padded ">
                   <img src="{{site.data.navigation.first-block.image}}" alt="">
                 </div>
                </div>
-              <div class="col-6"> 
+              <div class="col-6-middle padded"> 
                 {{site.data.navigation.first-block.textarea_html}}
               </div>  
             </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                {{site.data.navigation.second-block.textarea_html}}
+              </div>  
+              <div class="col-6 ">
+                <div class=" second-block grid-center padded ">
+                  <img src="{{site.data.navigation.second-block.image}}" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 ">
+                <div class=" third-block grid-center padded ">
+                  <img src="{{site.data.navigation.third-block.image}}" alt="">
+                </div>
+               </div>
+              <div class="col-6-middle padded"> 
+                {{site.data.navigation.third-block.textarea_html}}
+              </div>  
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                {{site.data.navigation.fourth-block.textarea_html}}
+              </div>  
+              <div class="col-6 ">
+                <div class=" fourth-block grid-center padded ">
+                  <img src="{{site.data.navigation.fourth-block.image}}" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="{{site.data.general.social-links.instagram}}"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
               <a class="padded-s" href="{{site.data.general.social-links.tiktok}}"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>

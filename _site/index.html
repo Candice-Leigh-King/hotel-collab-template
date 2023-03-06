@@ -75,11 +75,11 @@
           /* --------------NAVIGATION------------ */
         
           --hamburgerColor: #ffffff;
-          --backgroundColor: #859f9f;
-          --textareaBackgroundColor: #bccaca;
-          --BorderColor: #ffffff;
-          --topLeftCorner: 100%;
-          --topRightCorner: 100%;
+          --backgroundColor: #f8f6f4;
+          --textareaBackgroundColor: #f8f6f4;
+          --BorderColor: #9E9282;
+          --topLeftCorner: 0%;
+          --topRightCorner: 0%;
           --bottomLeftCorner: 0%;
           --bottomRightCorner: 0%;
           --linkColor: #2f3031;
@@ -115,7 +115,7 @@
         .textarea-background-color 
           {
           background-color: var(--textareaBackgroundColor);
-          border: 4px solid var(--BorderColor);
+          border: 1px solid var(--BorderColor);
           border-top-left-radius: var(--topLeftCorner);
           border-top-right-radius: var(--topRightCorner);
           border-bottom-left-radius: var(--bottomLeftCorner);
@@ -254,17 +254,51 @@
     .navigation-links img 
       {
       object-fit: cover;
-      width: 230px;
-      height: 230px;
-      }
-    
-    .first-block img
-      {
-        border: 1px solid #9E9282;
+      width: 150px;
+      height: 150px;
       }
   
   </style>
 
+<style>
+   .first-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%; 
+      }
+
+  .second-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+
+    .third-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+
+     .fourth-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+    .nav-border-right {border-right: 1px solid #9E9282;}
+    .nav-border-bottom {border-bottom: 1px solid #9E9282;}
+</style>
   <body>
 
     <header class="grid-center">
@@ -275,24 +309,61 @@
       <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
       </p>
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url(''); z-index: 100;">
-        <p class="cross exit right col-12"> ╳
-        </p>
-        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('');">
+        <!-- <p class="cross exit right col-2"> ╳
+        </p> -->
+        <a href="/" class="logo center grow col-12-middle exit"> 
+          <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
+        </a> 
+        <div class=" textarea-background-color radius-arch banner col-12 grid-top" style="background-image: url('');">
          
           <div class=" col-12 grid-center  ">
-            <a href="/" class="logo center grow col-12-middle exit"> 
-              <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
-            </a>
-            <div class="col-12 grid padded-sides text-med exit navigation-links">
-              <div class="col-6-middle border-right-2">
-                <div class=" first-block padded ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 nav-border-right">
+                <div class=" first-block grid-center padded ">
                   <img src="/images/food-photography/camrea.png" alt="">
                 </div>
                </div>
-              <div class="col-6"> 
-                <p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p>
+              <div class="col-6-middle padded"> 
+                <p><a href="/portfolio">portfolio</a></p>
               </div>  
             </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                <p><a href="/#about">about us</a></p> <p><a href="/contact">enquire</a></p>
+              </div>  
+              <div class="col-6 ">
+                <div class=" second-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 ">
+                <div class=" third-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+              <div class="col-6-middle padded"> 
+                <p><a href="/services">services</a></p>
+              </div>  
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                <p><a href="/media-kit">media kit</a></p>
+              </div>  
+              <div class="col-6 ">
+                <div class=" fourth-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="https://www.instagram.com/candy_and_the_kings/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
               <a class="padded-s" href="//www.tiktok.com/@candy_and_the_king"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
@@ -942,7 +1013,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
  
    #content-block-5 .form-border-color
    {
-   border: solid 4px #859f9f;
+   border: solid 1px #859f9f;
    border-top-left-radius: 0px;
    border-top-right-radius: 400px;
    border-bottom-left-radius: 0px;
@@ -960,17 +1031,6 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
        }  
    }
  
- @media(max-width:576px) 
-   {
-     #content-block-5 .carousel-border-color
-     {
-     border-top-left-radius: 0px;
-     border-top-right-radius: 150px;
-     border-bottom-left-radius: 0px;
-     border-bottom-right-radius: 0px;
-     } 
-   }
- 
   #content-block-5 .textarea-background-color
    {background-color: #ffffff;}
  
@@ -984,6 +1044,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
   #content-block-5 .input-text 
    {border-bottom: solid 2px #859f9f; 
    }
+
   
   #content-block-5 .dropdown
   {background-color: #ffffff;}
@@ -1064,82 +1125,120 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
   #content-block-5 .button-text-color
    {
    color: #ffffff;
-   font-family: Poppins, sans-serif;
    }
  
   #content-block-5 .button-font 
-   {font-family: Poppins, sans-serif;} 
+   {
+    font-family: Poppins, sans-serif;
+    background-color: #d2966d;
+    border: 1px solid #d2966d;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-top-left-radius: ;
+    border-top-right-radius: ;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
+   }
  
   #content-block-5 .button-text-color:hover
-   {color: #d2966d;}
- 
-  #content-block-5 .button-color
-   {
-   background-color: #d2966d;
-   border: 1px solid #d2966d;
-   }
+   {color: #d2966d;}   
  
   #content-block-5 .button-color:hover
    {background-color: transparent;}
+
+   #content-block-5 .socials a 
+   {
+    margin: 10px;
+    padding: 5%;
+    background-color: ;
+    color: ;
+    border: 1px solid ;
+   }
+   #content-block-5 .socials a:hover
+   {
+    color: ;
+    border: 1px solid ;
+   }
+
+   #content-block-5 .socials svg {width: 50px;}
+
+    
+ @media(max-width:576px) 
+   {
+     #content-block-5 .carousel-border-color
+     {
+     border-top-left-radius: 0px;
+     border-top-right-radius: 150px;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     } 
+
+     #content-block-5 .socials a 
+     {
+     display: none;
+     }
+
+     #content-block-5 .button-font 
+    {
+    font-size: 1rem;
+    }
+
+  }
  </style>
  
  <section id="content-block-5"> 
-   <section id="contact" class="padded grid-center form-background-color banner" style="background-image: url('');">
-     <h2 class="reveal form-heading-color form-heading-font  fade-up">Work with me</h2>
+   <section id="contact" class="padded grid-center-middle form-background-color banner" style="background-image: url('');">
      <form method="post" action="/success.html" class="enquiry col-12 grid-center capped-width">
-       <div class=" form-border-color textarea-background-color col-8_md-9_sm-12 padded radius-quarter" >
-         <div class="grid padded-sides">
-           <div class="col-1_sm-12 relative reveal fade-left">
-             <h3 class="sm-bold form-subheading-color form-subheading-font vertical-form-text "> basic info</h3>
-           </div>
+       <div class=" form-border-color center textarea-background-color col-9_sm-12 padded radius-quarter" >
+         <div class="grid-center-middle">
  
-         <div class="col-10_sm-12 form-padded">
+         <div class="col-8_x-12">
+          <h2 class=" form-heading-color form-heading-font">Work with me</h2>
            <div class="floating-input ">
-             <input type="text" name="Your Name" placeholder="Your Name" class=" input-text form-text-color" required="" />
-             <label class="input-label">Your Name</label>
+             <input type="text" name="" placeholder="" class=" input-text form-text-color" required="" />
+             <label class="input-label"></label>
            </div>
  
            <div class="floating-input ">
-             <input type="text" name="Your Email Address" placeholder="Your Email Address" class="input-text form-text-color" required="" />
-             <label class="input-label">Your Email Address</label>
+             <input type="text" name="" placeholder="" class="input-text form-text-color" required="" />
+             <label class="input-label"></label>
            </div>
  
            <div class="floating-input ">
-             <input type="text" name="Your WhatsApp (if preferred)" placeholder="Your WhatsApp (if preferred)" class="input-text form-text-color" />
-             <label class="input-label">Your WhatsApp (if preferred)</label>
+             <input type="text" name="" placeholder="" class="input-text form-text-color" />
+             <label class="input-label"></label>
            </div>
- 
-         </div>
-       </div>
-       <div class="grid padded-sides">
- 
-         <div class="col-1_sm-12 relative reveal fade-left">
-           <h3 class="sm-bold form-subheading-color form-subheading-font vertical-form-text">your brand </h3>
-         </div>
- 
-         <div class="col-10_sm-12 form-padded form-text-color">
-           <div class="floating-input ">
-             <textarea name="Tell us a little bit about your business or brand" placeholder="Tell us a little bit about your business or brand" class="input-text form-text-color"></textarea>
-             <label class="input-label">Tell us a little bit about your business or brand</label>
-           </div>
- 
-           <div class="floating-input  ">
              <select class="input-text" name="services " id="services" required="">
-               <option class="input-text form-text-color dropdown">What services do you require?</option>
-               <option class="input-text form-text-color dropdown" value="Content Creation">Content Creation</option>
-               <option class="input-text form-text-color dropdown" value="Influencer Marketing ">Influencer Marketing </option>
-               <option class="input-text form-text-color dropdown" value="Social Media Management">Social Media Management</option>
-               <option class="input-text form-text-color dropdown" value="Other">Other</option>
+               <option class="input-text form-text-color dropdown"></option>
+               <option class="input-text form-text-color dropdown" value=""></option>
+               <option class="input-text form-text-color dropdown" value=""></option>
+               <option class="input-text form-text-color dropdown" value=""></option>
+               <option class="input-text form-text-color dropdown" value=""></option>
              </select>
+             <div class="floating-input ">
+              <textarea name="" placeholder="" class="input-text form-text-color"></textarea>
+              <label class="input-label"></label>
+            </div>
+            <div class="padded-sides grid-center">
+              <input type="hidden" name="inbox_key" value="hello@kingcode.uk">
+              <input type="text" name="_gotcha" style="display: none;" />
+              <input type="submit" value="SEND MESSAGE" class="center button-solid button-font button-color button-text-color" />
+            </div>
            </div>
+           <div class="col-2_xs-12 socials padded">
+            <a class="col-12" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 3a1 1 0 0 1 1 1a4.004 4.004 0 0 0 3.2 3.92a1 1 0 1 1-.4 1.96A5.987 5.987 0 0 1 15 8.47V17a5 5 0 1 1-5-5a1 1 0 1 1 0 2a3 3 0 1 0 3 3V4a1 1 0 0 1 1-1Z"/></g></svg>
+            </a>
+            <a class="" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248a4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008a3.004 3.004 0 0 1 0 6.008z"/><circle cx="16.806" cy="7.207" r="1.078" fill="currentColor"/><path fill="currentColor" d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42a4.6 4.6 0 0 0-2.633 2.632a6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71c0 2.442 0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419a4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688a2.987 2.987 0 0 1-1.712 1.711a4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055c-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311a2.985 2.985 0 0 1-1.719-1.711a5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654c0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311a2.991 2.991 0 0 1 1.712 1.712a5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655c0 2.436 0 2.698-.043 3.654h-.011z"/></svg>
+            </a>
+            <a class="" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14 12l-3.5 2v-4l3.5 2Z"/><path d="M2 12.707v-1.415c0-2.895 0-4.343.905-5.274c.906-.932 2.332-.972 5.183-1.053C9.438 4.927 10.818 4.9 12 4.9c1.181 0 2.561.027 3.912.065c2.851.081 4.277.121 5.182 1.053c.906.931.906 2.38.906 5.274v1.415c0 2.896 0 4.343-.905 5.275c-.906.931-2.331.972-5.183 1.052c-1.35.039-2.73.066-3.912.066a141.1 141.1 0 0 1-3.912-.066c-2.851-.08-4.277-.12-5.183-1.052C2 17.05 2 15.602 2 12.708Z"/></g></svg>
+            </a>
            </div>
+          </div>
          </div>
-         <div class="padded grid-center">
-           <input type="hidden" name="inbox_key" value="hello@kingcode.uk">
-           <input type="text" name="_gotcha" style="display: none;" />
-           <input type="submit" value="SEND MESSAGE" class="center button-solid button-font button-color button-text-color" />
-         </div>
-       </div>
+         </div
      </form>
    </section>
  </section>

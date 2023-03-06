@@ -75,11 +75,11 @@
           /* --------------NAVIGATION------------ */
         
           --hamburgerColor: #ffffff;
-          --backgroundColor: #859f9f;
-          --textareaBackgroundColor: #bccaca;
-          --BorderColor: #ffffff;
-          --topLeftCorner: 100%;
-          --topRightCorner: 100%;
+          --backgroundColor: #f8f6f4;
+          --textareaBackgroundColor: #f8f6f4;
+          --BorderColor: #9E9282;
+          --topLeftCorner: 0%;
+          --topRightCorner: 0%;
           --bottomLeftCorner: 0%;
           --bottomRightCorner: 0%;
           --linkColor: #2f3031;
@@ -115,7 +115,7 @@
         .textarea-background-color 
           {
           background-color: var(--textareaBackgroundColor);
-          border: 4px solid var(--BorderColor);
+          border: 1px solid var(--BorderColor);
           border-top-left-radius: var(--topLeftCorner);
           border-top-right-radius: var(--topRightCorner);
           border-bottom-left-radius: var(--bottomLeftCorner);
@@ -254,17 +254,51 @@
     .navigation-links img 
       {
       object-fit: cover;
-      width: 230px;
-      height: 230px;
-      }
-    
-    .first-block img
-      {
-        border: 1px solid #9E9282;
+      width: 150px;
+      height: 150px;
       }
   
   </style>
 
+<style>
+   .first-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%; 
+      }
+
+  .second-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+
+    .third-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+
+     .fourth-block img
+      {
+        border: 1px solid #9E9282;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%; 
+      }
+    .nav-border-right {border-right: 1px solid #9E9282;}
+    .nav-border-bottom {border-bottom: 1px solid #9E9282;}
+</style>
   <body>
 
     <header class="grid-center">
@@ -275,24 +309,61 @@
       <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
       </p>
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url(''); z-index: 100;">
-        <p class="cross exit right col-12"> ╳
-        </p>
-        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('');">
+        <!-- <p class="cross exit right col-2"> ╳
+        </p> -->
+        <a href="/" class="logo center grow col-12-middle exit"> 
+          <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
+        </a> 
+        <div class=" textarea-background-color radius-arch banner col-12 grid-top" style="background-image: url('');">
          
           <div class=" col-12 grid-center  ">
-            <a href="/" class="logo center grow col-12-middle exit"> 
-              <img src="/images/candy-and-the-king-logo.gif" alt="Candy and the Kings logo" />
-            </a>
-            <div class="col-12 grid padded-sides text-med exit navigation-links">
-              <div class="col-6-middle border-right-2">
-                <div class=" first-block padded ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 nav-border-right">
+                <div class=" first-block grid-center padded ">
                   <img src="/images/food-photography/camrea.png" alt="">
                 </div>
                </div>
-              <div class="col-6"> 
-                <p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p>
+              <div class="col-6-middle padded"> 
+                <p><a href="/portfolio">portfolio</a></p>
               </div>  
             </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                <p><a href="/#about">about us</a></p> <p><a href="/contact">enquire</a></p>
+              </div>  
+              <div class="col-6 ">
+                <div class=" second-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6 ">
+                <div class=" third-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+              <div class="col-6-middle padded"> 
+                <p><a href="/services">services</a></p>
+              </div>  
+            </div>
+          </div>
+          <div class=" col-12 grid-center  ">
+            <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
+              <div class="col-6-middle padded"> 
+                <p><a href="/media-kit">media kit</a></p>
+              </div>  
+              <div class="col-6 ">
+                <div class=" fourth-block grid-center padded ">
+                  <img src="/images/food-photography/camrea.png" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="https://www.instagram.com/candy_and_the_kings/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
               <a class="padded-s" href="//www.tiktok.com/@candy_and_the_king"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>

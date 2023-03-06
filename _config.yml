@@ -378,54 +378,58 @@ _array_structures:
         icon: email
         value:
           _section-type: form
-          heading:
-          top:
-            subheading:
-            text-option-1:
-            text-option-2:
-            text-option-3:
-          bottom:
-            subheading: 
-            message:
+          heading: enquire
+          form-input:
+            text-option-1: Your Name
+            text-option-2: Your Email Address
+            text-option-3: Your WhatsApp (if preferred)
+            message: Tell us a little bit about your business or brand
             option-box:
-              subject:
-              option-1: 
-              option-2: 
-              option-3:
-              option-4: 
-          button: 
-          background_image:        
+              subject: What services do you require?
+              option-1: Content Creation
+              option-2: Influencer Marketing
+              option-3: Both
+              option-4: Other
+          button: finished!
+          background_image: /images/contact-us.webp
           colors:
-            background-color:
-            textarea-background-color: 
-            border-color: 
-            heading-color:
-            subheading-color:
-            text-color:
-            button-color: 
-            button-text-color:
+            background-color: 'white'
+            textarea-background-color: '#F8F7F3'
+            border-color: 'transparent'
+            heading-color: '#9E9282'
+            text-color: '#9E9282'
+            button-color: '#366E94'
+            button-hover-color: '#9E9282'
+            button-text-color: 'white'
+            socials-color: 'transparent'
+            socials-icon-color: '#9E9282'
+            socials-icon-hover-color: '#366E94'
           border-radius:
-            laptop:  
-              top-left-corner:
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner: 
-            tablet: 
-              top-left-corner: 
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner: 
+            laptop:
+              top-left-corner: 112%
+              top-right-corner: 82%
+              bottom-left-corner: 93%
+              bottom-right-corner: 127%
+            tablet:
+              top-left-corner: 112%
+              top-right-corner: 82%
+              bottom-left-corner: 93%
+              bottom-right-corner: 127%
             mobile:
-              top-left-corner: 
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner: 
+              top-left-corner: 0px
+              top-right-corner: 150px
+              bottom-left-corner: 0px
+              bottom-right-corner: 0px
+          button-border-radius:
+              top-left-corner: 100%
+              top-right-corner: 100%
+              bottom-left-corner: 100%
+              bottom-right-corner:  100%
           fonts:
-            heading-font:
-            subheading-font:
-            text-font:
-            button-font:
-          content-block-link:
+            heading-font: Mak
+            text-font: Raleway, sans-serif
+            button-font: Mak
+          content-block-link: contact
       - label: Media Kit
         icon: business_center
         value:

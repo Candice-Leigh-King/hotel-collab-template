@@ -791,7 +791,7 @@ header
 .floating-input {
       position: relative;
       padding-top: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
 .enquiry input {font-family: 'Poppins', sans-serif;}
@@ -811,7 +811,6 @@ textarea::placeholder {color: #cbcbcb;}
   transition: all .5s;
   padding: .7rem 0 .5rem;
   background-color: rgba(0,0,0,0);
-  font-family: 'Poppins', sans-serif;
   }
 
 .input-label
@@ -1072,7 +1071,7 @@ header
   
   .floating-input {
         padding-top: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.8rem;
       }
   
   .input-text
