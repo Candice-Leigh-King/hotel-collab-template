@@ -130,8 +130,8 @@ _array_structures:
             button-text-color: white
             button-hover-color: transparent
             button-text-hover-color: '#9E9282'
-            link-color: '#d2966d'
-            link-hover-color: '#859f9f'
+            link-color: '#366E94'
+            link-hover-color: '#EAE3D9'
           fonts:
             heading-font:
             subheading-font: Mak
