@@ -63,6 +63,8 @@ _inputs:
     comment: This subheading color is for the mobile version only. To change the subheading color on the laptop and desktop version, change the "hover text color". This will also change the color of the text.
   colors.on-mobile-text-color: 
     comment: This is to change the color of the text on mobile only.
+  scroll:
+    comment: Must have a minimum of 5 images.
 
 page_blocks: []
 _array_structures:
@@ -419,6 +421,7 @@ _array_structures:
             - image: /images/clients/crowne-plaza.webp
             - image: /images/clients/avis-vector-logo-small.webp
             - image: /images/clients/lao-ford.webp
+            - image: /images/clients/logo-the-inside-house.webp
           colors:
             heading-color: '#9E9282'
             subheading-font: '#9E9282'
