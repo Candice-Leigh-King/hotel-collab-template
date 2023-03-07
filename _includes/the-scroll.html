@@ -1,4 +1,7 @@
 <style>
+    #content-blocks-{{forloop.index0}} .textarea-background-color
+    {background-color: {{item.colors.textarea-background-color}};}
+
     #content-blocks-{{forloop.index0}} .background-color
     {background-color: {{item.colors.background-color}};}
 
@@ -71,12 +74,12 @@
   </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section class="grid-middle background-color border-top-and-bottom" id="{{item.content-block-link}}">
+    <section class="grid-middle textarea-background-color border-top-and-bottom" id="{{item.content-block-link}}">
         <div class="col-2-middle_md-3_sm-4_xs-12 text-padding center">
             <h4>{{item.heading}}</h4>
             <h6>{{item.subheading}}</h6>
         </div>
-        <div class=" grid col-10_md-9_sm-8_xs-12 border-left variable-width">
+        <div class=" grid col-10_md-9_sm-8_xs-12 background-color border-left variable-width">
             {% for scroll in item.scroll %}
             <div class="grid-center scroll col-12 center">
               <img src="{{scroll.image}}" alt="">
