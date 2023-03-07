@@ -426,7 +426,7 @@ _array_structures:
             heading-color: '#9E9282'
             subheading-color: '#9E9282'
             background-color: '#FEFEFE'
-            textarea-background-color: #FEFEFE'
+            textarea-background-color: '#FEFEFE'
           fonts:
             heading-font: Mak
             subheading-font: Playfair Display, serif
