@@ -407,7 +407,32 @@ _array_structures:
         icon: block
         value:
           _section-type: space-block
-          background-color: '#F8F7F3'     
+          background-color: '#F8F7F3'  
+      - label: The Scroll
+        icon: diamond
+        value:
+        - _section-type: the-scroll
+          heading: trusted by
+          subheading: 50+ brands in your industry
+          scroll:
+            - image: /images/clients/ritz-carlton.webp
+            - image: /images/clients/crowne-plaza.webp
+            - image: /images/clients/avis-vector-logo-small.webp
+            - image: /images/clients/lao-ford.webp
+          colors:
+            heading-color: '#9E9282'
+            subheading-font: '#9E9282'
+            background-color: '#F8F7F3'
+            textarea-background-color: '#FEFEFE'
+            titles-background-color: '#F8F7F3'
+          fonts:
+            heading-font: Mak
+            subheading-font: Playfair Display, serif
+          borders:
+            top-color: black
+            bottom-color: '#9E9282'
+            left-border: black
+          content-block-link: clients       
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
