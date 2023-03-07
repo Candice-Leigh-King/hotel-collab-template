@@ -237,6 +237,92 @@ _array_structures:
             subheading-font:
             text-font: 
           content-block-link: reviews
+      - label: exhibition
+        icon: wallpaper
+        value:
+          _section-type: exhibition
+          heading: hotel facility photography
+          optional:
+            textarea_html: '<h5 class="center">Client: Cielo Koh Samui</h5>'
+          cta: hire us
+          cta-link: /contact
+          textarea_html: >-
+            <p>We specialize in the hotel facility, food, travel and lifestyle. We
+            cover both photography and videography. <br /><br /> To see more images,
+            tap/click the image.  </p>
+          image-1:
+            image: /images/facility-photography/hotel-facility-photographer-5.webp
+            link: /food-photography
+            border-radius:
+              border-top-left-corner: 0%;
+              border-top-right-corner: 0%;
+              border-bottom-left-corner: 0%;
+              border-bottom-right-corner: 0%;
+          image-2:
+            image: /images/facility-photography/hotel-facility-photographer-1.webp
+            link: travel-photography
+            border-radius:
+              border-top-left-corner: 0%;
+              border-top-right-corner: 0%;
+              border-bottom-left-corner: 0%;
+              border-bottom-right-corner: 0%;
+          image-3:
+            image: /images/facility-photography/hotel-facility-photographer-2.webp
+            link: /lifestyle-photography
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          image-4:
+            image: /images/facility-photography/hotel-facility-photographer-4.webp
+            link: /facility-photography
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          image-5:
+            image: /images/facility-photography/hotel-facility-photographer-7.webp
+            link: /room-photography
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          image-6:
+            image: /images/facility-photography/hotel-facility-photographer-3.webp
+            link: /room-photography
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          colors:
+            heading-color: '#9E9282'
+            subheading-color: '#9E9282'
+            text-color: '#9E9282'
+            titles-color: '#9E9282'
+            background-color: '#F8F7F3'
+            textarea-background-color: '#FEFEFE'
+            titles-background-color: '#F8F7F3'
+            button-color: '#366E94'
+            button-text-color: white
+            button-hover-color: '#9E9282'
+            button-text-hover-color: white
+            link-color: '#d2966d'
+            link-hover-color: '#859f9f'
+          fonts:
+            heading-font: Mak
+            subheading-font: Mak
+            text-font: Playfair Display, serif
+            button-font: Mak
+          button-border-radius:
+            border-top-left-corner: 100%
+            border-top-right-corner: 100%
+            border-bottom-left-corner: 100%
+            border-bottom-right-corner: 100%
+          content-block-link:    
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
