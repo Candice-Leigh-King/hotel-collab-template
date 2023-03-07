@@ -322,7 +322,12 @@ _array_structures:
             border-top-right-corner: 100%
             border-bottom-left-corner: 100%
             border-bottom-right-corner: 100%
-          content-block-link:    
+          content-block-link:   
+      - label: Space
+        icon: block
+        value:
+          _section-type: space-block
+          background-color: '#F8F7F3'     
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
