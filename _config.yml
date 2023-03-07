@@ -424,7 +424,7 @@ _array_structures:
             - image: /images/clients/logo-the-inside-house.webp
           colors:
             heading-color: '#9E9282'
-            subheading-font: '#9E9282'
+            subheading-color: '#9E9282'
             background-color: '#F8F7F3'
             textarea-background-color: '#FEFEFE'
             titles-background-color: '#F8F7F3'
