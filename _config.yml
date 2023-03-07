@@ -237,7 +237,7 @@ _array_structures:
             subheading-font:
             text-font: 
           content-block-link: reviews
-      - label: exhibition
+      - label: Exhibition
         icon: wallpaper
         value:
           _section-type: exhibition
