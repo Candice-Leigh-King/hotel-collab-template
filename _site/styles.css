@@ -638,6 +638,7 @@ header
 
   .navigation-socials a:hover {color: #D2966D;}
 
+/* ---------ANNIMATION--------- */
 
 /* on scroll */
 .reveal 
@@ -648,11 +649,7 @@ header
 
 .reveal.active 
   {opacity: 1;}
-/* ---------ANNIMATION--------- */
 
-/* ---------ANNIMATION--------- */
-
-/* IMAGE  */
 @keyframes fadeIn {
   from {
       /* transform: translate3d(0,40px,0) */
