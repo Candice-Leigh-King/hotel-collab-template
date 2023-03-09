@@ -434,7 +434,62 @@ _array_structures:
             top-color: black
             bottom-color: '#9E9282'
             left-color: black
-          content-block-link: clients       
+          content-block-link: clients 
+      - label: Hey There
+        icon: waving_hand
+        value:
+      - label: Plain Jane
+        icon: face_3
+        value:
+        _section-type: plain-jane
+        textarea_html: >-
+          <h3 class="center">more services</h3><p class="center">Ok, so if you're
+          still wondering what it is that we exactly do, no problem. We understand
+          that although the lines between influencer marketing and content creation
+          are very defined and clear, they still might seem a little blurred. So,
+          I'll explain the difference nice and clearly.</p><p class="center">If
+          you're looking to reach a larger audience, then <strong><a
+          href="influencer-marketing">click here</a></strong>, because influencer
+          marketing is what you're after.</p><p class="center">And if you're just in
+          need of content for your socials, then you better<strong> <a
+          href="/content-creation">click here</a></strong> for content creation.</p>
+        background_image: /images/scratches.png
+        cta-link: /contact
+        colors:
+          background-color: '#f8f7f3'
+          textarea-background-color: '#f8f7f3'
+          heading-color: '#9e9282'
+          subheading-color: '#9e9282'
+          text-color: '#2f3031'
+          link-color: '#366e94'
+          link-hover-color: '#9e9282'
+          border-color: rgba(0, 0, 0, 0)
+          background-border:
+            top-color: '#366e94'
+            bottom-color: '#366e94'
+            left-color: '#366e94'
+            right-color: '#366e94'
+        border-radius:
+          laptop:
+            top-left-corner: 400px
+            top-right-corner: 70%
+            bottom-left-corner: 60%
+            bottom-right-corner: 300px
+          tablet:
+            top-left-corner: 200px
+            top-right-corner: 40%
+            bottom-left-corner: 40%
+            bottom-right-corner: 200px
+          mobile:
+            top-left-corner: 100px
+            top-right-corner: 50px
+            bottom-left-corner: 75px
+            bottom-right-corner: 100px
+        fonts:
+          heading-font: Mak
+          subheading-font: Mak
+          text-font: Raleway, sans-serif
+        content-block-link:          
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
