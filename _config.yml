@@ -435,9 +435,6 @@ _array_structures:
             bottom-color: '#9E9282'
             left-color: black
           content-block-link: clients 
-      - label: Hey There
-        icon: waving_hand
-        value:
       - label: Plain Jane
         icon: face_3
         value:
