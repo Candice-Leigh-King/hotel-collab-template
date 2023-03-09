@@ -435,6 +435,55 @@ _array_structures:
             bottom-color: '#9E9282'
             left-color: black
           content-block-link: clients 
+      - label: The Divine Fade
+        icon: auto_awesome
+        value:
+        _section-type: the-divine-fade
+        right-image: 
+          image: 
+          border-color: 
+          border-radius:
+          top-left-corner: 
+          top-right-corner: 
+          bottom-left-corner:
+          bottom-right-corner: 
+        left-image: 
+          image: 
+          border-color: 
+          border-radius:
+          top-left-corner: 
+          top-right-corner:
+          bottom-left-corner: 
+          bottom-right-corner:  
+        bottom-image: 
+          image: 
+          border-color:
+          border-radius:
+          top-left-corner:
+          top-right-corner: 
+          bottom-left-corner:
+          bottom-right-corner: 
+        text:
+          first-textarea_html: 
+          second-textarea_html:
+        button:
+          button-link: 
+          button-name:  
+        colors:  
+          background-color: 
+          heading-color: 
+          subheading-color: 
+          text-color:
+          button-color: 
+          button-hover-color:
+          button-text-color: 
+          button-text-hover-color: 
+        fonts:
+          heading-font: 
+          subheading-font: 
+          text-font: 
+          button-font:
+        content-block-link:
       - label: Plain Jane
         icon: face_3
         value:

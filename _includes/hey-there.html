@@ -1,0 +1,219 @@
+<style>
+    #content-blocks-{{forloop.index0}} .gallery 
+      {background-color:{{item.colors.background-color}};}
+  
+    #content-blocks-{{forloop.index0}} .heading-color
+      {color: {{item.colors.heading-color}};}
+  
+    #content-blocks-{{forloop.index0}} .heading-font
+      {font-family: {{item.fonts.heading-font}};} 
+
+    #content-blocks-{{forloop.index0}} .portrait-md
+    {
+    padding-bottom: 35rem; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    
+    #content-blocks-{{forloop.index0}} .portrait 
+    {
+    padding-bottom: 20rem; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-sm
+    {
+    padding-bottom: 15rem;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-xs
+    {
+    padding-bottom: 10rem; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-xxs
+    {
+    padding-bottom: 8rem; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    #content-blocks-{{forloop.index0}} h1
+    {
+    margin-top: -2rem;
+    font-size: 6rem;
+    color: {{item.colors.heading-color}};
+    font-family: {{item.fonts.heading-font}};
+    margin-bottom: 0;
+    }
+
+    #content-blocks-{{forloop.index0}} h2
+    {
+    margin-top: -5rem;
+    transform: translateX(27%) rotate(-7deg);
+    font-size: 4rem;
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h3
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h4
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h5
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} h6
+    {
+    color: {{item.colors.subheading-color}};
+    font-family: {{item.fonts.subheading-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} .left-vertical-text
+    {
+    margin-top: -16rem;
+    margin-left: 5.5rem;    
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+
+    #content-blocks-{{forloop.index0}} .right-vertical-text
+    {
+    margin-top: 18rem;    
+    margin-bottom: -18rem;
+    transform: translateX(53%) translateY(-51%) rotate(90deg);
+    }
+
+    #content-blocks-{{forloop.index0}} p
+    {
+    
+    color: {{item.colors.text-color}};
+    font-family: {{item.fonts.text-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} a
+    {
+    color: {{item.colors.link-color}};
+    font-family: {{item.fonts.text-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} a:hover
+    {
+    color: {{item.colors.link-hover-color}};
+    }
+
+@media(max-width:1024px)
+{
+    #content-blocks-0 h1 
+    {
+    margin-top: -1.5rem;
+    font-size: 4rem;
+    }
+
+    #content-blocks-0 h2 
+    {
+    margin-top: -3.5rem;
+    font-size: 3rem;
+    }
+} 
+
+@media(max-width:768px)
+{
+    #content-blocks-{{forloop.index0}} .portrait-md
+    {
+    padding-bottom: 30rem; 
+    }
+    #content-blocks-{{forloop.index0}} .portrait 
+    {
+    padding-bottom: 15rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-sm
+    {
+    padding-bottom: 10rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-xs 
+    {
+    padding-bottom: 7rem;
+    }
+}
+@media(max-width:425px)
+{
+
+    #content-blocks-{{forloop.index0}} h1 
+    {
+    margin-top: -5.5rem;
+    font-size: 3rem;
+    }
+
+    #content-blocks-{{forloop.index0}} h2 
+    {
+    margin-top: -2.5rem;
+    font-size: 2.5rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .portrait-md
+    {
+    padding-bottom: 25rem; 
+    }
+
+    #content-blocks-{{forloop.index0}} .left-vertical-text
+    {
+    margin-top: -12rem;
+    margin-bottom: 8rem;   
+    }
+
+}
+
+  </style>
+  
+  <section id="content-blocks-{{forloop.index0}}" class="center">
+    <section id="{{item.content-block-link}}" class=" grid-center-middle ">
+        <div class="col-2 xs-hidden grid padded-top">
+          <div class="portrait col-12_xs-6 fadeInUp animated-2" style="background-image:url({{item.left.top-image}}); "> </div>
+          <div class="portrait-xs col-12_xs-1"> </div>
+          <div class="portrait-xs fadeInLeftDown animatedLong margin col-6_sm-8_xs-4" style="background-image:url({{item.left.bottom-image}});"> </div>
+          <div class="portrait-xs col-4_sm-1 xs-hidden"> </div>
+          <div class="portrait-xxs col-12 xs-hidden"> </div>
+        </div>
+        <div class="col-2_sm-1_xs-hidden"></div>
+        <div class="col-4_sm-6_xs-11 grid-center padded-top fadeInLong animated-5 ">
+          <div class="padded col-12 xs-hidden"> </div>
+          <p class="left col-12 xs-hidden right-vertical-text">{{item.right-vertical-text}}</p>
+          <div class="portrait-md col-12_xs-12" style="background-image:url({{item.middle.top-image}});"> </div>
+          <p class="col-12 left-vertical-text left xs-hidden">{{item.left-vertical-text}}</p>
+          <h1 class="col-12_sm-12 centered no-margin"> {{item.heading}} </h1>
+          <h2 class="col-12_sm-12 centered no-margin"> {{item.subheading}} </h2>
+        </div>
+        <div class="col-2_sm-1_xs-hidden"></div>
+        <div class="col-2_xs-12 grid">
+          <div class="portrait-xs col-12 xs-hidden"> </div>
+          <div class="portrait-sm col-9_sm-10_xs-4 animated-3 fadeInRightDown  margin" style="background-image:url({{item.right.top-image}});"> </div>
+          <div class="portrait-xxs col-12 xs-hidden"> </div>
+          <div class="portrait-sm col-5 xs-hidden"> </div>
+          <div class="portrait-sm fadeInUp animated col-7" style="background-image:url({{item.right.bottom-image}});"> </div>
+        </div>
+      </section>
+    </section>  

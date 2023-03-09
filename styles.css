@@ -126,11 +126,11 @@ font-family: 'Shrikhand', cursive;*/
   .padded   {  padding: 5% !important;    }
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
-  .padded-sides {padding: 0% 5%;}
+  .padded-sides {padding: 0% 5% !important;}
   .padded-right {padding-right: 5%;}
   .padded-top-botton-left {padding: 5% 0% 5% 5%;}
   .padded-bottom {padding-bottom: 5%; }
-  .padded-top {padding-top: 3%;}
+  .padded-top {padding-top: 3% !important;}
   .padded-review {padding: 0% 15%;}
   .form-padded {padding: 3%}
   .margin {margin: 10px;}
@@ -661,16 +661,50 @@ header
   }
 }
 
-.animated {
+.animated 
+  {
   animation-duration: 1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both
+  }
+
+.animated-2
+  {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both
+  }
+
+.animated-3
+  {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both
+  }
+
+
+.animatedLong {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both
 }
 
-.animatedFadeIn {
+.animated-5 
+  {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: both
+  }
+
+.animatedFadeIn 
+  {
   opacity: 0
-}
+  }
 
 .fadeIn {
   opacity: 0;
@@ -690,13 +724,57 @@ header
   }
 }
 
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
 
-.animatedLong {
-  animation-duration: 4s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-fill-mode: both
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
 }
+
+
+@keyframes fadeInLeftDown {
+  from {
+    transform: translateX(-50px) translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+
+.fadeInLeftDown {
+  opacity: 0;
+  animation-name: fadeInLeftDown;
+  -webkit-animation-name: fadeInLeftDown;
+}
+
+.fadeInRightDown
+  {
+  opacity: 0;
+  animation-name: fadeInRightDown;
+  -webkit-animation-name: fadeInRightDown;
+  }
+
+  @keyframes fadeInRightDown {
+    from {
+      transform: translateX(50px) translateY(-50px);
+      opacity: 0;
+    }
+  
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+
+
 
 .animatedFadeIn {
   opacity: 0
@@ -706,6 +784,12 @@ header
   opacity: 0;
   animation-name: fadeInLong;
   -webkit-animation-name: fadeInLong;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 
 .active.fade-up {animation: fade-up 1s ease-in;}
@@ -920,6 +1004,125 @@ footer {
     }
 
 .desktop-hide {display: none;}
+
+/* -------SHOP---- */
+  
+.shopify-button 
+{
+display: inline-block;
+position: fixed;
+line-height: 0.5;
+bottom: 3rem;
+right: 0%;
+left: 0%;
+z-index: 2;
+font-weight: 400;
+color: white;
+text-align: center;
+}
+.shop-button
+{
+position: fixed;
+z-index: 10;
+}
+
+.all-products .compare-at-price 
+{font-size: 1.3rem;}
+
+.all-products .product-price
+{font-size: 1.3rem;}
+
+.all-products h3 
+{
+font-size: 1.3rem;
+font-family: 'Montserrat', sans-serif;
+color: #2F3E39;
+text-shadow: none;
+margin: 0px 0px 10px
+}
+
+.product-price 
+{
+color: #9b4851;
+font-size: 1.7rem;
+padding: 0.2rem 0.5rem;
+margin-right: -5px
+}
+
+.compare-at-price 
+{
+text-decoration: line-through;
+color: #748672;
+padding: 0.2rem 0.5rem;
+font-size: 1.7rem;
+}
+
+.shop-bump
+{
+margin-left: 2rem;
+margin-top: -3rem;
+z-index: 3;
+position: relative;
+padding: 5%;
+} 
+
+.stars p
+{font-size: 1.2rem;}
+
+.shop-padded { padding-right: 5%;}
+
+.shop h1 
+{
+margin: 0px;
+font-size: 2.5rem;
+}
+
+.shop h2 
+{
+margin: 0px;
+font-size: 2.3rem;
+}
+
+.shop h3
+{font-size: 2rem;}
+
+.shop h4
+{font-size: 1.8rem;}
+
+.shop h5
+{font-size: 1.6rem;}
+
+.shop h6
+{font-size: 1.4rem;}
+
+.right-image  
+{
+padding-bottom:60%;
+background-size: cover;
+background-position: center;
+margin-bottom: 4rem;
+margin-right: -2rem;
+}
+
+.left-image  
+{
+padding-bottom:60%;
+background-size: cover;
+background-position: center;
+z-index: 1;
+border: 4px white solid;
+margin-top: 4rem;
+margin-left: -2rem;
+}
+
+.main-image  
+{
+padding-bottom: 70%;
+background-size: cover;
+background-position: center;
+margin-top: -7rem;
+z-index: 1;
+}
 
 /* ---------READ MORE--------- */
 
