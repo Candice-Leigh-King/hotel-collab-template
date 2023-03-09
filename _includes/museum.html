@@ -45,6 +45,17 @@
      font-family: {{item.fonts.text-font}};
      }
 
+     #content-blocks-{{forloop.index0}} a
+    {
+    color: {{item.colors.link-color}};
+    font-family: {{item.fonts.text-font}};
+    }
+
+    #content-blocks-{{forloop.index0}} a:hover
+    {
+    color: {{item.colors.link-hover-color}};
+    }
+
      #content-blocks-{{forloop.index0}} .textarea
      {
      background-color: {{item.colors.textarea-background-color}};
