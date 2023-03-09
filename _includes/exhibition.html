@@ -125,6 +125,17 @@
     color: {{item.colors.text-color}};
     font-family: {{item.fonts.text-font}};
     }
+    #content-blocks-{{forloop.index0}} .gallery-images-under-text
+     {
+     opacity: 1;
+     }
+
+     #content-blocks-{{forloop.index0}} .gallery-images-under-text:hover
+     {
+     opacity: 0.5;
+     transition: all 0.3s;
+     
+     }
 
 @media(max-width:768px) 
  {
@@ -142,29 +153,29 @@
 
 <section id="content-blocks-{{forloop.index0}}">
  <section class="grid-center background-color mixed-gallery padded-sides" id="{{item.content-block-link}}">
-   <div class="col-12">
+   <div class="col-12 padded-sides">
      <h1> {{item.heading}}</h1>
      {{item.textarea_html}}
    </div>
  
    <div class="grid-middle col-12">
        <div class="grid-middle-center reveal fadeIn animatedFadeInLong animatedLong col-6_xs-12">
-           <a class="landscape col-12 exibition-gallery border-1" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
+           <a class="gallery-images-under-text landscape col-12 exibition-gallery border-1" data-fancybox="gallery" href="{{item.image-1.image}}" style="background-image: url('{{item.image-1.image}}');">
            </a>
-           <a class="col-6 portrait exibition-gallery border-2 reveal fadeIn animatedFadeInLong animatedLong grid image-1 " data-fancybox="gallery" href="{{item.image-2.image}}" style="background-image: url('{{item.image-2.image}}');">
+           <a class="gallery-images-under-text col-6 portrait exibition-gallery border-2 grid image-1 " data-fancybox="gallery" href="{{item.image-2.image}}" style="background-image: url('{{item.image-2.image}}');">
            </a>
-           <a class="col-6 border-3 reveal fadeIn animatedFadeInLong animatedLong grid-center exibition-gallery image-2 portrait" data-fancybox="gallery" href="{{item.image-3.image}}" style="background-image: url('{{item.image-3.image}}');">
+           <a class="gallery-images-under-text col-6 border-3 grid-center exibition-gallery image-2 portrait" data-fancybox="gallery" href="{{item.image-3.image}}" style="background-image: url('{{item.image-3.image}}');">
            </a>
-           <a class="landscape col-12 fadeInLong animatedFadeInLong animatedLong border-4 exibition-gallery " data-fancybox="gallery" href="{{item.image-4.image}}" style="background-image: url('{{item.image-4.image}}');">
+           <a class="gallery-images-under-text landscape col-12 border-4 exibition-gallery " data-fancybox="gallery" href="{{item.image-4.image}}" style="background-image: url('{{item.image-4.image}}');">
            </a>
            <a href="{{item.cta-link}}" class=" cta-button center"> {{item.cta}}</a>
        </div>
-       <div class="grid col-6_xs-12">
-           <a class="col-6 grid-center border-5 reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-5.image}}" style="background-image: url('{{item.image-5.image}}');">
+       <div class="grid col-6_xs-12  reveal fadeIn animatedFadeInLong animatedLong">
+           <a class="gallery-images-under-text col-6 grid-center border-5 exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-5.image}}" style="background-image: url('{{item.image-5.image}}');">
            </a>
-           <a class="col-6 grid-center border-5 reveal fadeIn animatedFadeInLong animatedLong exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-6.image}}" style="background-image: url('{{item.image-6.image}}');">
+           <a class="gallery-images-under-text col-6 grid-center border-5 reveal exibition-gallery  image-4 landscape" data-fancybox="gallery" href="{{item.image-6.image}}" style="background-image: url('{{item.image-6.image}}');">
           </a>
-           <a class="col-12 border-6 fadeInLong animatedFadeInLong animatedLong grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-7.image}}"  style="background-image: url('{{item.image-7.image}}');"> 
+           <a class="gallery-images-under-text col-12 border-6 grid-right exibition-gallery image-5 long-portrait" data-fancybox="gallery" href="{{item.image-7.image}}"  style="background-image: url('{{item.image-7.image}}');"> 
            </a>
         </div>
    </div>
