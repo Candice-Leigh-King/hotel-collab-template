@@ -324,14 +324,9 @@ _array_structures:
         value:
           _section-type: exhibition
           heading: hotel facility photography
-          optional:
-            textarea_html: '<h5 class="center">Client: Cielo Koh Samui</h5>'
+          textarea_html: 
           cta: hire us
           cta-link: /contact
-          textarea_html: >-
-            <p>We specialize in the hotel facility, food, travel and lifestyle. We
-            cover both photography and videography. <br /><br /> To see more images,
-            tap/click the image.  </p>
           image-1:
             image: /images/facility-photography/hotel-facility-photographer-5.webp
             border-radius:
