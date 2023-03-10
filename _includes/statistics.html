@@ -31,6 +31,13 @@
     font-family: {{item.left-stat.font-family}};
     }
 
+  #content-blocks-{{forloop.index0}} .left-stat p
+    {
+    margin: 0;  
+    font-size: 1rem;
+    font-family: {{item.middle-stat.font-family}};
+    }
+
   #content-blocks-{{forloop.index0}} .left-stat span 
     {
     font-size: 2.5rem;
@@ -58,6 +65,13 @@
     {
     margin: 0;  
     font-size: 5rem;
+    font-family: {{item.middle-stat.font-family}};
+    }
+
+  #content-blocks-{{forloop.index0}} .middle-stat p
+    {
+    margin: 0;  
+    font-size: 1.5rem;
     font-family: {{item.middle-stat.font-family}};
     }
     
@@ -89,6 +103,13 @@
     {
     margin: 0;  
     font-size: 3rem;
+    font-family: {{item.right-stat.font-family}};
+    }
+
+  #content-blocks-{{forloop.index0}} .right-stat p
+    {
+    margin: 0;  
+    font-size: 1rem;
     font-family: {{item.right-stat.font-family}};
     }
 
@@ -140,16 +161,19 @@
       <div class="col-12 grid-center-middle padded">
         <a href="{{item.left-stat.link}}" class="grid-middle-center col-3_xs-9 left-stat center padded-s">
           <h6 class=" col-12 ">{{item.left-stat.stat}}</h6>
+          <p class="col-12">{{item.left-stat.textarea}}</p>
           <span class="left-icon  ">{{item.left-stat.icon}}</span>
         </a>
         <div class="col-1_xs-3"></div>
         <a href="{{item.middle-stat.link}}" class="grid-middle-center col-4_xs-12 middle-stat center padded">
           <h6 class="col-12 ">{{item.middle-stat.stat}}</h6>
+          <p class="col-12">{{item.middle-stat.textarea}}</p>
           <span class=" middle-icon ">{{item.middle-stat.icon}}</span>
         </a>
         <div class="col-1_xs-3"></div>
         <a href="{{item.right-stat.link}}"  class="grid-middle-center col-3_xs-9 right-stat center padded-s">
           <h6 class="col-12 ">{{item.right-stat.stat}}</h6>
+          <p class="col-12">{{item.right-stat.textarea}}</p>
           <span class="left-icon ">{{item.right-stat.icon}}</span>
         </a>
       </div>
