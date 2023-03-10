@@ -1,0 +1,148 @@
+<style>
+  #content-blocks-{{forloop.index0}} .background-color {background-color: {{item.colors.background-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea a {color: {{item.colors.link-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea a:hover {color: {{item.colors.link-hover-color}};}
+
+  #content-blocks-{{forloop.index0}} .purity-button a
+  {
+  background-color: {{item.colors.button-color}};
+  color: {{item.colors.button-text-color}};
+  font-family: {{item.fonts.button-font}};
+  font-weight: bolder;
+  padding: 0.8rem 2rem 0.6rem;
+  border: solid 2px {{item.colors.button-text-color}};
+  border-top-left-radius: {{item.button-border-radius.border-top-left-corner}};
+  border-top-right-radius: {{item.button-border-radius.border-top-right-corner}};
+  border-bottom-left-radius: {{item.button-border-radius.border-bottom-left-corner}};
+  border-bottom-right-radius: {{item.button-border-radius.border-bottom-right-corner}};
+  }
+
+  #content-blocks-{{forloop.index0}} .purity-button a:hover
+  {
+  color: {{item.colors.button-text-hover-color}};
+  background-color: {{item.colors.button-hover-color}};
+  border: solid 2px {{item.colors.button-text-hover-color}};
+  transition: all 0.5s;
+  }
+
+  #content-blocks-{{forloop.index0}} .purity img
+    { 
+    border: solid 2px {{item.colors.image-border-color}};
+    border-top-left-radius: {{item.image-border-radius.border-top-left-corner}};
+    border-top-right-radius: {{item.image-border-radius.border-top-right-corner}};
+    border-bottom-left-radius: {{item.image-border-radius.border-bottom-left-corner}};
+    border-bottom-right-radius: {{item.image-border-radius.border-bottom-right-corner}};
+    }
+
+  #content-blocks-{{forloop.index0}} p 
+    {
+     font-family: {{item.fonts.text-font}}; 
+     color: {{item.colors.text-color}}
+    }
+
+  #content-blocks-{{forloop.index0}} h1 
+  {
+  font-size: 3.5rem;
+  color: {{item.colors.heading-color}};
+  font-family: {{item.fonts.heading-font}};
+  }
+
+  #content-blocks-{{forloop.index0}} h2 
+  {
+  font-size: 3rem;
+  color: {{item.colors.subheading-color}};
+  font-family: {{item.fonts.subheading-font}};
+  }
+
+  #content-blocks-{{forloop.index0}} h3 
+  {
+  font-size: 2.5rem;
+  color: {{item.colors.subheading-color}};
+  font-family: {{item.fonts.subheading-font}};
+  }
+
+  #content-blocks-{{forloop.index0}} h4 
+  {
+  font-size: 2rem;
+  color: {{item.colors.subheading-color}};
+  font-family: {{item.fonts.subheading-font}};
+  }
+
+  #content-blocks-{{forloop.index0}} h5 
+  {
+  font-size: 1.5rem;
+  color: {{item.colors.subheading-color}};
+  font-family: {{item.fonts.subheading-font}};
+  }
+
+  #content-blocks-{{forloop.index0}} h6 
+  {
+  font-size: 1rem;
+  color: {{item.colors.subheading-color}};
+  font-family: {{item.fonts.subheading-font}};
+  }
+
+  @media(max-width:770px)
+  {
+    content-blocks-{{forloop.index0}} h1 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h2 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h3 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h4 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h5 
+    { margin: 0;}
+
+    #content-blocks-{{forloop.index0}} h6 
+    { margin: 0;}
+  }
+
+  @media(max-width:576px) 
+  {
+    #content-blocks-{{forloop.index0}} h1 
+    {font-size: 3rem; margin-bottom: 15px; }
+
+    #content-blocks-{{forloop.index0}} h2 
+    {font-size: 2.5rem; margin-bottom: 15px; }
+
+    #content-blocks-{{forloop.index0}} h3 
+    {font-size: 2rem; margin-bottom: 15px;}
+
+    #content-blocks-{{forloop.index0}} h4 
+    {font-size: 1.5rem; margin-bottom: 15px; }
+
+    #content-blocks-{{forloop.index0}} h5 
+    {font-size: 1rem;margin-bottom: 15px;}
+
+    #content-blocks-{{forloop.index0}} h6 
+    {font-size: 0.9rem; margin-bottom: 15px;}
+  }
+</style>
+
+<section id="content-blocks-{{forloop.index0}}">
+  <section id="{{item.content-block-link}}" class="grid-middle purity-content-block background-color">
+    <div class="col-12 padded-sides">
+      {{item.top.textarea_html}}
+    </div>
+    <div class="col-4_sm-6_xs-12 textarea padded-sides ">
+      {{item.left.textarea_html}}   
+    </div>  
+    <div class="col-4_sm-6_xs-12 textarea padded-sides ">
+      {{item.middle.textarea_html}}   
+    </div>
+    <div class="col-4_sm-12_xs-12 textarea padded-sides ">
+      {{item.right.textarea_html}}   
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</section>
