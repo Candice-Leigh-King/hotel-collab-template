@@ -1,0 +1,169 @@
+<style>
+  #content-blocks-{{forloop.index0}} .background-color 
+    {
+    border: 40px solid {{item.colors.border-color}};
+    background-color: {{item.colors.background-color}};}
+
+  #content-blocks-{{forloop.index0}} span {height: 54px;}
+
+  #content-blocks-{{forloop.index0}} .left-stat
+    {
+    background-color: {{item.left-stat.background-color}};
+    color: {{item.left-stat.text-color}};
+    border: 2px solid {{item.left-stat.border-color}};
+    border-top-left-radius: {{item.left-stat.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.left-stat.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.left-stat.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.left-stat.border-radius.bottom-right-corner}};
+    }
+
+  #content-blocks-{{forloop.index0}} .left-stat:hover
+    {
+    background-color: {{item.left-stat.background-hover-color}};
+    color: {{item.left-stat.text-hover-color}};
+    border: 2px solid {{item.left-stat.text-hover-color}};
+    }
+
+  #content-blocks-{{forloop.index0}} .left-stat h6
+    {
+    margin: 0;  
+    font-size: 3rem;
+    font-family: {{item.left-stat.font-family}};
+    }
+
+  #content-blocks-{{forloop.index0}} .left-stat span 
+    {
+    font-size: 2.5rem;
+    }
+
+  #content-blocks-{{forloop.index0}} .middle-stat
+    {
+    background-color: {{item.middle-stat.background-color}};
+    color: {{item.middle-stat.text-color}};
+    border: 2px solid {{item.middle-stat.border-color}};
+    border-top-left-radius: {{item.middle-stat.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.middle-stat.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.middle-stat.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.middle-stat.border-radius.bottom-right-corner}};
+    }
+
+  #content-blocks-{{forloop.index0}} .middle-stat:hover
+    {
+    background-color: {{item.middle-stat.background-hover-color}};
+    color: {{item.right-stat.middle-hover-color}};
+    border: 2px solid {{item.middle-stat.text-hover-color}};
+    }
+
+  #content-blocks-{{forloop.index0}} .middle-stat h6
+    {
+    margin: 0;  
+    font-size: 5rem;
+    font-family: {{item.middle-stat.font-family}};
+    }
+    
+  #content-blocks-{{forloop.index0}} .middle-stat span 
+    {
+    font-size: 5.5rem;
+    height: 90px;
+    }
+
+  #content-blocks-{{forloop.index0}} .right-stat
+    {
+    background-color: {{item.right-stat.background-color}};
+    color: {{item.right-stat.text-color}};
+    border: 2px solid {{item.right-stat.border-color}};
+    border-top-left-radius: {{item.right-stat.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.right-stat.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.right-stat.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.right-stat.border-radius.bottom-right-corner}};
+    }
+
+  #content-blocks-{{forloop.index0}} .right-stat:hover
+    {
+    background-color: {{item.right-stat.background-hover-color}};
+    color: {{item.right-stat.text-hover-color}};
+    border: 2px solid {{item.right-stat.text-hover-color}};
+    }
+
+  #content-blocks-{{forloop.index0}} .right-stat h6
+    {
+    margin: 0;  
+    font-size: 3.5rem;
+    font-family: {{item.right-stat.font-family}};
+    }
+
+  #content-blocks-{{forloop.index0}} .right-stat span 
+    {
+    font-size: 2.5rem;
+    }
+
+  #content-blocks-{{forloop.index0}} .textarea-color p
+    {color: {{item.colors.textarea-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font p
+    {font-family: {{item.fonts.textarea-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h1
+    {font-family: {{item.fonts.subheading-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color h1
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h2
+    {font-family: {{item.fonts.subheading-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color h2
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h3
+    {font-family: {{item.fonts.subheading-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color h3
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h4
+    {font-family: {{item.fonts.subheading-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color h4
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h5
+    {font-family: {{item.fonts.subheading-font}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color h5
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-font h6
+    {font-family: {{item.fonts.subheading-font}};}
+    
+  #content-blocks-{{forloop.index0}} .textarea-color h6
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color a
+    {color: {{item.colors.subheading-color}};}
+
+  #content-blocks-{{forloop.index0}} .textarea-color a:hover
+    {color: {{item.colors.textarea-color}};}
+
+</style>
+    
+<section id="content-blocks-{{forloop.index0}}" class="center media-kit">
+  <section data-cms-bind class="background-color">
+      <div class="col-12 grid-center-middle padded">
+        <a href="{{item.left-stat.link}}" class="grid-middle-center col-2 left-stat center padded-s">
+          <h6 class=" col-12 ">{{item.left-stat.stat}}</h6>
+          <span class="left-icon  ">{{item.left-stat.icon}}</span>
+        </a>
+        <div class="col-1"></div>
+        <a href="{{item.middle-stat.link}}" class="grid-middle-center col-3 middle-stat center padded">
+          <h6 class="col-12 ">{{item.middle-stat.stat}}</h6>
+          <span class=" middle-icon ">{{item.middle-stat.icon}}</span>
+        </a>
+        <div class="col-1"></div>
+        <a href="{{item.right-stat.link}}"  class="grid-middle-center col-2 right-stat center padded-s">
+          <h6 class="col-12 ">{{item.right-stat.stat}}</h6>
+          <span class="left-icon ">{{item.right-stat.icon}}</span>
+        </a>
+      </div>
+  </section>
+</section>

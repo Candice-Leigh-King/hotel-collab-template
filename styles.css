@@ -136,7 +136,7 @@ font-family: 'Shrikhand', cursive;*/
   .margin {margin: 10px;}
   .margin-shapes {  margin: 0px 15px 15px;}
   .margin-sides {margin: 0px 15px;}
-  .padded-s {padding: 3%;}
+  .padded-s {padding: 3% !important;}
   .padded-xs {padding: 1%;}
   .no-margin {margin: 0;}
 
