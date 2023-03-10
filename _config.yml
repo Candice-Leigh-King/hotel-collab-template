@@ -493,6 +493,7 @@ _array_structures:
           _section-type: statistics
           left-stat:
             stat: 30K+
+            textarea: followers
             icon: <span class="iconify" data-icon="teenyicons:instagram-outline"></span>
             background-color: 'white'
             text-color: '#366E94'
@@ -508,6 +509,7 @@ _array_structures:
             font-family: Mak
           middle-stat:
             stat: 3M+
+            textarea: followers
             icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
             link:  //www.tiktok.com/@candy_and_the_kings
             background-color: '#366E94'
@@ -523,6 +525,7 @@ _array_structures:
             font-family: Mak
           right-stat:
             stat: 3K+
+            textarea: followers
             icon: <span class="iconify" data-icon="iconoir:facebook"></span>
             link: https://www.facebook.com/candy.and.the.king/
             background-color: 'white'
