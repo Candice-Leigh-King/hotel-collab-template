@@ -435,6 +435,33 @@ _array_structures:
             bottom-color: '#9E9282'
             left-color: black
           content-block-link: clients 
+      - label: Hey There
+        icon: waving_hand
+        value:
+          _section-type: hey-there
+          heading: influencer
+          subheading: marketing
+          left-vertical-text: "86% of women turn to social media for buying advice." 
+          right-vertical-text: "Influencer marketing ROI is 11x greater than banner ads."
+          background-image: /images/scratches.png
+          left:
+            top-image: /images/influencer-marketing/south-african-influencers.webp
+            bottom-image: /images/influencer-marketing/influencer.webp
+          middle:
+            top-image: /images/influencer-marketing/influencers.webp
+          right:
+            top-image: /images/influencer-marketing/influencers-koh-tao.webp
+            bottom-image: /images/influencer-marketing/south-africa-influencer-marketing.webp
+          colors:
+            background-color: '#F8F7F3'
+            heading-color: 'white'
+            subheading-color: 'white'
+            text-color: '#9E9282'
+          fonts:
+            heading-font: Mak
+            subheading-font: Brushwell
+            text-font: Playfair Display, serif
+          content-block-link:    
       - label: Statistics
         icon: insights
         value:
