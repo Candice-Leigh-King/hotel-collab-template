@@ -511,7 +511,6 @@ _array_structures:
               bottom-left-corner: 100%
               bottom-right-corner: 100%
             font-family: Mak  
-          textarea_html:
           colors:
             background-color: '#F8F7F3'
             border-color: '#9E9282'    
