@@ -329,7 +329,7 @@
           <div class=" col-12 grid-center-middle  ">
             <div class="col-12 grid padded-sides text-med exit navigation-links nav-border-bottom">
               <div class="col-6-middle padded-s"> 
-                <p><a href="/#about">about us</a></p> <p><a href="/media-kit">media kit</a></p>
+                <p><a href="/#about">about us</a></p> <p><a href="/influencer-marketing">media kit</a></p>
               </div>  
               <div class="col-6 ">
                 <div class=" second-block grid-center padded-s ">
@@ -859,6 +859,8 @@
     border-bottom-right-radius: 0%;;
     }
 
+  #content-blocks-2 .desktop-hide {display: none;}
+
   #content-blocks-2 p 
     {
      font-family: Raleway, sans-serif; 
@@ -907,14 +909,25 @@
   font-family: Brushwell;
   }
 
-  @media(max-width:1300px)
+  @media(max-width:1300px) 
   {
-    #content-blocks-2 .purity img 
-    {margin-left: 2rem;}
+    .purity img {margin-left: 7rem;}
+  }
+
+  @media(max-width:1299px) 
+  {
+    .purity img {margin-left: 2rem;}
   }
 
   @media(max-width:770px)
   {
+
+    #content-blocks-2 .desktop-hide 
+    {
+    display: inline;
+    padding: 5%;
+    }
+  
     #content-blocks-2 h1 
     { margin: 0;}
 
@@ -936,6 +949,12 @@
 
   @media(max-width:576px) 
   {
+    #content-blocks-2 .desktop-hide 
+    {
+    display: inline;
+    padding: 10%;
+    }
+
     #content-blocks-2 h1 
     {font-size: 3rem; margin-bottom: 15px; }
 
@@ -964,8 +983,11 @@
       </div>
     </div>
     <div class="col-2_sm-hidden"></div>
-    <div class="col-7_xs-12 textarea padded ">
+    <div class="col-7_sm-12 textarea grid padded ">
+      <div class=" col-12 desktop-hide"></div>
+      <div class="col-12">
       <h2 class="center">- the kings -</h2><h4 class="center">(yup! that's our surname.)</h4><p>We’re Candy and Jonty King, and we're going to make you TikTok famous! For the last 3 years, we've been building the most supportive community of travel-hungry, enthusiastic fans. Although, we LOVE beautifully curated videography and photography, our strongest and most valuable asset is showing off our personality and the brands we love through fun, relatable content that goes viral every time! We want to do this with you too!</p><p><strong><em>"80% of consumers have purchased something via an influencer recommendation." - startupbonsai.com</em></strong></p>
+      </div>
       <div class="purity-button reveal fade-up col-12">  
         <p class="center"><a href="/contact.html">I'm ready to enquire.</a></p>
       </div>  
@@ -1180,7 +1202,10 @@
     #content-blocks-5 .border-top-and-bottom
     {
     border-top: 1px solid #ffffff; 
-    border-bottom: 1px solid #ffffff; 
+    border-bottom: 1px solid #ffffff;
+    border-left: 0;
+    border-right: 0;
+
       
     }
 
@@ -1202,7 +1227,7 @@
   {
     #content-blocks-5 .scroll img
         {
-        max-height: 150px;
+        max-height: 90px;
         width: auto;
         }
 

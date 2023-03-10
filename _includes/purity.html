@@ -36,6 +36,8 @@
     border-bottom-right-radius: {{item.image-border-radius.border-bottom-right-corner}};
     }
 
+  #content-blocks-{{forloop.index0}} .desktop-hide {display: none;}
+
   #content-blocks-{{forloop.index0}} p 
     {
      font-family: {{item.fonts.text-font}}; 
@@ -84,14 +86,25 @@
   font-family: {{item.fonts.other-subheadings-font}};
   }
 
-  @media(max-width:1300px)
+  @media(max-width:1300px) 
   {
-    #content-blocks-{{forloop.index0}} .purity img 
-    {margin-left: 2rem;}
+    .purity img {margin-left: 7rem;}
+  }
+
+  @media(max-width:1299px) 
+  {
+    .purity img {margin-left: 2rem;}
   }
 
   @media(max-width:770px)
   {
+
+    #content-blocks-{{forloop.index0}} .desktop-hide 
+    {
+    display: inline;
+    padding: 5%;
+    }
+  
     #content-blocks-{{forloop.index0}} h1 
     { margin: 0;}
 
@@ -113,6 +126,12 @@
 
   @media(max-width:576px) 
   {
+    #content-blocks-{{forloop.index0}} .desktop-hide 
+    {
+    display: inline;
+    padding: 10%;
+    }
+
     #content-blocks-{{forloop.index0}} h1 
     {font-size: 3rem; margin-bottom: 15px; }
 
@@ -141,8 +160,11 @@
       </div>
     </div>
     <div class="col-2_sm-hidden"></div>
-    <div class="col-7_xs-12 textarea padded ">
+    <div class="col-7_sm-12 textarea grid padded ">
+      <div class=" col-12 desktop-hide"></div>
+      <div class="col-12">
       {{item.textarea_html}}
+      </div>
       <div class="purity-button reveal fade-up col-12">  
         {{item.cta_html}}
       </div>  

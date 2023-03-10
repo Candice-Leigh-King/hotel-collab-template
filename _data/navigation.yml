@@ -12,7 +12,7 @@ second-block:
   image: /images/about-the-kings.webp
   textarea_html: >-
     <p><a href="/#about">about us</a></p>
-    <p><a href="/media-kit">media kit</a></p>
+    <p><a href="/influencer-marketing">media kit</a></p>
   border-radius:
     border-top-left-corner: 0%
     border-top-right-corner: 0%

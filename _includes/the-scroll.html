@@ -34,7 +34,10 @@
     #content-blocks-{{forloop.index0}} .border-top-and-bottom
     {
     border-top: 1px solid {{item.borders.top-color}}; 
-    border-bottom: 1px solid {{item.borders.bottom-color}}; 
+    border-bottom: 1px solid {{item.borders.bottom-color}};
+    border-left: 0;
+    border-right: 0;
+
       
     }
 
@@ -56,7 +59,7 @@
   {
     #content-blocks-{{forloop.index0}} .scroll img
         {
-        max-height: 150px;
+        max-height: 90px;
         width: auto;
         }
 

@@ -1188,12 +1188,12 @@ header
       /* ----- PURITY ----  */
     .purity-banner 
       {
-      max-height: 7rem;
+      max-height: 15rem;
       }
 
     .purity img 
       {
-      text-align: right;
+      margin-top: -6rem;
       max-width: 280px;
       padding: 0%;
       } 
@@ -1307,10 +1307,11 @@ header
 
   .purity img 
       {
+      margin-top: 0rem;
       text-align: right;
       max-width: 170px;
       padding: 0%;
-      margin-left: 11.5rem;
+      margin-left: 0rem;
       } 
     
   .purity {text-align: right;}
