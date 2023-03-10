@@ -567,7 +567,6 @@ _array_structures:
       - label: Plain Jane
         icon: face_3
         value:
-          _section-type: plain-jane
           textarea_html: >-
             <h3 class="center">more services</h3><p class="center">Ok, so if you're
             still wondering what it is that we exactly do, no problem. We understand
@@ -595,27 +594,27 @@ _array_structures:
               bottom-color: '#366e94'
               left-color: '#366e94'
               right-color: '#366e94'
-            border-radius:
-              laptop:
-                top-left-corner: 400px
-                top-right-corner: 70%
-                bottom-left-corner: 60%
-                bottom-right-corner: 300px
-              tablet:
-                top-left-corner: 200px
-                top-right-corner: 40%
-                bottom-left-corner: 40%
-                bottom-right-corner: 200px
-              mobile:
-                top-left-corner: 100px
-                top-right-corner: 50px
-                bottom-left-corner: 75px
-                bottom-right-corner: 100px
-            fonts:
-              heading-font: Mak
-              subheading-font: Mak
-              text-font: Raleway, sans-serif
-            content-block-link:          
+          border-radius:
+            laptop:
+              top-left-corner: 400px
+              top-right-corner: 70%
+              bottom-left-corner: 60%
+              bottom-right-corner: 300px
+            tablet:
+              top-left-corner: 200px
+              top-right-corner: 40%
+              bottom-left-corner: 40%
+              bottom-right-corner: 200px
+            mobile:
+              top-left-corner: 100px
+              top-right-corner: 50px
+              bottom-left-corner: 75px
+              bottom-right-corner: 100px
+          fonts:
+            heading-font: Mak
+            subheading-font: Mak
+            text-font: Raleway, sans-serif
+          content-block-link:   
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
