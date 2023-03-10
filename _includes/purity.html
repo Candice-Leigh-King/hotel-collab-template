@@ -84,9 +84,15 @@
   font-family: {{item.fonts.other-subheadings-font}};
   }
 
+  @media(max-width:1300px)
+  {
+    #content-blocks-{{forloop.index0}} .purity img 
+    {margin-left: 2rem;}
+  }
+
   @media(max-width:770px)
   {
-    content-blocks-{{forloop.index0}} h1 
+    #content-blocks-{{forloop.index0}} h1 
     { margin: 0;}
 
     #content-blocks-{{forloop.index0}} h2 
