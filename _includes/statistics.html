@@ -88,7 +88,7 @@
   #content-blocks-{{forloop.index0}} .right-stat h6
     {
     margin: 0;  
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: {{item.right-stat.font-family}};
     }
 
@@ -97,70 +97,58 @@
     font-size: 2.5rem;
     }
 
-  #content-blocks-{{forloop.index0}} .textarea-color p
-    {color: {{item.colors.textarea-color}};}
+  @media(max-width:768px) 
+  {
 
-  #content-blocks-{{forloop.index0}} .textarea-font p
-    {font-family: {{item.fonts.textarea-font}};}
+    #content-blocks-{{forloop.index0}} .left-stat h6
+    {
+    font-size: 2rem;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-font h1
-    {font-family: {{item.fonts.subheading-font}};}
+    #content-blocks-{{forloop.index0}} .middle-stat h6
+    { 
+    font-size: 3.5rem;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-color h1
-    {color: {{item.colors.subheading-color}};}
+    #content-blocks-{{forloop.index0}} .right-stat h6
+    {
+    font-size: 2rem;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-font h2
-    {font-family: {{item.fonts.subheading-font}};}
+    #content-blocks-{{forloop.index0}} .right-stat span 
+    {
+    font-size: 2rem;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-color h2
-    {color: {{item.colors.subheading-color}};}
+    #content-blocks-{{forloop.index0}} .middle-stat span 
+    {
+    font-size: 4rem;
+    height: 90px;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-font h3
-    {font-family: {{item.fonts.subheading-font}};}
+  #content-blocks-{{forloop.index0}} .left-stat span 
+    {
+    font-size: 2rem;
+    }
 
-  #content-blocks-{{forloop.index0}} .textarea-color h3
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-font h4
-    {font-family: {{item.fonts.subheading-font}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-color h4
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-font h5
-    {font-family: {{item.fonts.subheading-font}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-color h5
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-font h6
-    {font-family: {{item.fonts.subheading-font}};}
-    
-  #content-blocks-{{forloop.index0}} .textarea-color h6
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-color a
-    {color: {{item.colors.subheading-color}};}
-
-  #content-blocks-{{forloop.index0}} .textarea-color a:hover
-    {color: {{item.colors.textarea-color}};}
+  }
 
 </style>
     
 <section id="content-blocks-{{forloop.index0}}" class="center media-kit">
   <section id="{{item.content-block-link}}"class="background-color">
       <div class="col-12 grid-center-middle padded">
-        <a href="{{item.left-stat.link}}" class="grid-middle-center col-2 left-stat center padded-s">
+        <a href="{{item.left-stat.link}}" class="grid-middle-center col-3_xs-9 left-stat center padded-s">
           <h6 class=" col-12 ">{{item.left-stat.stat}}</h6>
           <span class="left-icon  ">{{item.left-stat.icon}}</span>
         </a>
-        <div class="col-1"></div>
-        <a href="{{item.middle-stat.link}}" class="grid-middle-center col-3 middle-stat center padded">
+        <div class="col-1_xs-3"></div>
+        <a href="{{item.middle-stat.link}}" class="grid-middle-center col-4_xs-12 middle-stat center padded">
           <h6 class="col-12 ">{{item.middle-stat.stat}}</h6>
           <span class=" middle-icon ">{{item.middle-stat.icon}}</span>
         </a>
-        <div class="col-1"></div>
-        <a href="{{item.right-stat.link}}"  class="grid-middle-center col-2 right-stat center padded-s">
+        <div class="col-1_xs-3"></div>
+        <a href="{{item.right-stat.link}}"  class="grid-middle-center col-3_xs-9 right-stat center padded-s">
           <h6 class="col-12 ">{{item.right-stat.stat}}</h6>
           <span class="left-icon ">{{item.right-stat.icon}}</span>
         </a>
