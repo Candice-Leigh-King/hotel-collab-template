@@ -438,56 +438,56 @@ _array_structures:
       - label: Statistics
         icon: insights
         value:
-        _section-type: statistics
-        left-stat:
-          stat: 30K+
-          icon: <span class="iconify" data-icon="teenyicons:instagram-outline"></span>
-          background-color: 'white'
-          text-color: '#366E94'
-          background-hover-color: '#9E9282'
-          text-hover-color: 'white'
-          link:
-          border-color: '#366E94'
-          border-radius:
-            top-left-corner: 100%
-            top-right-corner: 100%
-            bottom-left-corner: 100%
-            bottom-right-corner: 100%
-          font-family: Mak
-        middle-stat:
-          stat: 3M+
-          icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
-          link:
-          background-color: '#366E94'
-          text-color: 'white'
-          background-hover-color: '#9E9282'
-          text-hover-color: 'white'
-          border-color: 'white'
-          border-radius:
-            top-left-corner: 100%
-            top-right-corner: 100%
-            bottom-left-corner: 100%
-            bottom-right-corner: 100%
-          font-family: Mak
-        right-stat:
-          stat: 3K+
-          icon: <span class="iconify" data-icon="iconoir:facebook"></span>
-          link: 
-          background-color: 'white'
-          text-color: '#366E94'
-          background-hover-color: '#9E9282'
-          text-hover-color: 'white'
-          border-color: '#366E94'
-          border-radius:
-            top-left-corner: 100%
-            top-right-corner: 100%
-            bottom-left-corner: 100%
-            bottom-right-corner: 100%
-          font-family: Mak  
-        textarea_html:
-        colors:
-          background-color: '#F8F7F3'
-          border-color: '#9E9282'    
+          _section-type: statistics
+          left-stat:
+            stat: 30K+
+            icon: <span class="iconify" data-icon="teenyicons:instagram-outline"></span>
+            background-color: 'white'
+            text-color: '#366E94'
+            background-hover-color: '#9E9282'
+            text-hover-color: 'white'
+            link:
+            border-color: '#366E94'
+            border-radius:
+              top-left-corner: 100%
+              top-right-corner: 100%
+              bottom-left-corner: 100%
+              bottom-right-corner: 100%
+            font-family: Mak
+          middle-stat:
+            stat: 3M+
+            icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
+            link:
+            background-color: '#366E94'
+            text-color: 'white'
+            background-hover-color: '#9E9282'
+            text-hover-color: 'white'
+            border-color: 'white'
+            border-radius:
+              top-left-corner: 100%
+              top-right-corner: 100%
+              bottom-left-corner: 100%
+              bottom-right-corner: 100%
+            font-family: Mak
+          right-stat:
+            stat: 3K+
+            icon: <span class="iconify" data-icon="iconoir:facebook"></span>
+            link: 
+            background-color: 'white'
+            text-color: '#366E94'
+            background-hover-color: '#9E9282'
+            text-hover-color: 'white'
+            border-color: '#366E94'
+            border-radius:
+              top-left-corner: 100%
+              top-right-corner: 100%
+              bottom-left-corner: 100%
+              bottom-right-corner: 100%
+            font-family: Mak  
+          textarea_html:
+          colors:
+            background-color: '#F8F7F3'
+            border-color: '#9E9282'    
       - label: The Divine Fade
         icon: auto_awesome
         value:
