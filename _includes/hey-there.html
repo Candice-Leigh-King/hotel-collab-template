@@ -1,6 +1,9 @@
 <style>
-    #content-blocks-{{forloop.index0}} .gallery 
-      {background-color:{{item.colors.background-color}};}
+    #content-blocks-{{forloop.index0}} .background-color 
+      {
+      background-image: {{item.background-image}};
+      background-size: cover;
+      background-color:{{item.colors.background-color}};}
   
     #content-blocks-{{forloop.index0}} .heading-color
       {color: {{item.colors.heading-color}};}
@@ -201,7 +204,7 @@
   </style>
   
   <section id="content-blocks-{{forloop.index0}}" class="center">
-    <section id="{{item.content-block-link}}" class=" grid-center-middle ">
+    <section id="{{item.content-block-link}}" class=" grid-center-middle background-color " style="background-image:url({{item.background-image}});">
         <div class="col-2_xs-12 grid padded-top">
           <div class="portrait col-12_xs-6 fadeInUp animated-2" style="background-image:url({{item.left.top-image}}); "> </div>
           <div class="portrait-xs col-12 xs-hidden"> </div>
