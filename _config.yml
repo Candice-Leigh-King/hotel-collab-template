@@ -435,7 +435,7 @@ _array_structures:
             bottom-color: '#9E9282'
             left-color: black
           content-block-link: clients 
-      - label: Stats
+      - label: Statistics
         icon: insights
         value:
         _section-type: statistics
