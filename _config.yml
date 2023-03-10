@@ -513,7 +513,8 @@ _array_structures:
             font-family: Mak  
           colors:
             background-color: '#F8F7F3'
-            border-color: '#9E9282'    
+            border-color: '#9E9282'  
+          content-block-link:    
       - label: The Divine Fade
         icon: auto_awesome
         value:
