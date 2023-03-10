@@ -498,7 +498,7 @@ _array_structures:
             text-color: '#366E94'
             background-hover-color: '#9E9282'
             text-hover-color: 'white'
-            link:
+            link: https://www.instagram.com/candy_and_the_kings/
             border-color: '#366E94'
             border-radius:
               top-left-corner: 100%
@@ -509,7 +509,7 @@ _array_structures:
           middle-stat:
             stat: 3M+
             icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
-            link:
+            link:  //www.tiktok.com/@candy_and_the_kings
             background-color: '#366E94'
             text-color: 'white'
             background-hover-color: '#9E9282'
@@ -524,7 +524,7 @@ _array_structures:
           right-stat:
             stat: 3K+
             icon: <span class="iconify" data-icon="iconoir:facebook"></span>
-            link: 
+            link: https://www.facebook.com/candy.and.the.king/
             background-color: 'white'
             text-color: '#366E94'
             background-hover-color: '#9E9282'
@@ -538,8 +538,8 @@ _array_structures:
             font-family: Mak  
           colors:
             background-color: '#F8F7F3'
-            border-color: '#9E9282'  
-          content-block-link:    
+            border-color: '#9E9282'
+          content-block-link:
       - label: The Divine Fade
         icon: auto_awesome
         value:
