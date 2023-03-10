@@ -567,6 +567,7 @@ _array_structures:
       - label: Plain Jane
         icon: face_3
         value:
+          _section-type: plain-jane
           textarea_html: >-
             <h3 class="center">more services</h3><p class="center">Ok, so if you're
             still wondering what it is that we exactly do, no problem. We understand
