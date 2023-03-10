@@ -52,6 +52,47 @@
     background-repeat: no-repeat;
     }
 
+    #content-blocks-{{forloop.index0}} .left-top
+    {
+    border-top-left-radius: {{item.left.top-image-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.left.top-image-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.left.top-image-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.left.top-image-border-radius.bottom-right-corner}};
+    }  
+
+    #content-blocks-{{forloop.index0}} .left-bottom
+    {
+    border-top-left-radius: {{item.left.bottom-image-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.left.bottom-image-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.left.bottom-image-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.left.bottom-image-border-radius.bottom-right-corner}};
+    }  
+
+    #content-blocks-{{forloop.index0}} .middle
+    {
+    border-top-left-radius: {{item.middle.border-radius.top-left-corner}};
+    border-top-right-radius: {{item.middle.border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.middle.border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.middle.border-radius.bottom-right-corner}};
+    }  
+
+    #content-blocks-{{forloop.index0}} .right-top
+    {
+    border-top-left-radius: {{item.right.top-image-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.right.top-image-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.right.top-image-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.right.top-image-border-radius.bottom-right-corner}};
+    }  
+
+    #content-blocks-{{forloop.index0}} .right-bottom
+    {
+    border-top-left-radius: {{item.right.bottom-image-border-radius.top-left-corner}};
+    border-top-right-radius: {{item.right.bottom-image-border-radius.top-right-corner}};
+    border-bottom-left-radius: {{item.right.bottom-image-border-radius.bottom-left-corner}};
+    border-bottom-right-radius: {{item.right.bottom-image-border-radius.bottom-right-corner}};
+    }  
+      
+    
     #content-blocks-{{forloop.index0}} h1
     {
     margin-top: -2rem;
@@ -206,9 +247,9 @@
   <section id="content-blocks-{{forloop.index0}}" class="center">
     <section id="{{item.content-block-link}}" class=" grid-center-middle background-color " style="background-image:url({{item.background-image}});">
         <div class="col-2_xs-12 grid padded-top">
-          <div class="portrait col-12_xs-6 fadeInUp animated-2" style="background-image:url({{item.left.top-image}}); "> </div>
+          <div class="portrait col-12_xs-6 fadeInUp left-top animated-2" style="background-image:url({{item.left.top-image}}); "> </div>
           <div class="portrait-xs col-12 xs-hidden"> </div>
-          <div class="portrait-xs fadeInLeftDown animatedLong margin col-6_sm-8_xs-5" style="background-image:url({{item.left.bottom-image}});"> </div>
+          <div class="left-bottom portrait-xs fadeInLeftDown animatedLong margin col-6_sm-8_xs-5" style="background-image:url({{item.left.bottom-image}});"> </div>
           <div class="portrait-xs col-4_sm-1 xs-hidden"> </div>
           <div class="portrait-xxs col-12 xs-hidden"> </div>
         </div>
@@ -216,7 +257,7 @@
         <div class="col-4_sm-6_xs-11 grid-center padded-top fadeInLong animated-5 ">
           <div class="padded col-12 xs-hidden"> </div>
           <p class="left col-12 xs-hidden right-vertical-text">{{item.right-vertical-text}}</p>
-          <div class="portrait-md col-12_xs-12" style="background-image:url({{item.middle.top-image}});"> </div>
+          <div class="middle portrait-md col-12_xs-12" style="background-image:url({{item.middle.top-image}});"> </div>
           <p class="col-12 left-vertical-text left xs-hidden">{{item.left-vertical-text}}</p>
           <h1 class="col-12_sm-12 centered no-margin"> {{item.heading}} </h1>
           <h2 class="col-12_sm-12 centered no-margin"> {{item.subheading}} </h2>
@@ -224,10 +265,10 @@
         <div class="col-2_sm-1_xs-hidden"></div>
         <div class="col-2_xs-12 grid">
           <div class="portrait-xs col-12 xs-hidden"> </div>
-          <div class="portrait-sm col-9_sm-10_xs-4 animated-3 fadeInRightDown  margin" style="background-image:url({{item.right.top-image}});"> </div>
+          <div class="right-top portrait-sm col-9_sm-10_xs-4 animated-3 fadeInRightDown  margin" style="background-image:url({{item.right.top-image}});"> </div>
           <div class="portrait-xxs col-12 xs-hidden"> </div>
           <div class="portrait-sm col-5 xs-hidden"> </div>
-          <div class="portrait-sm fadeInUp animated col-7" style="background-image:url({{item.right.bottom-image}});"> </div>
+          <div class="right-bottom portrait-sm fadeInUp animated col-7" style="background-image:url({{item.right.bottom-image}});"> </div>
         </div>
       </section>
     </section>  
