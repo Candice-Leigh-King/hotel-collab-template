@@ -12,7 +12,7 @@
   font-family: {{item.fonts.button-font}};
   font-weight: bolder;
   padding: 0.8rem 2rem 0.6rem;
-  border: solid 2px {{item.colors.button-text-color}};
+  border: solid 2px {{item.colors.button-color}};
   border-top-left-radius: {{item.button-border-radius.border-top-left-corner}};
   border-top-right-radius: {{item.button-border-radius.border-top-right-corner}};
   border-bottom-left-radius: {{item.button-border-radius.border-bottom-left-corner}};
@@ -128,7 +128,7 @@
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-  <section id="{{item.content-block-link}}" class="grid-middle purity-content-block background-color">
+  <section id="{{item.content-block-link}}" class="grid purity-content-block background-color">
     <div class="col-12 padded-sides">
       {{item.top.textarea_html}}
     </div>
@@ -141,6 +141,8 @@
     <div class="col-4_sm-12_xs-12 textarea reveal fade-in padded-sides ">
       {{item.right.textarea_html}}   
     </div>
+    <div class="purity-button padded-sides padded-top reveal fade-up col-12">  
+      {{item.cta_html}}
     </div>
     </div>
     </div>
