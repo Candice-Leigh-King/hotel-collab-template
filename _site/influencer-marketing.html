@@ -2021,6 +2021,13 @@
 
   #content-blocks-9 .textarea a:hover {color: #9E9282;}
 
+  #content-blocks-9 .cards .image-last
+  {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 500px;
+  }
+
   #content-blocks-9 .cards .image
   {
   background-repeat: no-repeat;
@@ -2105,9 +2112,19 @@
   font-family: Mak;
   }
 
+  @media(max-width: 1100px)
+  {
+    #content-blocks-9 .cards .image
+    {
+    padding-bottom: 350px;
+    }
+    #content-blocks-9 .desktop-hide
+    {display: none;}
+  }
+
   @media(max-width:770px)
   {
-    content-blocks-9 h1 
+    #content-blocks-9 h1 
     { margin: 0;}
 
     #content-blocks-9 h2 
@@ -2124,6 +2141,9 @@
 
     #content-blocks-9 h6 
     { margin: 0;}
+
+    #content-blocks-9 .desktop-hide
+    {display: inline;}
   }
 
   @media(max-width:576px) 
@@ -2145,6 +2165,9 @@
 
     #content-blocks-9 h6 
     {font-size: 0.9rem; margin-bottom: 15px;}
+
+    #content-blocks-9 .desktop-hide
+    {display: none;}
   }
 </style>
 
@@ -2153,7 +2176,7 @@
     <div class="col-12 padded-sides">
       <h2 class="center">our packages</h2>
     </div>
-    <div class="col-4_sm-12 reveal fade-right grid-center padded-top cards textarea padded-sides ">
+    <div class="col-4_sm-6_xs-12 reveal fade-right grid-center padded-top cards textarea padded-sides ">
       <div class="col-12 image" style="background-image: url('/images/influencer-marketing/influencers-koh-tao.webp');"></div>
         <div class="col-11 textarea purity-button padded-s">
           <h4 class="center">Knight</h4><h6 class="center">Great exposure, introducing your brand to our audience</h6>
@@ -2168,17 +2191,17 @@
           <p class="center"><a href="/contact">enquire</a></p>
         </div>  
       </div>
-      <div class="col-4_sm-12 reveal fade-up grid-center padded-top cards textarea padded-sides ">
+      <div class="col-4_sm-6_xs-12 reveal fade-up grid-center padded-top cards textarea padded-sides ">
         <div class="col-12 image" style="background-image: url('/images/influencer-marketing/influencer-kings.webp');"></div>
           <div class="col-11 textarea purity-button padded-s">
-            <h4 class="center">Knight</h4><h6 class="center">Introducing and familiarizing our audience with your brand.</h6> <p>- x5 lifestyle photos </p> <p>- x1 facility photo </p> <p>- x8+ IG stories </p> <p>- x2 IG carousel/reel </p> <p>- x2 TikTok tagging and/or using brand hashtag with CTA. </p> <p>- licensed for social media </p> <p>- professionally edited</p>  <br> 
+            <h4 class="center">Queen</h4><h6 class="center">Introducing and familiarizing our audience with your brand.</h6> <p>- x5 lifestyle photos </p> <p>- x1 facility photo </p> <p>- x8+ IG stories </p> <p>- x2 IG carousel/reel </p> <p>- x2 TikTok tagging and/or using brand hashtag with CTA. </p> <p>- licensed for social media </p> <p>- professionally edited</p>  <br> 
             <p class="center"><a href="/contact">enquire</a></p>
           </div>  
         </div>
-        <div class="col-4_sm-12 reveal fade-left grid-center padded-top cards textarea padded-sides ">
+        <div class="col-4_sm-6_xs-12 reveal fade-left grid-center padded-top cards textarea padded-sides ">
           <div class="col-12 image" style="background-image: url('/images/influencer-marketing/influencer-chas.webp');"></div>
             <div class="col-11 textarea purity-button padded-s">
-              <h4 class="center">Knight</h4><h6 class="center">Retargeting our audience and strengthening brand recognition.</h6>
+              <h4 class="center">King</h4><h6 class="center">Retargeting our audience and strengthening brand recognition.</h6>
  <p>- x7 lifestyle photos </p>
  <p>- x3 facility photo </p>
  <p>- x12+ IG stories </p>
@@ -2190,6 +2213,9 @@
               <p class="center"><a href="/contact">enquire</a></p>
             </div>  
           </div>
+        <div class="col-4_sm-6_xs-12 desktop-hide reveal fade-down grid-middle padded-top cards textarea padded-sides ">
+            <div class="col-12 image-last" style="background-image: url('/images/woman-copy.png');"></div> 
+            </div>
     </div>
     </div>
   </section>
