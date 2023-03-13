@@ -644,6 +644,69 @@ _array_structures:
             subheading-font: Mak
             text-font: Raleway, sans-serif
           content-block-link:   
+      - label: New York Times
+        icon:
+        value: 
+          _section-type: new-york-times
+          top:
+          textarea_html: <h3>ok, but who even are you?</h3>
+          left:
+            textarea_html: >-
+              <p>Great question! Over to Candy first for a brief introduction. "Lol.
+              That's something I ask myself every morning. A part from being outgoing
+              and good in front of the camera, I am also a master sales person. I can
+              sell ice to a penguin! With 3 million followers, this fierce skill of
+              mine is an investment for all brands I work with, and myself - of
+              course."</p><p>Anything else? "Yup, I have a Bachelor Degree in Brand
+              Communications, I'm Copywriting and storytelling specialist annnnd this
+              gal has 8 years experience in social media growth. But that's not all. I
+              also have 8 years experience working in international markets -
+              something that not too many South Africans can say."</p>
+          middle:
+            textarea_html: >-
+              <p>Thanks, Candy. Jonty, you're up. Tell us a bit about you. "Well, when
+              words can't describe a setting, I let my camera do the work." Sounds
+              like you're the photographer here? "Correct. I have a wealth of
+              experience in creating beautiful imagery for brands, hotels and the
+              tourism industry - I capture unique selling points that drive sales and
+              repeat customers. The funny thing is that I actually have a Bachelor
+              Degree in Environmental Management, but shortly after university, I
+              became a photographer and videographer. I'm also a strategist and
+              collaboration specialist with 8 years experience in social media growth
+              and 8 years experience working in international markets.</p>
+          right:
+            textarea_html: >-
+              <p>All of this experience and our fierce knowledge in marketing is the
+              foundation of our social media presence and each of our collaborations.
+              Our strong brand image and our social media presence speaks for itself
+              with multiple features, tags and interviews about us. We've also been on
+              the news, in the newspapers and found in many online articles. So when
+              we say that "we create viral content" we mean it. </p> <p><b>"Influencer
+              marketing ROI is 11x greater than banner ads."-
+              startupbonsai.com</b></p>
+          cta_html: <p class="left"><a href="/contact">I want to go viral</a></p>
+          colors:
+            heading-color: '#9e9282'
+            subheading-color: '#9e9282'
+            text-color: '#000000'
+            background-color: '#f8f7f3'
+            button-color: '#212121'
+            button-text-color: white
+            button-hover-color: white
+            button-text-hover-color: '#212121'
+            link-color: '#366E94'
+            link-hover-color: '#9E9282'
+          fonts:
+            heading-font: Mak
+            subheading-font: Mak
+            text-font: Playfair Display, serif
+            button-font: Playfair Display, serif
+          button-border-radius:
+            border-top-left-corner: 0%;
+            border-top-right-corner: 0%;
+            border-bottom-left-corner: 0%;
+            border-bottom-right-corner: 0%;
+          content-block-link:
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
