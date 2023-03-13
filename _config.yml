@@ -645,7 +645,7 @@ _array_structures:
             text-font: Raleway, sans-serif
           content-block-link:   
       - label: New York Times
-        icon:
+        icon: newspaper
         value: 
           _section-type: new-york-times
           top:
