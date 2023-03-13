@@ -649,7 +649,7 @@ _array_structures:
         value: 
           _section-type: new-york-times
           top:
-          textarea_html: <h3>ok, but who even are you?</h3>
+            textarea_html: <h3>ok, but who even are you?</h3>
           left:
             textarea_html: >-
               <p>Great question! Over to Candy first for a brief introduction. "Lol.
