@@ -706,6 +706,7 @@ _array_structures:
             border-top-right-corner: 0%;
             border-bottom-left-corner: 0%;
             border-bottom-right-corner: 0%;
+          content-block-link:  
       - label: 3 Deluxe
         icon: fort
         value:
