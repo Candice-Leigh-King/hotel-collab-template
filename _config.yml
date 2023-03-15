@@ -781,6 +781,7 @@ _array_structures:
         icon: pin
         value:
           _section-type: all-the-figures
+          heading: insights
           icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
           stat-1:
             figure: 3M+
