@@ -780,7 +780,7 @@ _array_structures:
       - label: All the Figures
         icon: pin
         value:
-        _section-type: all-the-figures
+          _section-type: all-the-figures
           icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
           stat-1:
             number: 3M+
