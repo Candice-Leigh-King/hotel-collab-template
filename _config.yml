@@ -782,20 +782,20 @@ _array_structures:
         value:
           _section-type: 3-deluxe
           top:
-           textarea_html: <h1 class="left">packages</h1>
+            textarea_html: <h1 class="left">packages</h1>
           left:
-           image: /images/influencer-marketing/influencers-koh-tao.webp
-           textarea_html: >-
-             <h4 class="center">Knight</h4><br /><h6 class="center">Great exposure,
-             introducing your brand to our audience</h6><br />
-             <p>- x3 lifestyle photos </p>
-             <p>- x1 facility photo </p>
-             <p>- x4+ IG stories </p>
-             <p>- x1 IG carousel/reel </p>
-             <p>- x1 TikTok tagging and/or using brand hashtag with CTA. </p>
-             <p>- licensed for social media </p>
-             <p>- professionally edited</p> 
-             <br />
+            image: /images/influencer-marketing/influencers-koh-tao.webp
+            textarea_html: >-
+              <h4 class="center">Knight</h4><br /><h6 class="center">Great exposure,
+              introducing your brand to our audience</h6><br />
+              <p>- x3 lifestyle photos </p>
+              <p>- x1 facility photo </p>
+              <p>- x4+ IG stories </p>
+              <p>- x1 IG carousel/reel </p>
+              <p>- x1 TikTok tagging and/or using brand hashtag with CTA. </p>
+              <p>- licensed for social media </p>
+              <p>- professionally edited</p> 
+              <br />
             cta_html: <p class="center"><a href="#enquire">enquire</a></p>
           middle:
             image: /images/influencer-marketing/influencer-kings.webp
