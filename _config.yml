@@ -777,6 +777,51 @@ _array_structures:
             border-bottom-left-corner: 100%;
             border-bottom-right-corner: 100%;
           content-block-link:      
+      - label: All the Figures
+        icon: pin
+        value:
+        _section-type: all-the-figures
+          icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
+          stat-1:
+            number: 3M+
+            title: followers
+          stat-2:
+            number: 136K
+            title: monthly profile views
+          stat-3:
+            number: 44.7M
+            title: total likes
+          stat-4:
+            number: 11M
+            title: monthly view
+          stat-5:
+            number: 9K
+            title: average comment
+          colors:
+            icon-color: '#366E94'
+            text-color: '#9E9282'
+            background-color: '#F8F7F3'
+            textarea-background-color: '#FEFEFE'
+            border-color: transparent
+          fonts:
+            numbers-font: Mak
+            titles-font: Playfair Display, serif 
+          border-radius:
+            laptop:
+              top-left-corner: 215px;
+              top-right-corner: 100%;
+              bottom-left-corner: 72%;
+              bottom-right-corner: 135px;
+            tablet:
+              top-left-corner: 58%;
+              top-right-corner: 92px;
+              bottom-left-corner: 100px;
+              bottom-right-corner: 52%;
+            mobile:
+              top-left-corner: 30%;
+              top-right-corner: 40%;
+              bottom-left-corner: 34%;
+              bottom-right-corner: 27%;
           content-block-link:
       - label: Fig Hover Block
         icon: emoji_nature
