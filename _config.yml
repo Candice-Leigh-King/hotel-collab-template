@@ -780,49 +780,87 @@ _array_structures:
       - label: All the Figures
         icon: pin
         value:
-          _section-type: all-the-figures
-          heading: insights
-          icon: <span class="iconify" data-icon="ph:tiktok-logo-light"></span>
-          stat-1:
-            figure: 3M+
-            title: followers
-          stat-2:
-            figure: 136K
-            title: monthly profile views
-          stat-3:
-            figure: 44.7M
-            title: total likes
-          stat-4:
-            figure: 11M
-            title: monthly view
-          stat-5:
-            figure: 9K
-            title: average comment
+          _section-type: 3-deluxe
+          top:
+           textarea_html: <h1 class="left">packages</h1>
+          left:
+           image: /images/influencer-marketing/influencers-koh-tao.webp
+           textarea_html: >-
+             <h4 class="center">Knight</h4><br /><h6 class="center">Great exposure,
+             introducing your brand to our audience</h6><br />
+             <p>- x3 lifestyle photos </p>
+             <p>- x1 facility photo </p>
+             <p>- x4+ IG stories </p>
+             <p>- x1 IG carousel/reel </p>
+             <p>- x1 TikTok tagging and/or using brand hashtag with CTA. </p>
+             <p>- licensed for social media </p>
+             <p>- professionally edited</p> 
+             <br />
+            cta_html: <p class="center"><a href="#enquire">enquire</a></p>
+          middle:
+            image: /images/influencer-marketing/influencer-kings.webp
+            textarea_html: >-
+              <h4 class="center">Queen</h4><br /><h6 class="center">Introducing and
+              familiarizing our audience with your brand.</h6><br /> <p>- x5 lifestyle
+              photos </p> <p>- x1 facility photo </p> <p>- x8+ IG stories </p> <p>- x2
+              IG carousel/reel </p> <p>- x2 TikTok tagging and/or using brand hashtag
+              with CTA. </p> <p>- licensed for social media </p> <p>- professionally
+              edited</p>  <br />
+            cta_html: <p class="center"><a href="#enquire">enquire</a></p>
+          right:
+            image: /images/influencer-marketing/influencer-chas.webp
+            textarea_html: >-
+              <h4 class="center">King</h4><br /><h6 class="center">Retargeting our
+              audience and strengthening brand recognition.</h6><br />
+              <p>- x7 lifestyle photos </p>
+              <p>- x3 facility photo </p>
+              <p>- x12+ IG stories </p>
+              <p>- x3 IG carousel/reel </p>
+              <p>- x3 TikTok tagging and/or using brand hashtag with CTA. </p>
+              <p>- Pinned video on TikTok for 1 week.</p>
+              <p>- licensed for social media </p>
+              <p>- professionally edited</p> 
+            cta_html: <p class="center"><a href="#enquire">enquire</a></p>
+          tablet-image: /images/woman-copy.png
           colors:
-            icon-color: '#366E94'
-            text-color: '#9E9282'
-            background-color: '#F8F7F3'
-            textarea-background-color: '#FEFEFE'
-            border-color: transparent
+            heading-color: '#9e9282'
+            subheading-color: '#9e9282'
+            text-color: '#000000'
+            background-color: '#f8f7f3'
+            cards-background-color: '#FEFEFE'
+            card-border-color: '#9E9282'
+            button-color: '#9E9282'
+            button-text-color: white
+            button-hover-color: '#366E94'
+            button-text-hover-color: white
+            link-color: '#366E94'
+            link-hover-color: '#9E9282'
           fonts:
-            figures-font: Mak
-            titles-font: Playfair Display, serif 
+            heading-font: Mak
+            subheading-font: Mak
+            text-font: Raleway, sans-serif
+            button-font: Mak
           border-radius:
-            laptop:
-              top-left-corner: 215px
-              top-right-corner: 100%
-              bottom-left-corner: 72%
-              bottom-right-corner: 135px
-            tablet:
-              top-left-corner: 58%
-              top-right-corner: 92px
-              bottom-left-corner: 100px
-              bottom-right-corner: 52%
-            mobile:
-              top-left-corner: 30%
-              top-right-corner: 40%
-              bottom-left-corner: 34%
-              bottom-right-corner: 27%
+            left-card:
+              top-left-corner: 100%;
+              top-right-corner: 100%;
+              bottom-left-corner: 0%;
+              bottom-right-corner: 0%;
+            middle-card:
+              top-left-corner: 100%;
+              top-right-corner: 100%;
+              bottom-left-corner: 0%;
+              bottom-right-corner: 0%;
+            right-card:
+              top-left-corner: 100%;
+              top-right-corner: 100%;
+              bottom-left-corner: 0%;
+              bottom-right-corner: 0%;
+            button:
+              top-left-corner: 100%;
+              top-right-corner: 100%;
+              bottom-left-corner: 100%;
+              bottom-right-corner: 100%;
           content-block-link:
       - label: Fig Hover Block
         icon: emoji_nature
