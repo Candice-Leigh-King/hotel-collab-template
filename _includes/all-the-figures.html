@@ -6,6 +6,13 @@
 
   #content-blocks-{{forloop.index0}} span {height: 54px;}
 
+  #content-blocks-{{forloop.index0}} h2
+  {
+  color: {{item.colors.heading-color}};
+  font-family: {{item.fonts.heading-font}};
+  font-size: 7rem;
+  }
+
   #content-blocks-{{forloop.index0}} .textarea
     {
     background-color: {{item.colors.textarea-background-color}};
@@ -83,6 +90,7 @@
 <section id="content-blocks-{{forloop.index0}}" class="center">
   <section id="{{item.content-block-link}}"class="background-color">
       <div class="col-12 grid-center-middle padded-sides">
+        <div class="col-12 padded-bottom left"><h2>{{item.heading}}</h2></div>
         <div class="grid-center col-12 textarea center padded-s">
           <div class="grid-center col-12">
             <span class="icon">{{item.icon}}</span>
