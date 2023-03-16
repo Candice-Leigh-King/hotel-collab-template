@@ -41,7 +41,7 @@ $(document).ready(function() {
 				variableWidth: true
 			  });
 
-			// on scroll
+			
 			// on scroll
 			function reveal() {
 			let reveals = document.querySelectorAll(".reveal");
