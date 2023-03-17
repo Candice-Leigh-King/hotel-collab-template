@@ -549,12 +549,12 @@ a .exibition-gallery {display: block;}
 /*------------------ HEADER ----------------*/
 header 
   {
-  margin-bottom: -4rem !important;
+  margin-bottom: -7.2rem !important;
   }
 
 .logo-home img
   { 
-  max-width: 5rem;
+  max-height: 5rem;
   padding-top: 20px;
   }
 
