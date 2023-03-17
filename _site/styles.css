@@ -973,7 +973,30 @@ input:focus, textarea:focus
 
 footer {
   border-top: 1px solid black;
+  position: relative;
 }
+
+.custom-shape-divider-top-1679056084 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1679056084 svg {
+  position: relative;
+  display: block;
+  width: calc(176% + 1.3px);
+  height: 115px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679056084 .shape-fill {
+  fill: #366E94;
+}
+
 
 .socials a
   {
