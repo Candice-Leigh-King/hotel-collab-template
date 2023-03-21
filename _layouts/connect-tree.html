@@ -91,15 +91,21 @@
           --navSocialsBorderBottomRight: {{site.data.navigation.icons-border-radius.bottom-right-corner}};
           --navSocialsBorderBottomLeft: {{site.data.navigation.icons-border-radius.bottom-left-corner}};
           --iconBackgroundColor: {{site.data.navigation.social-link-colors.background-color}};
-          --iconBorderColor: {{site.data.navigation.social-link-colors.border-color}};
-          --iconHoverColor: {{site.data.navigation.social-link-colors.icon-hover-color}};
           --exitColor: {{site.data.navigation.colors.exit-color}};
           --exitHoverColor: {{site.data.navigation.colors.exit-hover-color}};
 
           /* -------------FOOTER----------- */
           --footerBackgroundColor: {{site.data.footer.colors.background-color}};
           --footerBorderColor: {{site.data.footer.colors.border-color}};
+          --footerSocialIconsColor: {{site.data.footer.colors.social-icons-color}};
+          --footerSocialIconsHoverColor: {{site.data.footer.colors.social-icons-hover-color}};
+          --footerSocialIconsBackgroundHoverColor: {{site.data.footer.colors.social-icons-background-hover-color}};
+          --iconBorderColor: {{site.data.navigation.social-link-colors.icon-border-color}};
+          --iconHoverColor: {{site.data.navigation.social-link-colors.icon-hover-color}};
           --socialIconsBackgroundColor: {{site.data.footer.colors.social-icons-background-color}};
+          --footerTextColor: {{site.data.footer.colors.text-color}};
+          --footerTextFont: {{site.data.footer.fonts.text-font}};
+          --footerTextHoverColor: {{site.data.footer.colors.text-hover-color}};
           --subfooterHoverColor: {{site.data.footer.colors.subfooter-hover-color}};
           --subfooterFont: {{site.data.footer.fonts.subfooter-font}};
 
@@ -165,18 +171,36 @@
           border-top: 1px solid var(--footerBorderColor);
           }
 
-        .social-icons-color a 
+        .footer-image 
+          { 
+          border-left: solid 4px var(--footerBackgroundColor);
+          }
+
+        .social-icons-color 
           {
-          color: var(--footerBackgroundColor);
+          color: var(--footerSocialIconsColor);
           background-color: var(--socialIconsBackgroundColor);
-          border: solid var(--socialIconsBackgroundColor);
+          border: 1.5px solid var(--footerSocialIconsColor);
           }
         
-        .social-icons-color a:hover
+        .social-icons-color {background-size: cover;}
+        
+        .social-icons-color:hover
           {
-          color: var(--socialIconsBackgroundColor);
-          background-color: transparent;
-          border: solid var(--socialIconsBackgroundColor);
+          color: var(--footerSocialIconsHoverColor);
+          background-color: var(--footerSocialIconsBackgroundHoverColor);
+          border: 1.5px solid var(--socialIconsBackgroundColor);
+          }
+
+        .footer-text 
+          {
+          color: var(--footerTextColor);
+          font-family: var (--footerTextFont);
+          }
+
+        .footer-text a:hover 
+          {
+          color: var(--footerTextHoverColor);
           }
 
         .built {background-color: var(--footerBackgroundColor);}

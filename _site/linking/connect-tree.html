@@ -91,16 +91,22 @@
           --navSocialsBorderBottomRight: 100px;
           --navSocialsBorderBottomLeft: 0px;
           --iconBackgroundColor: ;
-          --iconBorderColor: ;
-          --iconHoverColor: #9E9282;
           --exitColor: #f8f6f4;
           --exitHoverColor: #366E94;
 
           /* -------------FOOTER----------- */
           --footerBackgroundColor: #FFFFFF;
-          --footerBorderColor: #D2966D;
-          --socialIconsBackgroundColor: #D2966D;
-          --subfooterHoverColor: #859F9F;
+          --footerBorderColor: ;
+          --footerSocialIconsColor: #FEFEFE;
+          --footerSocialIconsHoverColor: #9E9282;
+          --footerSocialIconsBackgroundHoverColor: #EAE3D9;
+          --iconBorderColor: ;
+          --iconHoverColor: #9E9282;
+          --socialIconsBackgroundColor: ;
+          --footerTextColor: #FEFEFE;
+          --footerTextFont: Raleway, sans-serif;
+          --footerTextHoverColor: #9E9282;
+          --subfooterHoverColor: #366E94;
           --subfooterFont: Raleway, sans-serif;
 
           --editor-panel-zindex: 90;
@@ -165,18 +171,36 @@
           border-top: 1px solid var(--footerBorderColor);
           }
 
-        .social-icons-color a 
+        .footer-image 
+          { 
+          border-left: solid 4px var(--footerBackgroundColor);
+          }
+
+        .social-icons-color 
           {
-          color: var(--footerBackgroundColor);
+          color: var(--footerSocialIconsColor);
           background-color: var(--socialIconsBackgroundColor);
-          border: solid var(--socialIconsBackgroundColor);
+          border: 1.5px solid var(--footerSocialIconsColor);
           }
         
-        .social-icons-color a:hover
+        .social-icons-color {background-size: cover;}
+        
+        .social-icons-color:hover
           {
-          color: var(--socialIconsBackgroundColor);
-          background-color: transparent;
-          border: solid var(--socialIconsBackgroundColor);
+          color: var(--footerSocialIconsHoverColor);
+          background-color: var(--footerSocialIconsBackgroundHoverColor);
+          border: 1.5px solid var(--socialIconsBackgroundColor);
+          }
+
+        .footer-text 
+          {
+          color: var(--footerTextColor);
+          font-family: var (--footerTextFont);
+          }
+
+        .footer-text a:hover 
+          {
+          color: var(--footerTextHoverColor);
           }
 
         .built {background-color: var(--footerBackgroundColor);}
