@@ -1,44 +1,41 @@
 first-block:
   image: /images/food-photography/camrea.png
-  textarea_html: >-
-    <p><a href="/portfolio">portfolio</a></p>
+  textarea_html: <p><a href="/portfolio">portfolio</a></p>
   border-radius:
     border-top-left-corner: 100%
     border-top-right-corner: 100%
     border-bottom-left-corner: 100%
-    border-bottom-right-corner:  100%
-  border-color: '#9E9282'  
+    border-bottom-right-corner: 100%
+  border-color: '#9e9282'
 second-block:
   image: /images/about-the-kings.webp
   textarea_html: >-
-    <p><a href="/#about">about us</a></p>
-    <p><a href="/influencer-marketing">media kit</a></p>
+    <p><a href="/#about">about us</a></p><p><a
+    href="/influencer-marketing">media kit</a></p>
   border-radius:
     border-top-left-corner: 0%
     border-top-right-corner: 0%
     border-bottom-left-corner: 0%
-    border-bottom-right-corner:  0%
-  border-color: '#9E9282'  
+    border-bottom-right-corner: 0%
+  border-color: '#9e9282'
 third-block:
   image: /images/services.webp
-  textarea_html: >-
-    <p><a href="/services">services</a></p>
+  textarea_html: <p><a href="/#services">services</a></p>
   border-radius:
     border-top-left-corner: 100%
     border-top-right-corner: 100%
     border-bottom-left-corner: 0%
-    border-bottom-right-corner:  0%
-  border-color: '#9E9282'  
+    border-bottom-right-corner: 0%
+  border-color: '#9e9282'
 fourth-block:
   image: /images/contact-the-kings.webp
-  textarea_html: >-
-    <p><a href="/contact">contact us</a></p>
+  textarea_html: <p><a href="/contact">contact us</a></p>
   border-radius:
     border-top-left-corner: 0%
     border-top-right-corner: 0%
     border-bottom-left-corner: 0%
-    border-bottom-right-corner:  0%
-  border-color: '#9E9282'  
+    border-bottom-right-corner: 0%
+  border-color: '#9E9282'
 colors:
   hamburger-color: '#ffffff'
   background-color: '#9e9282'
