@@ -42,23 +42,21 @@
   #content-blocks-{{forloop.index0}} .textarea span 
     {
     font-size: 4rem;
-    margin-top: -4rem;
     padding: 0rem 2rem 3rem;
     background-color: {{item.colors.textarea-background-color}};
     color: {{item.colors.icon-color}};
     border-radius: 100%;
-    font-size: 4rem;
     margin-top: -5rem;
     border-top: 2px solid {{item.colors.icon-color}};
     border-left: solid {{item.colors.icon-color}};
     border-right: 2px solid {{item.colors.icon-color}};
     border-bottom: 2px solid {{item.colors.icon-color}};
-}
+
     }
 
   #content-blocks-{{forloop.index0}} .icon
     {
-    {color: {{item.colors.icon-color}};}
+    color: {{item.colors.icon-color}};
     }
 
   @media(max-width:768px) 
@@ -72,10 +70,29 @@
     border-bottom-right-radius: {{item.border-radius.tablet.bottom-right-corner}};
     }
 
+   #content-blocks-{{forloop.index0}} h2
+    {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    }
+
+
   }
 
   @media(max-width: 500px)
   {
+    #content-blocks-{{forloop.index0}} h2
+    {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .textarea span 
+    {
+    font-size: 4rem;
+    margin-top: -3rem;
+    }
+
     #content-blocks-{{forloop.index0}} .textarea
     {
     border-top-left-radius: {{item.border-radius.mobile.top-left-corner}};
@@ -107,11 +124,11 @@
             <p class=" number col-12 ">{{item.stat-3.figure}}</p>
             <p class=" title col-12 ">{{item.stat-3.title}}</p>
           </div>
-          <div class="col-2_md-3_sm-4_xs-12 grid">
+          <div class="col-2_md-4_sm-4_xs-12 grid">
             <p class=" number col-12 ">{{item.stat-4.figure}}</p>
             <p class=" title col-12 ">{{item.stat-4.title}}</p>
           </div>
-          <div class="col-2_md-3_sm-4_xs-12 grid">
+          <div class="col-2_md-4_sm-4_xs-12 grid">
             <p class=" number col-12 ">{{item.stat-5.figure}}</p>
             <p class=" title col-12 ">{{item.stat-5.title}}</p>
           </div>
