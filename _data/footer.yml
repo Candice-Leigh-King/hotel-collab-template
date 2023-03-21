@@ -11,20 +11,24 @@ images:
   5-image: /images/footer-images/2.webp
   5-alt:
   6-image: /images/footer-images/4.webp
-  6-alt: 
+  6-alt:
 navigation:
-  right-textarea: <p> <a href = "/portfolio"> portfolio </a> </p> <p> <a href = "/influencer-marketing"> media kit </a> </p>
-  left-textarea: <p> <a href = "/contact"> contact </a> </p> <p> <a href = "/portfolio#reviews"> reviews </a> </p>
+  right-textarea: >-
+    <p> <a href = "/portfolio"> portfolio </a> </p> <p> <a href =
+    "/influencer-marketing"> media kit </a> </p>
+  left-textarea: >-
+    <p> <a href = "/contact"> contact </a> </p> <p> <a href =
+    "/portfolio#reviews"> reviews </a> </p>
 colors:
-  background-color: '#FFFFFF'
-  social-icons-color: '#FEFEFE'
-  social-icons-hover-color: '#9E9282'
-  text-color: '#FEFEFE'
-  text-hover-color: '#9E9282'
-  icon-border-color: '#FEFEFE'
-  social-icons-background-hover-color: '#EAE3D9'
-  subfooter-color: '#9E9282'
-  subfooter-hover-color: '#366E94'
+  background-color: '#f8f7f3'
+  social-icons-color: '#fefefe'
+  social-icons-hover-color: '#9e9282'
+  text-color: '#fefefe'
+  text-hover-color: '#9e9282'
+  icon-border-color: '#fefefe'
+  social-icons-background-hover-color: '#eae3d9'
+  subfooter-color: '#9e9282'
+  subfooter-hover-color: '#366e94'
 fonts:
-  text-font: 'Raleway, sans-serif'
-  subfooter-font: 'Raleway, sans-serif'
+  text-font: Raleway, sans-serif
+  subfooter-font: Raleway, sans-serif
