@@ -35,16 +35,16 @@ fourth-block:
     border-top-right-corner: 0%
     border-bottom-left-corner: 0%
     border-bottom-right-corner: 0%
-  border-color: '#9E9282'
+  border-color: '#9e9282'
 colors:
   hamburger-color: '#ffffff'
   background-color: '#9e9282'
   textarea-background-color: '#f8f6f4'
-  border-color: '#9E9282'
+  border-color: '#9e9282'
   link-color: '#2f3031'
-  hover-link-color: '#366E94'
+  hover-link-color: '#366e94'
   exit-color: '#f8f6f4'
-  exit-hover-color: '#366E94'
+  exit-hover-color: '#366e94'
 border-radius:
   top-left-corner: 0%
   top-right-corner: 0%
@@ -53,8 +53,8 @@ border-radius:
 fonts:
   link-font: Mak
 social-link-colors:
-  icon-color: '#366E94'
-  icon-hover-color: '#9E9282'
+  icon-color: '#366e94'
+  icon-hover-color: '#9e9282'
 icons-border-radius:
   top-left-corner: 100px
   top-right-corner: 0px
