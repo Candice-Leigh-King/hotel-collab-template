@@ -971,10 +971,7 @@ select {padding: 0.7rem 0 0.5rem}
 input:focus, textarea:focus
   {outline: 0;}
 
-footer {
-  border-top: 1px solid black;
-  position: relative;
-}
+.footer-bg {background-size: cover;}
 
 .footer-image 
   { 
