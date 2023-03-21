@@ -174,6 +174,13 @@
         .footer-image 
           { 
           border-left: solid 4px var(--footerBackgroundColor);
+          border-top: solid 4px var(--footerBackgroundColor);
+          }
+
+        .border-sides 
+          {
+          border-left: solid 4px var(--footerBackgroundColor);
+          border-right: solid 0px var(--footerBackgroundColor);
           }
 
         .social-icons-color 
@@ -195,7 +202,7 @@
         .footer-text 
           {
           color: var(--footerTextColor);
-          font-family: var (--footerTextFont);
+          font-family: var(--footerTextFont);
           }
 
         .footer-text a:hover 
@@ -218,6 +225,17 @@
           }
 
         .built a:hover {color: var(--subfooterHoverColor);}
+
+        @media(max-width:768px) 
+        {
+
+        .border-sides 
+          {
+          border-left: solid 4px var(--footerBackgroundColor);
+          border-right: solid 4px var(--footerBackgroundColor);
+          }
+
+        }
 
         </style>
   </head>
@@ -612,26 +630,26 @@
     
 
 
-    <footer class="grid-center center padded-top footer-background-color">
-      <div class="col-3 grid-center  padded-siades" style="background-image:url(/images/footer-bg.webp); ">
+    <footer class="grid-middle center padded-top footer-background-color">
+      <div class="col-3_sm-5_xs-12 grid-center  padded-siades" style="background-image:url(/images/footer-bg.webp); ">
         <div class="col-12 grid-center">
-          <a href="" class="col-2 social-icons-color socials margin ig"><span class="iconify" data-icon="teenyicons:instagram-outline"></span></a>
-          <a href="" class=" col-2 social-icons-color socials margin fb "><span class="iconify" data-icon="ri:facebook-line"></span></a>
-          <a href="" class="col-2 social-icons-color socials margin tt"><span class="iconify" data-icon="teenyicons:tiktok-outline"></span></a>
-          <a href="" class="col-2 social-icons-color socials margin yt "><span class="iconify" data-icon="iconoir:youtube"></span></a> 
+          <a href="" class="col-2 social-icons-color socials margin "><span class="iconify" data-icon="teenyicons:instagram-outline"></span></a>
+          <a href="" class=" col-2 social-icons-color socials margin  "><span class="iconify" data-icon="ri:facebook-line"></span></a>
+          <a href="" class="col-2 social-icons-color socials margin "><span class="iconify" data-icon="teenyicons:tiktok-outline"></span></a>
+          <a href="" class="col-2 social-icons-color socials margin  "><span class="iconify" data-icon="iconoir:youtube"></span></a> 
         </div>
-        <div class="grid-center col-12 footer-text">
-          <div class="col-6"><p> <a href = "/portfolio"> portfolio </a> </p></div>
-          <div class="col-6"><p> <a href = "/portfolio"> portfolio </a> </p></div>
+        <div class="grid-center col-12 footer-text padded-s">
+          <div class="col-6"><p> <a href = "/portfolio"> portfolio </a> </p> <p> <a href = "/influencer-marketing"> media kit </a> </p></div>
+          <div class="col-6"><p> <a href = "/contact"> contact </a> </p> <p> <a href = "/portfolio#reviews"> reviews </a> </p></div>
         </div>
       </div>
-      <div class="col-9 grid-center">
-        <img class="col-2 footer-image border-sides" src="/images/lifestyle-photography/lifestyle-photographer.webp" alt="/images/lifestyle-photography/lifestyle-photographer.webp">
-        <img class="col-2 footer-image border-sides" src="/images/services.webp" alt="/images/services.webp">
-        <img class="col-2 footer-image border-sides" src="/images/influencer-marketing/south-africa-influencer-marketing.webp" alt="/images/influencer-marketing/south-africa-influencer-marketing.webp">
-        <img class="col-2 footer-image border-sides" src="/images/footer-images/3.webp" alt="/images/footer-images/3.webp">
-        <img class="col-2 footer-image border-sides" src="/images/footer-images/2.webp" alt="/images/footer-images/2.webp">
-        <img class="col-2 footer-image border-sides" src="/images/footer-images/4.webp" alt="/images/footer-images/4.webp">
+      <div class="col-9_sm-7_xs-12 grid-center">
+        <img class="col-2_sm-4 footer-image" src="/images/lifestyle-photography/lifestyle-photographer.webp" alt="/images/lifestyle-photography/lifestyle-photographer.webp">
+        <img class="col-2_sm-4 footer-image " src="/images/services.webp" alt="/images/services.webp">
+        <img class="col-2_sm-4 footer-image border-sides" src="/images/influencer-marketing/south-africa-influencer-marketing.webp" alt="/images/influencer-marketing/south-africa-influencer-marketing.webp">
+        <img class="col-2_sm-hidden footer-image" src="/images/footer-images/3.webp" alt="/images/footer-images/3.webp">
+        <img class="col-2_sm-hidden footer-image " src="/images/footer-images/2.webp" alt="/images/footer-images/2.webp">
+        <img class="col-2_sm-hidden footer-image" src="/images/footer-images/4.webp" alt="/images/footer-images/4.webp">
       </div>
     </footer>
 

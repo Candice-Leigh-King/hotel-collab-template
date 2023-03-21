@@ -983,6 +983,23 @@ footer {
   object-fit: cover;
   }
 
+  
+.socials-form a
+{
+color: #F8DCC2;
+background-color: #FAE6D4;
+border-radius: 90px;
+font-size: 2rem;
+padding: 5px 0px 0px;
+border: #FAE6D4 solid;
+}
+
+.socials-form a:hover
+{
+color: #FAE6D4;
+background-color: #F8DCC2;
+border: #FAE6D4 solid;
+}
 
 
 .socials
@@ -1219,12 +1236,14 @@ header
    .carousel-symbols-color {font-size: 1.8rem;}
    .carousel-subheading-font {font-size: 1.6rem;}
   
-  .socials a {font-size: 1.9rem;}
+  .socials-form a {font-size: 1.9rem;}
   .fb {padding: 8px 24px;}
   .ig {padding: 8px 16px;}
   .tt {padding: 8px 15px;}
   .yt {padding: 8px 15px;}
   .padded-top-botton-left {padding: 5% 0%;}
+
+  .socials {font-size: 1.6rem;}
   
   }
 
@@ -1345,7 +1364,8 @@ header
    .padded-1 
     {padding: 4px;}
   
-  .socials a {font-size: 1.5rem;}
+  .socials-form a {font-size: 1.5rem;}
+  .socials {font-size: 1.5rem;}
   .fb {padding: 5px 17px;}
   .ig {padding: 5px 11px;}
   .tt {padding: 5px 10px;}
