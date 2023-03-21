@@ -13,10 +13,8 @@ images:
   6-image: /images/footer-images/4.webp
   6-alt:
 navigation:
-  right:
-    textarea: <p><a href = "/portfolio"> portfolio </a> </p><p><a href = "/influencer-marketing"> media kit </a></p>
-  left:
-    textarea: <p><a href = "/contact"> contact </a> </p> <p><a href = "/portfolio#reviews"> reviews </a></p>
+  right-textarea_html: <p><a href = "/portfolio"> portfolio </a> </p><p><a href = "/influencer-marketing"> media kit </a></p>
+  left-textarea_html: <p><a href = "/contact"> contact </a> </p> <p><a href = "/portfolio#reviews"> reviews </a></p>
 colors:
   background-color: '#f8f7f3'
   social-icons-color: '#fefefe'
