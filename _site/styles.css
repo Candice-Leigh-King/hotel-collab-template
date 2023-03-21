@@ -975,7 +975,7 @@ input:focus, textarea:focus
 
 .footer-image 
   { 
-  height: 180px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
   }
@@ -1224,6 +1224,16 @@ header
       } 
     
     .purity {text-align: right;}
+
+    /* --FOOTER--- */
+
+  .footer-image 
+    { 
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    }
+
 
   /* --------FORM-------- */
   .radius-quarter {border-radius: 0px 150px 0px 0px;}
