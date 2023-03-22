@@ -112,7 +112,9 @@ Release 2 birds with one hand! Get "I want to book this room" kinda content and 
           --footerTextColor: #fefefe;
           --footerTextFont: Raleway, sans-serif;
           --footerTextHoverColor: #9e9282;
-          --subfooterHoverColor: #366e94;
+          --subfooterBackgroundColor: #EAE3D9;
+          --subfooterTextColor: #9E9282;
+          --subfooterTextHoverColor: #366E94;
           --subfooterFont: Raleway, sans-serif;
 
           --editor-panel-zindex: 90;
@@ -214,21 +216,21 @@ Release 2 birds with one hand! Get "I want to book this room" kinda content and 
           color: var(--footerTextHoverColor);
           }
 
-        .built {background-color: var(--footerBackgroundColor);}
+        .built {background-color: var(--subfooterBackgroundColor);}
 
         .built a 
           {
-          color: var(--socialIconsBackgroundColor);
+          color: var(--subfooterTextColor);
           font-family: var(--subfooterFont);
           }
 
         .built p 
           {
-          color: var(--socialIconsBackgroundColor);
+          color: var(--subfooterTextColor);
           font-family: var(--subfooterFont);
           }
 
-        .built a:hover {color: var(--subfooterHoverColor);}
+        .built a:hover {color: var(--subfooterTextHoverColor);}
 
         @media(max-width:768px) 
         {

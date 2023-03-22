@@ -975,7 +975,7 @@ input:focus, textarea:focus
 
 .footer-image 
   { 
-  height: 212px;
+  height: 213.5px;
   width: 100%;
   object-fit: cover;
   }
@@ -1021,7 +1021,7 @@ border: #FAE6D4 solid;
 .tt {padding: 15px 20px 0px;}
 .yt {padding: 15px 20px 0px;} */
 
-.built {padding: 2%;}
+.built {padding: 0.5%;}
 .built p 
     {
     font-size: 0.8rem;

@@ -107,7 +107,9 @@
           --footerTextColor: {{site.data.footer.colors.text-color}};
           --footerTextFont: {{site.data.footer.fonts.text-font}};
           --footerTextHoverColor: {{site.data.footer.colors.text-hover-color}};
-          --subfooterHoverColor: {{site.data.footer.colors.subfooter-hover-color}};
+          --subfooterBackgroundColor: {{site.data.footer.colors.subfooter-background-color}};
+          --subfooterTextColor: {{site.data.footer.colors.subfooter-text-color}};
+          --subfooterTextHoverColor: {{site.data.footer.colors.subfooter-text-hover-color}};
           --subfooterFont: {{site.data.footer.fonts.subfooter-font}};
 
           --editor-panel-zindex: 90;
@@ -209,21 +211,21 @@
           color: var(--footerTextHoverColor);
           }
 
-        .built {background-color: var(--footerBackgroundColor);}
+        .built {background-color: var(--subfooterBackgroundColor);}
 
         .built a 
           {
-          color: var(--socialIconsBackgroundColor);
+          color: var(--subfooterTextColor);
           font-family: var(--subfooterFont);
           }
 
         .built p 
           {
-          color: var(--socialIconsBackgroundColor);
+          color: var(--subfooterTextColor);
           font-family: var(--subfooterFont);
           }
 
-        .built a:hover {color: var(--subfooterHoverColor);}
+        .built a:hover {color: var(--subfooterTextHoverColor);}
 
         @media(max-width:768px) 
         {
