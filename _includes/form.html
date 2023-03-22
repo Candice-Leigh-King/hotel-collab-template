@@ -147,14 +147,15 @@
    #content-block-{{forloop.index0}} .socials-form a 
    {
     margin: 10px;
-    background-color: {{item.colors.socials-color}};
-    color: {{item.colors.socials-icon-color}};
-    border: 1.5px solid {{item.colors.socials-icon-color}};
+    background-color: {{item.colors.social-icons-background-color}};
+    color: {{item.colors.social-icons-color}};
+    border: 1.5px solid {{item.colors.social-icons-border-color}};
    }
-   #content-block-{{forloop.index0}} .socials a:hover
+   #content-block-{{forloop.index0}} .socials-form a:hover
    {
-    color: {{item.colors.socials-icon-hover-color}};
-    border: 1px solid {{item.colors.socials-icon-hover-color}};
+    color: {{item.colors.social-icons-hover-color}};
+    border: 1px solid {{item.colors.social-icons-border-hover-color}};
+    background-color: {{item.colors.social-icons-background-hover-color}};
    }
 
   @media (max-width: 768px)

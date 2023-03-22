@@ -99,9 +99,11 @@
           --footerSocialIconsColor: #fefefe;
           --footerSocialIconsHoverColor: #9e9282;
           --footerSocialIconsBackgroundHoverColor: #eae3d9;
+          --footerSocialIconsBorderColor: #fefefe;
+          --footerSocialIconsBorderHoverColor: #9e9282;
           --iconBorderColor: ;
           --iconHoverColor: #9e9282;
-          --socialIconsBackgroundColor: ;
+          --socialIconsBackgroundColor: transparent;
           --footerTextColor: #fefefe;
           --footerTextFont: Raleway, sans-serif;
           --footerTextHoverColor: #9e9282;
@@ -185,16 +187,15 @@
           {
           color: var(--footerSocialIconsColor);
           background-color: var(--socialIconsBackgroundColor);
-          border: 1.5px solid var(--footerSocialIconsColor);
+          border: 1.5px solid var(--footerSocialIconsBorderColor);
+          background-size: cover;
           }
-        
-        .social-icons-color {background-size: cover;}
         
         .social-icons-color:hover
           {
           color: var(--footerSocialIconsHoverColor);
           background-color: var(--footerSocialIconsBackgroundHoverColor);
-          border: 1.5px solid var(--socialIconsBackgroundColor);
+          border: 1.5px solid var(--footerSocialIconsBorderHoverColor);
           }
 
         .footer-text 
@@ -1012,10 +1013,11 @@
     color: #9E9282;
     border: 1.5px solid #9E9282;
    }
-   #content-block-3 .socials a:hover
+   #content-block-3 .socials-form a:hover
    {
-    color: #366E94;
-    border: 1px solid #366E94;
+    color: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    background-color: #366E94;
    }
 
   @media (max-width: 768px)

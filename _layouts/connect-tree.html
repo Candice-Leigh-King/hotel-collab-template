@@ -99,6 +99,8 @@
           --footerSocialIconsColor: {{site.data.footer.colors.social-icons-color}};
           --footerSocialIconsHoverColor: {{site.data.footer.colors.social-icons-hover-color}};
           --footerSocialIconsBackgroundHoverColor: {{site.data.footer.colors.social-icons-background-hover-color}};
+          --footerSocialIconsBorderColor: {{site.data.footer.colors.social-icons-border-color}};
+          --footerSocialIconsBorderHoverColor: {{site.data.footer.colors.social-icons-border-hover-color}};
           --iconBorderColor: {{site.data.navigation.social-link-colors.icon-border-color}};
           --iconHoverColor: {{site.data.navigation.social-link-colors.icon-hover-color}};
           --socialIconsBackgroundColor: {{site.data.footer.colors.social-icons-background-color}};
@@ -185,16 +187,15 @@
           {
           color: var(--footerSocialIconsColor);
           background-color: var(--socialIconsBackgroundColor);
-          border: 1.5px solid var(--footerSocialIconsColor);
+          border: 1.5px solid var(--footerSocialIconsBorderColor);
+          background-size: cover;
           }
-        
-        .social-icons-color {background-size: cover;}
         
         .social-icons-color:hover
           {
           color: var(--footerSocialIconsHoverColor);
           background-color: var(--footerSocialIconsBackgroundHoverColor);
-          border: 1.5px solid var(--socialIconsBackgroundColor);
+          border: 1.5px solid var(--footerSocialIconsBorderHoverColor);
           }
 
         .footer-text 
