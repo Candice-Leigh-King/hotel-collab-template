@@ -324,15 +324,11 @@ _array_structures:
         value:
           _section-type: exhibition
           heading: hotel facility photography
-          textarea_html: >-
-            <h4 class="center">Client: Cielo Koh Samui</h4><p class="center">We
-            specialize in the hotel facility, food, travel and lifestyle. We cover
-            both photography and videography.</p><p>Tap/click the image to view in
-            full size.</p>
+          textarea_html: <p>Tap/click the image to view in full size.</p>
           cta: hire us
           cta-link: /contact
           content-1:
-            content-path: /images/facility-photography/hotel-facility-photographer-5.webp
+            content-path: https://youtu.be/DV16nY_zRtA
             cover-image: /images/facility-photography/hotel-facility-photographer-5.webp
             border-radius:
               border-top-left-corner: 0%;
@@ -340,38 +336,14 @@ _array_structures:
               border-bottom-left-corner: 0%;
               border-bottom-right-corner: 0%;
           content-2:
-            content-path: /images/facility-photography/hotel-facility-photographer-1.webp
-            cover-image: /images/facility-photography/hotel-facility-photographer-1.webp
+            content-path: /images/facility-photography/hotel-facility-photographer-7.webp
+            cover-image: /images/facility-photography/hotel-facility-photographer-7.webp
             border-radius:
               border-top-left-corner: 0%;
               border-top-right-corner: 0%;
               border-bottom-left-corner: 0%;
               border-bottom-right-corner: 0%;
           content-3:
-            content-path: /images/facility-photography/hotel-facility-photographer-2.webp
-            cover-image: /images/facility-photography/hotel-facility-photographer-2.webp
-            border-radius:
-              border-top-left-corner: 0%
-              border-top-right-corner: 0%
-              border-bottom-left-corner: 0%
-              border-bottom-right-corner: 0%
-          content-4:
-            content-path: /images/facility-photography/hotel-facility-photographer-4.webp
-            cover-image: /images/facility-photography/hotel-facility-photographer-4.webp
-            border-radius:
-              border-top-left-corner: 0%
-              border-top-right-corner: 0%
-              border-bottom-left-corner: 0%
-              border-bottom-right-corner: 0%
-          content-5:
-            content-path:  /images/facility-photography/hotel-facility-photographer-7.webp
-            cover-image: /images/facility-photography/hotel-facility-photographer-7.webp
-            border-radius:
-              border-top-left-corner: 0%
-              border-top-right-corner: 0%
-              border-bottom-left-corner: 0%
-              border-bottom-right-corner: 0%
-          content-6:
             content-path: /images/facility-photography/hotel-facility-photographer-3.webp
             cover-image: /images/facility-photography/hotel-facility-photographer-3.webp
             border-radius:
@@ -379,9 +351,33 @@ _array_structures:
               border-top-right-corner: 0%
               border-bottom-left-corner: 0%
               border-bottom-right-corner: 0%
-          content-7:
-            content-path: /images/facility-photography/hotel-facility-photographer-9.web
+          content-4:
+            content-path: /images/facility-photography/hotel-facility-photographer-1.webp
+            cover-image: /images/facility-photography/hotel-facility-photographer-1.webp
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          content-5:
+            content-path: /images/facility-photography/hotel-facility-photographer-2.webp
+            cover-image: /images/facility-photography/hotel-facility-photographer-2.webp
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          content-6:
+            content-path: /images/facility-photography/hotel-facility-photographer-9.webp
             cover-image: /images/facility-photography/hotel-facility-photographer-9.webp
+            border-radius:
+              border-top-left-corner: 0%
+              border-top-right-corner: 0%
+              border-bottom-left-corner: 0%
+              border-bottom-right-corner: 0%
+          content-7:
+            content-path: /images/facility-photography/hotel-facility-photographer-8.webp
+            cover-image: /images/facility-photography/hotel-facility-photographer-8.webp
             border-radius:
               border-top-left-corner: 0%
               border-top-right-corner: 0%
@@ -407,11 +403,11 @@ _array_structures:
             text-font: Playfair Display, serif
             button-font: Mak
           button-border-radius:
-            border-top-left-corner: 100%
-            border-top-right-corner: 100%
-            border-bottom-left-corner: 100%
-            border-bottom-right-corner: 100%
-          content-block-link:   
+            border-top-left-corner: 100%;
+            border-top-right-corner: 100%;
+            border-bottom-left-corner: 100%;
+            border-bottom-right-corner: 100%;
+          content-block-link: 
       - label: Space
         icon: block
         value:
