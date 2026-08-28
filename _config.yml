@@ -550,54 +550,59 @@ _array_structures:
         icon: auto_awesome
         value:
           _section-type: the-divine-fade
-          right-image: 
-            image: 
-            border-color: 
+          right-image:
+            image: /images/products/sunset.jpg
+            border-color: '#3f3f40'
             border-radius:
-            top-left-corner: 
-            top-right-corner: 
-            bottom-left-corner:
-            bottom-right-corner: 
-          left-image: 
-            image: 
-            border-color: 
+              top-left-corner: 0px
+              top-right-corner: 0px
+              bottom-left-corner: 0%
+              bottom-right-corner: 0%
+          left-image:
+            image: /images/products/shop.jpg
+            border-color: '#3f3f40'
             border-radius:
-            top-left-corner: 
-            top-right-corner:
-            bottom-left-corner: 
-            bottom-right-corner:  
-          bottom-image: 
-            image: 
-            border-color:
+              top-left-corner: 0px
+              top-right-corner: 0px
+              bottom-left-corner: 0%
+              bottom-right-corner: 0%
+          bottom-image:
+            image: /images/products/new.jpg
+            border-color: '#3f3f40'
             border-radius:
-            top-left-corner:
-            top-right-corner: 
-            bottom-left-corner:
-            bottom-right-corner: 
+              top-left-corner: 0px
+              top-right-corner: 0px
+              bottom-left-corner: 0px
+              bottom-right-corner: 0px
           text:
-            first-textarea_html: 
-            second-textarea_html:
+            first-textarea_html: >-
+              <h2>Shop Now!</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quaerat libero dignissimos voluptatem, debitis rem fugit optio
+              eveniet numquam possimus fuga. Non, praesentium ipsam nisi quidem
+              accusamus debitis dicta nemo voluptates?</p>
+            second-textarea_html: >-
+              <p>★★★★★</p><p><i>"Nimo Bitis rem fugit optio eveniet numquam possimus
+              fug!"</i></p>
           button:
-            button-link: 
-            button-name:  
-          colors:  
-            background-color: 
-            heading-color: 
-            subheading-color: 
-            text-color:
-            button-color: 
-            button-hover-color:
-            button-text-color: 
-            button-text-hover-color: 
+            button-link: /products/the-ultimate-guide-for-hotel-collabs.html
+            button-name: Ooh, Learn more!
+          colors:
+            background-color: '#ffffff'
+            heading-color: '#3f3f40'
+            subheading-color: '#3f3f40'
+            text-color: '#3f3f40'
+            button-color: '#bed0d2'
+            button-hover-color: '#CCBFD9'
+            button-text-color: '#ffffff'
+            button-text-hover-color: '#ffffff'
           fonts:
-            heading-font: 
-            subheading-font: 
-            text-font: 
-            button-font:
-          content-block-link:
-      - label: Plain Jane
-        icon: face_3
-        value:
+            heading-font: Mak
+            subheading-font: Brushwell
+            text-font: Raleway, sans-serif
+            button-font: Mak
+        - label: Plain Jane
+          icon: face_3
+          value:
           _section-type: plain-jane
           textarea_html: >-
             <h3 class="center">more services</h3><p class="center">Ok, so if you're
@@ -841,144 +846,7 @@ _array_structures:
               top-right-corner: 40%
               bottom-left-corner: 34%
               bottom-right-corner: 27%
-          content-block-link:
-      - label: Fig Hover Block
-        icon: emoji_nature
-        value: 
-          _section-type: fig-hover-block
-          left:
-            heading:
-            background-image:
-          right:
-            subheading:
-            textarea:
-            background-image: 
-            button: 
-            button-link:
-          colors:
-            overlay-color: 
-            background-color:
-            border-color: 
-            heading-color:
-            hover-text-color:
-            hover-overlay-color:
-            button-background-color:
-            button-text-color:
-            subheading-mobile-color: 
-            on-mobile-text-color:
-          border-radius:
-            laptop:  
-              top-left-corner:
-              top-right-corner:
-              bottom-left-corner:
-              bottom-right-corner:
-            tablet: 
-              top-left-corner:
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner: 
-            mobile:
-              top-left-corner:
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner:  
-          fonts:
-            heading-font:
-            subheading-font:
-            textarea-font: 
-          content-block-link:
-      - label: Zuko Hover Block
-        icon: pets
-        value: 
-          _section-type: zuko-hover-block
-          left:
-            subheading:
-            textarea:
-            background-image: 
-            button:
-            button-link: 
-          right:
-            subheading: 
-            textarea:
-            background-image:
-            button: 
-            button-link: 
-          colors:
-            overlay-color: 
-            background-color:
-            hover-overlay-color:
-            border-color: 
-            heading-color:
-            hover-text-color:   
-            button-background-color:
-            button-text-color:
-            subheading-mobile-color:
-            on-mobile-text-color:
-          border-radius:
-            laptop:  
-              top-left-corner: 
-              top-right-corner:
-              bottom-left-corner:
-              bottom-right-corner:
-            tablet: 
-              top-left-corner:
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner: 
-            mobile:
-              top-left-corner: 
-              top-right-corner: 
-              bottom-left-corner: 
-              bottom-right-corner:    
-          fonts:
-            heading-font:
-            subheading-font:
-            textarea-font:
-          content-block-link:          
-      - label: Gallery
-        icon: photo_camera
-        value:
-          _section-type: gallery
-          heading: Gallery
-          left:
-            top-image:  
-            bottom-image:  
-          middle:
-            top-image:
-            bottom-image: 
-          right:
-            top-image:
-            bottom-image: 
-          colors:
-            background-color:
-            heading-color:
-          fonts:
-            heading-font:
-          content-block-link:
-      - label: Gallery with Links
-        icon: link
-        value:
-          _section-type: gallery-with-links 
-          subheading:
-          images: 
-            first-image: 
-            second-image: 
-            third-image:  
-            fourth-image:
-          links:
-            first-link:
-            second-link: 
-            third-link:  
-            fourth-link:
-          colors:
-            background-color: 
-            subheading-color: 
-            text-color: 
-            text-background-color: 
-          fonts:
-            subheading-font:
-            text-font:
-          content-block-link:
+          content-block-link:  
       - label: Form
         icon: email
         value:
@@ -1038,57 +906,7 @@ _array_structures:
             text-font: Raleway, sans-serif
             button-font: Mak
           content-block-link: contact
-      - label: Media Kit
-        icon: business_center
-        value:
-          _section-type: media-kit 
-          info:
-            title-1: 
-            title-2: 
-            title-3: 
-            title-4:
-            title-5: 
-          statistics:
-            bubble-1: 
-              data:
-              title:
-            bubble-2:
-              data: 
-              title: 
-            bubble-3:
-              data: 
-              title:
-            bubble-4:
-              data: 
-              title:
-          text-area:
-            subheading: 
-            textarea_html: 
-          image:
-          colors:
-            top-background-color: 
-            bottom-background-color: 
-            image-border-color: 
-            line-color: 
-            title-1-color: 
-            title-2-color: 
-            title-3-color: 
-            title-4-color: 
-            title-5-color:
-            statistic-data-color: 
-            statistic-title-color: 
-            subheading-color: 
-            textarea-color: 
-          fonts:
-            title-1-font:
-            title-2-font: 
-            title-3-font:
-            title-4-font: 
-            title-5-font:
-            statistic-data-font: 
-            statistic-title-font: 
-            subheading-font: 
-            textarea-font: 
+   
 fonts:
 _select_data:
   fonts:
